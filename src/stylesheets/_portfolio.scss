@@ -1,0 +1,125 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: black !important;
+    overflow-x: hidden;
+}
+
+
+
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+    html, body {
+        width: 80%; 
+    }
+    
+    .company-col {
+        top: 20px !important;
+        left: 7% !important;
+        width: 160%;
+        display: inline-block !important;
+    }
+    i.btn {
+        left: 50% !important;
+        zoom: 1.1;
+    }
+   .dropdown {
+        left: 30%;
+    }
+    .dropdown-menu {
+        zoom: .1 !important;
+    }
+   
+    #dropdownMenuButton {
+        left: -40px !important;
+    color: white !important;
+}
+    
+    #port {
+        top: 250px !important;
+        left: 25% !important;
+        font-size: 50px !important;
+    }
+    .portfolio-move {
+        top: 470px !important;
+        left:  -15% !important;
+        zoom:  .7 !important;
+    }
+    #portfolio-one-image {
+      width: 200% !important;
+    }
+    
+    .new-row, .tea-row, .broadway-row, .coffee-row, .davie-row, .travel-row {
+        position: relative;
+        right: 30%;
+        width: 205%;
+    }
+    
+    footer {
+        right: 19%;
+        top: 400px !important;
+    }
+    
+    .copyright-text{
+        padding-left: 30% !important;
+    }
+}
+
+
+
+
+
+
+
+
+/*PORTFOLIO--------------------*/
+#port {
+    position: relative;
+    top: 300%;
+    left: 40%;
+    font-family: 'Cinzel', serif;
+    font-weight: bolder;
+    font-size: 80px;
+    color: whitesmoke;
+    z-index: -2;
+}
+
+.round{
+        border-radius: 20px;
+    }
+
+ 
+
+#portfolio-one{
+    padding-top: 30%;
+    padding-left: 35%;
+     zoom: 1.3;
+}
+
+#portfolio-two, #portfolio-six,#portfolio-three,#portfolio-four, #portfolio-five,
+#portfolio-seven {
+    padding-top: 10%;
+    padding-left: 35%;
+    zoom: 1.3;
+}
+
+
+
+
+
+
+#portfolio-one-image,#portfolio-two-image,  #portfolio-three-image,  #portfolio-four-image,  #portfolio-five-image, #portfolio-six-image,  #portfolio-seven-image {
+    height: 260px;
+}
+
+
+
+
+
+
+
+
+
+    

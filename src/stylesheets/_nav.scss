@@ -1,0 +1,61 @@
+
+ /* Nav bar */
+.sidebar {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed !important; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+
+
+header {
+    font-family: 'Lora', serif;
+}
+
+
+/*HEADER-----------------*/
+
+header .logo-and-contact .company-logo {
+    float: left;
+    margin-top: 13px;
+}
+header .logo-and-contact .company-contact {
+    float: right;
+    margin-top: 8px;
+}
+
+
+
+header .menu nav ul li a:hover {
+    background: #1a2d4e;
+    transition: 0.4s ease-in;
+    color: #00a4b8;
+}
+
+.company-logo, h5 {
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+}
+
+
+.company-col {
+        top: 40px;
+        right: 46%;
+        zoom: 1.4;
+        z-index: 10;
+        color: white;
+        width: 50%;
+}
+a {
+    color: white;
+}
+
+a:hover {
+    color: blue;
+}
