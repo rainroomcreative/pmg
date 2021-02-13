@@ -24,6 +24,218 @@ html{
   }
   
   
+  /* Responsive CSS */
+
+   @media only screen and (min-width: 400px) and (max-width: 500px) {
+    body {
+        background: black !important;
+    }
+    .company-col {
+          left: 6%;
+          width: 100%;
+      }
+    i.btn {
+          position: relative;
+          top: 20px;
+          left: 40%;
+          zoom: 1.1;
+      }
+    #dropdown-id {
+          top: 34px !important;
+          opacity: 1;
+      }
+   
+    .title {
+          top: 150px !important;
+      }
+    .table-link {
+          top: 20px !important;
+          left: 5% !important;
+      }
+    #table-section {
+          position: relative; 
+            left: 10%;
+             z-index: -1;
+      }
+       .time-container {
+           width: 200% !important;
+       }
+       .rating-row {
+           left: 20% !important;
+       }
+    .footer-content {
+        left: -13%;
+          zoom: .8!important;
+      }
+  }
+
+ @media only screen and (min-width: 300px) and (max-width: 375px) {
+    body {
+        background: black !important;
+    }
+    .company-col {
+      left: 3%;
+      zoom: .7 !important;
+    }
+    .title {
+      top: 40px;
+    }
+      .dropdown {
+          left: 10%;
+          z-index: 1;
+      }
+      #dropdown-id {
+          z-index: 1;
+      }
+    #see {
+      position: relative;
+      right: 16%;
+      zoom: .9;
+    }
+    .table-link {
+      left: 7% !important;
+      zoom: .9;
+    }
+    .time-row {
+        position: relative ;
+        left: 14%;
+      zoom: .8;
+    }
+      .rating-row {
+          left: 23% !important;
+      }
+    .footer-content {
+        zoom: .8 !important;
+      }
+  }
+   
+ 
+/* Loading Animation Styling */
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "proxima-nova-soft", sans-serif;
+  -webkit-user-select: none;
+  
+}
+body .vertical-centered-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+body .vertical-centered-box:after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+body .vertical-centered-box .content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  font-size: 0;
+}
+* {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.loader-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  margin-left: -60px;
+  margin-top: -60px;
+}
+.loader-line-mask {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 60px;
+  height: 120px;
+  margin-left: -60px;
+  margin-top: -60px;
+  overflow: hidden;
+  -webkit-transform-origin: 60px 60px;
+  -moz-transform-origin: 60px 60px;
+  -ms-transform-origin: 60px 60px;
+  -o-transform-origin: 60px 60px;
+  transform-origin: 60px 60px;
+  -webkit-mask-image: -webkit-linear-gradient(top, #000000, rgba(0, 0, 0, 0));
+  -webkit-animation: rotate 1.2s infinite linear;
+  -moz-animation: rotate 1.2s infinite linear;
+  -o-animation: rotate 1.2s infinite linear;
+  animation: rotate 1.2s infinite linear;
+}
+.loader-line-mask .loader-line {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+}
+#particles-background,
+#particles-foreground {
+  left: -51%;
+  top: -51%;
+  width: 202%;
+  height: 202%;
+  -webkit-transform: scale3d(0.5, 0.5, 1);
+  -moz-transform: scale3d(0.5, 0.5, 1);
+  -ms-transform: scale3d(0.5, 0.5, 1);
+  -o-transform: scale3d(0.5, 0.5, 1);
+  transform: scale3d(0.5, 0.5, 1);
+}
+#particles-background {
+  background: #2c2d44;
+  background-image: -moz-linear-gradient(45deg, #3f3251 2%, #002025 100%);
+  background-image: -webkit-linear-gradient(45deg, #3f3251 2%, #002025 100%);
+  background-image: linear-gradient(45deg, #3f3251 2%, #002025 100%);
+}
+lesshat-selector {
+  -lh-property: 0; } 
+@-webkit-keyframes rotate{ 0% { -webkit-transform: rotate(0deg);} 100% { -webkit-transform: rotate(360deg);}}
+@-moz-keyframes rotate{ 0% { -moz-transform: rotate(0deg);} 100% { -moz-transform: rotate(360deg);}}
+@-o-keyframes rotate{ 0% { -o-transform: rotate(0deg);} 100% { -o-transform: rotate(360deg);}}
+@keyframes rotate{ 0% {-webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg);} 100% {-webkit-transform: rotate(360deg);-moz-transform: rotate(360deg);-ms-transform: rotate(360deg);transform: rotate(360deg);}}
+[not-existing] {
+  zoom: 1;
+}
+lesshat-selector {
+  -lh-property: 0; } 
+@-webkit-keyframes fade{ 0% { opacity: 1;} 50% { opacity: 0.25;}}
+@-moz-keyframes fade{ 0% { opacity: 1;} 50% { opacity: 0.25;}}
+@-o-keyframes fade{ 0% { opacity: 1;} 50% { opacity: 0.25;}}
+@keyframes fade{ 0% { opacity: 1;} 50% { opacity: 0.25;}}
+[not-existing] {
+  zoom: 1;
+}
+lesshat-selector {
+  -lh-property: 0; } 
+@-webkit-keyframes fade-in{ 0% { opacity: 0;} 100% { opacity: 1;}}
+@-moz-keyframes fade-in{ 0% { opacity: 0;} 100% { opacity: 1;}}
+@-o-keyframes fade-in{ 0% { opacity: 0;} 100% { opacity: 1;}}
+@keyframes fade-in{ 0% { opacity: 0;} 100% { opacity: 1;}}
+[not-existing] {
+  zoom: 1;
+}
+p {
+    color: white;
+}
+#loader {
+  z-index: 100;
+}
+ 
 .title {
   position: relative;
   top: 150px;
@@ -196,11 +408,17 @@ h1 {
   font-size: 20px;
 }
 
+
+#tt-num, #pic-num, #sic-num, #dual-num, #solo-num, #inst-num, #xc-num, 
+#night-num, #multi-num, #turb-num  {
+  color: white !important;
+}
+
   /* Ratings Table */
 .rating-row {
   position: relative;
   top: 100px;
-  left: 44.6%;
+  left: 38%;
   width: 90%;
   zoom: 1.3;
 }
@@ -324,6 +542,28 @@ h1#ratings {
  .container td:nth-child(4),
  .container th:nth-child(4) { display: none; }
  }
+
+
+/*FOOTER-------------------*/
+footer h5 {
+    color: white;
+}
+footer {
+    background: #1a2d4e;
+    position: relative !important;
+    top: 1200px !important;
+    right: 20% !important;
+    width: 200% !important;
+}
+
+.copyright-text {
+  position: relative !important;
+  right: 8% !important;
+  zoom: 1.4 !important;
+}
+
+
+
 
 
 

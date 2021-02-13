@@ -15,7 +15,7 @@ const Aviation = () => {
   </h1>
   
   <div className="row click-row">
-    <div className="container click-col" data-aos="fade-up" id="click-col-id">
+    <div className="container click-col"  id="click-col-id">
       <a className="table-link" href="#table-section">
         <i className="fas fa-chevron-down p-3  bg-white" id="table-chevron-id"></i>
       </a>

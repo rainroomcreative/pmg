@@ -35,10 +35,10 @@ const NavBarComp = () => {
           </Fade>
           
       
-      <ProSidebar className="sidebar" collapsed={visible}  toggled={true} breakPoint='sm'>
+      <ProSidebar className="sidebar" collapsed={visible}  toggled={true} breakPoint='sm'  width='200px'>
       <SidebarHeader>
-        <h1>02DesignStudio</h1>
-      <Checkbox  toggle onChange={collapseHandler}/>
+        <img src="https://res.cloudinary.com/dyew1z2ms/image/upload/v1606430221/Portfolio/logo-site_fvm91j.png" alt="logo" className="side-logo"/>
+      <Checkbox className="side-check"  toggle onChange={collapseHandler}/>
       </SidebarHeader>
       <SidebarContent>
         <Menu iconShape="square">
