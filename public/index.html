@@ -51,7 +51,6 @@
     -->
 <!-- jQUERY -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="javascripts/loading-animation.js"></script>
 
 <!-- AOS-->
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
@@ -69,11 +68,7 @@
 
 <!--Animation JS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-<!-- Video Script Link-->
-<script type="text/javascript">
-  var vid = document.getElementById("video");
-  vid.playbackRate = .8;
-</script>
+
 <script>
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function () {
@@ -109,29 +104,7 @@
   }
 
 </script>
-<script>
-  // Wrap every letter in a span
-    var textWrapper = document.querySelector('.ml7 .letters');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-    anime.timeline({ loop: true })
-      .add({
-        targets: '.ml7 .letter',
-        translateY: ["1.1em", 0],
-        translateX: ["0.55em", 0],
-        translateZ: 0,
-        rotateZ: [180, 0],
-        duration: 750,
-        easing: "easeOutExpo",
-        delay: (el, i) => 50 * i
-      }).add({
-        targets: '.ml7',
-        opacity: 0,
-        duration: 1000,
-        easing: "easeOutExpo",
-        delay: 1000
-      });
-</script>
 
   </body>
 </html>

@@ -2,22 +2,21 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import{ init } from 'emailjs-com';
-init('user_H2dSH0v7XWD3nG6vyyosk');
+init(`${process.env.REACT_APP_UserId}`);
 
 // #TODO Configure Env variables for the EmailJS Client.
 
 
 const Contact = () => {
-    const {REACT_APP_UserId, REACT_APP_TemplateId, REACT_APP_ServiceId} = process.env;
-    const serviceId = process.env.REACT_APP_ServiceId;
-    const templateId =  process.env.REACT_APP_TemplateId;
-    const userId = process.env.REACT_APP_UserId; 
-
 
     const sendEmail = (e)  => {
     e.preventDefault();
-
-    emailjs.sendForm(`${serviceId}`, `${templateId}`, e.target, `${userId}`)
+      console.log(process.env);
+    emailjs.sendForm(
+      `${process.env.REACT_APP_ServiceId}`,
+       `${process.env.REACT_APP_TemplateId}`, 
+       e.target, 
+       `${process.env.REACT_APP_UserId}`)
       .then((result) => {
           console.log(result.text);
       }, (error) => {

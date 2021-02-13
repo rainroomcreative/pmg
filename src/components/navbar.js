@@ -7,7 +7,7 @@ import React, {useState} from 'react';
 
 // External imports
 import Fade from 'react-reveal';
-import { ProSidebar, Menu, MenuItem, SubMenu, SidebarHeader, SidebarContent } from 'react-pro-sidebar';
+import { ProSidebar, Menu, MenuItem, SidebarHeader, SidebarContent } from 'react-pro-sidebar';
 import {Link} from 'react-router-dom';
 import { Checkbox } from 'semantic-ui-react'
 
