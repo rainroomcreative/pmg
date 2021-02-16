@@ -5,16 +5,6 @@ $body-bg: #000;
 // Put any other imports below so that CSS from your
 // components takes precedence over default styles.
 
- body {
-    overflow-x: hidden;
-}
-
-
-
-
-html{
-    scroll-behavior: smooth;
-}
 #video {
   position: fixed;
   right: 0;

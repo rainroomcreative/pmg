@@ -1,67 +1,61 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
+import {Card, CardContent} from 'semantic-ui-react';
+
+import {Globe, WordpressComp, PeopleIcon} from './Icons';
 
 
 const Services = () => {
     return (
         <Fade top duration={3000}>
-            <div   id="services">
+            <div id="services">
             <div className="row services-row" id="services-row">
                 <div className="col-xs col-sm col-md col-lg col-xl">
                     <h1 className="text-center services-text" id="services-text">Services</h1>
                 </div>
             </div>
-
-            <div className="row web-row-contain services-content" id="web-id">
-                <div className="row">
-                    <div className="col-xs col-sm col-md col-lg col-xl">
-                        <ion-icon name="globe-outline" id="ion-icon-globe" role="img" className="md hydrated" aria-label="globe outline">
-                        </ion-icon>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-xs col-sm col-md col-lg col-xl">
-                        <h3 id="web-text">Website development</h3>
+            <Card className="web-card"> 
+                <Card.Content>
+                    <Card.Header textAlign="center">
+                        <Globe />
+                        <h3 id="web-text">Website Development</h3>
+                    </Card.Header>
+                    <Card.Description textAlign="left">
                         <h4 id="services-1-description">I provide a web development service to deliver a product that is created
                         using the latest technologies, to ensure the quality, functionality, and security of your site. Sites will be
             responsive across all devices. </h4>
-                    </div>
-                </div>
-            </div>
+                    </Card.Description>
+                </Card.Content>
+            </Card>
 
-            <div className="row wordpress services-content" id="word-id">
-                <div className="row">
-                    <div className="col-xs col-sm col-md col-lg col-xl">
-                        <ion-icon name="server" id="ion-icon-desktop" role="img" className="md hydrated" aria-label="logo wordpress">
-                        </ion-icon>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-xs col-sm col-md col-lg col-xl">
-                        <h3 id="wordpress">CMS Development</h3>
-                        <h4 id="services-2-description">If you are in need of a reliable and scaleable Wordpress or Squarespace site,
+             <Card className="wordpress-card"> 
+                <Card.Content>
+                    <Card.Header textAlign='center'>
+                        <WordpressComp  />
+                       <h3 id="wordpress">CMS Development</h3>
+                    </Card.Header>
+                    <Card.Description textAlign='left'>
+                       <h4 id="services-2-description">If you are in need of a reliable and scaleable Wordpress or Squarespace site,
                         please use
               the "Contact" page to request a quote. </h4>
-                    </div>
-                </div>
-            </div>
+                    </Card.Description>
+                </Card.Content>
+            </Card>
 
-            <div className="row consulting services-content">
-                <div className="row">
-                    <div className="col-xs col-sm col-md col-lg col-xl">
-                        <ion-icon name="people-circle-outline" id="ion-icon-people" role="img" className="md hydrated"
-                            aria-label="people circle outline"></ion-icon>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-xs col-sm col-md col-lg col-xl">
-                        <h3 className="consulting-title" id="consulting-title-id">Consulting Services</h3>
-                        <h4 id="services-3-description"> If you are in need of technical support for your site, need to modernize your
+                <Card className="consulting-card"> 
+                <Card.Content>
+                    <Card.Header textAlign='center'>
+                        <PeopleIcon />
+                         <h3 className="consulting-title" id="consulting-title-id">Consulting Services</h3>
+                    </Card.Header>
+                    <Card.Description textAlign='left'>
+                       <h4 id="services-3-description"> If you are in need of technical support for your site, need to modernize your
                         site, or need help setting up a domain for your site I am available for consulting. I will provide a quality
               product with customer service as my top priority. If interested, please use the "Contact page.”</h4>
-                    </div>
-                </div>
-            </div>
+                    </Card.Description>
+                </Card.Content>
+            </Card>
+           
 
 
             <div className="row" id="about-chevron">

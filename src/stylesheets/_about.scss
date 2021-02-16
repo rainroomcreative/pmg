@@ -1,53 +1,28 @@
 
 /*ABOUT-----------------------*/
-#about, .web-col, .wordpress, .web-row-contain,.consulting{
-    height: inherit;
-    box-shadow: 0px 3px 2px 1px lightgrey;
-    border-radius: 5px;
-    background: #f8f8f8;
-}
-
-#about {
-    position: relative;
-    top: 440px;
-    width: 50%;
-    height: 500px;
-    zoom: 1.1;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    z-index: 1;
-    background: #F0F0F0;
-}
-
-
-h1 {
-    font-family: 'Abril Fatface', cursive;
-    padding-top: 10px;
-}
-
-
-
-
 .about-link {
     position: relative;
     top: -400%;
     left: 19.5%;
 }  
 
-.about-me-content {
-    position: relative;
-    left: 30%;
-}
-   #about-image {
-    position: relative;
-    top: 2%;
-    left: 28%;
-    zoom: .07;
+#about {
+    width: 40%;
+    zoom: 1;
+   
 }
 
+.about-card {
+    background: white;
+    position: relative;
+    left: 33%;
+    top: 800px;
 
-
-.about-description {
+        h1 {
+    font-family: 'Abril Fatface', cursive;
+    padding-top: 10px;
+    }
+        .about-description {
     position: relative; 
     top: 9%;
     padding-left: 5%;
@@ -56,9 +31,8 @@ h1 {
     font-size: 16px;
     margin: 0px 5% 0px 5%;
    color: black;
+    }
 }
 
 
-.about-chev {
-    padding-left: 45%;
-}
+

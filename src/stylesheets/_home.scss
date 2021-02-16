@@ -80,26 +80,27 @@
 }
 
 #august-2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif !important;
     font-size: 80px;
     color: white !important;
    z-index: 1000;
 }
 .august-1 {
-    position: relative;
-     bottom: -90px;
-     left: 24%;
+    position: relative !important;
+     bottom: -90px !important;
+     left: 24% !important;
 }
 
 .august-3 {
-    position: relative;
-    bottom: -220px;
-    right: 25%;
+    position: relative !important;
+    bottom: -220px !important;
+    right: 25% !important;
 }
 
 #august-4 {
-   font-family: 'Playfair Display', serif;
+   font-family: 'Playfair Display', serif !important;
    color: white;
+   font-size: 30px !important;
 
 }
 .title-col {
@@ -110,8 +111,7 @@
 
 
 .see-col {
-   padding-left: 52%;
-   position: relative;
+   position: relative ;
    top: 190px;
 
 }

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 
 // Icon Import 
  import {HomeIcon, FolderIcon, PlaneIcon, EmailIcon} from './Icons';
@@ -14,31 +14,32 @@ import { Checkbox } from 'semantic-ui-react'
 
 const NavBarComp = () => {
   const [visible, setIsVisible] = useState(true);
+  const box = useRef(null);
+
     const collapseHandler = (e) => {
+      
        e.preventDefault();
       if(visible) {
         setIsVisible(false);
+        box.current.className = 'side-logo';
+       
       } else {
         setIsVisible(true)
+        box.current.className = null;
       }
     }
     return (
-<header>
-          <Fade top>
-              <div className="row position-fixed company-col" id="test">
-                <div className=" col-sm col-xs col-md col-lg col-xl ">
-                    <h5 className="company-logo">August Shah</h5>
-                    <h5 className="company-contact"> <a href="tel:443-681-9485">443-681-9485</a> || <a
-                            href="mailto:augustshah@02pilot.com">augustshah@02pilot.com</a> </h5>
-                </div>
-            </div>
-          </Fade>
-          
-      
+<header>        
       <ProSidebar className="sidebar" collapsed={visible}  toggled={true} breakPoint='sm'  width='200px'>
       <SidebarHeader>
-        <img src="https://res.cloudinary.com/dyew1z2ms/image/upload/v1606430221/Portfolio/logo-site_fvm91j.png" alt="logo" className="side-logo"/>
-      <Checkbox className="side-check"  toggle onChange={collapseHandler}/>
+        <img src="https://res.cloudinary.com/dyew1z2ms/image/upload/c_scale,w_82/v1606430221/Portfolio/logo-site_fvm91j.png" 
+        alt="logo"
+         className=""
+         ref={box}/>
+      <Checkbox
+        className="side-check"  
+        toggle
+        onChange={collapseHandler}/>
       </SidebarHeader>
       <SidebarContent>
         <Menu iconShape="square">

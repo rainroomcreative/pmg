@@ -1,18 +1,20 @@
  import React from 'react';
 
+ import { Card, Icon, Image } from 'semantic-ui-react'
+
+
  const About = () => {
+   const url = 'https://res.cloudinary.com/dyew1z2ms/image/upload/v1606430218/Portfolio/bio-pic_xvc1la.jpg';
+
+   
      return (
-        <div className="container" id="about">
-      <div className="row about-container">
-        <h1 className=" col-xs col-sm col-md col-lg- col-xl about-me-content">About Me</h1>
-      </div>
-      <div className="row">
-        <div className=" col-xs col-sm col-md col-lg col-xl">
-          <img src="https://res.cloudinary.com/dyew1z2ms/image/upload/v1606430218/Portfolio/bio-pic_xvc1la.jpg" className="img-thumbnail" id="about-image" alt='Personal Headshot'/>
-        </div>
-      </div>
-      <div className="row flex-nowrap">
-        <div className="col-xs col-sm col-md col-lg col-xl img-col">
+      <Card className="about-card" id='about'>
+        <Image src={url} alt='Bio image' />
+        <Card.Content>
+          <Card.Header>
+            <h1>About Me</h1>
+          </Card.Header>
+          <Card.Description>
             <p className="about-description">
             I’m August Shah. While a professional pilot by trade, I also work as a full stack web developer. Through
             working with
@@ -31,9 +33,9 @@
             If you are ready to take this journey with me, then please send me a message. I look forward to hearing
             from you.
           </p>
-            </div>
-          </div>
-    </div>
+          </Card.Description>
+        </Card.Content>
+      </Card>
      )
  }
 

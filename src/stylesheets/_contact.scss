@@ -93,24 +93,11 @@
 
 
 /*CONTACT--------------------*/
-#container-loader {
-   position: relative;
-   left: 3%;
 
-}
 
-#contact .col-md-12 {
-    height: 600px;
-    overflow: hidden;
-    position: relative;
-}
 
-#contact form, input,
-#contact form, textarea {
-    border: 1px solid black !important;
-    color: black;
-    text-align: center;
-}
+
+
 
 .contact-content {
   position: relative;
@@ -166,11 +153,14 @@ input[value=Send] {
 }
 
 #submit:hover {
+    zoom: 1.2;
+}
+#submit {
     color: white;
 }
    
      
-  
+
 
 
 

@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, {useRef} from 'react';
 import emailjs from 'emailjs-com';
 import{ init } from 'emailjs-com';
 init(`${process.env.REACT_APP_UserId}`);
@@ -7,7 +7,9 @@ init(`${process.env.REACT_APP_UserId}`);
 // #TODO Configure Env variables for the EmailJS Client.
 
 
+
 const Contact = () => {
+
 
     const sendEmail = (e)  => {
     e.preventDefault();
@@ -51,9 +53,7 @@ const Contact = () => {
             </form>
 
           </div>
-    
-         
-    
+           
             </div>
         </div>
         <video autoPlay muted id="video">

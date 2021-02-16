@@ -13,7 +13,7 @@
 
 #services {
     position: relative;
-    top: 550px;
+    top: 700px;
     left: 8%;
     width: 100%;
     font-family: 'Lora', serif;
@@ -36,89 +36,53 @@ h1.services-text {
 
 #services-row {
     position: relative;
-    bottom: 35px;
+    bottom: 150px;
 }
 
 .services-text {
     position: relative;
-    right: 34.5%;
-    color: white;
+    right: 36.5%;
+    color: white !important;
+    font-size: 60px; 
+    z-index: 1;
 }
 
 
 
-.web-row-contain {
-     position: relative;
-     top: -105.1px;
-     left: -5%;
-     height: 290px !important;
-     width: 33%;
-     overflow-x: hidden;
-     overflow-y: scroll;
-     z-index: 1
-}
 
 
 
-#ion-icon-globe {
-     position: relative;
-    top: 25px;
-    left: 295%;
-    zoom: .7;
-}
 
 #web-text {
     position: relative;
-    bottom: 15%;
-    left: 13%;
+    top: 12px;
     font-family: 'Abril Fatface', cursive;
     font-size: 24px;
 }
 
 #services-1-description {
     position: relative;
-    bottom: 10px;
-    width: 100%;
-    zoom: 1;
+    top: 20px;
     line-height: 150%;
     font-size: 15px;
 }
 
 
 
-.wordpress {
-     position: relative;
-     top: -395px;
-     left: 31%;
-     height: 290px !important;
-     width: 33%;
-     overflow-x: hidden;
-     overflow-y: scroll;
-     z-index: 1
-}
 
 
-#ion-icon-desktop {
-    position: relative;
-    top: 24px;
-    left: 295%;
-    zoom: .7;
-}
+
 
 #wordpress {
     position: relative;
-    bottom: 20%;
-    left: 18%;
+    top: 12px;
     font-family: 'Abril Fatface', cursive;
     font-size: 24px;
 }
 
 #services-2-description {
     position: relative;
-    bottom: 20px;
-    left: 2%;
-    width: 100%;
-    zoom: 1;
+    top: 20px;
     line-height: 150%;
     font-size: 15px;
 }
@@ -130,46 +94,49 @@ h1.services-text {
     left: 66%;
 }
 
-.consulting {
-  position: relative;
-  left: 67%;
-  bottom: 686px;
-  width: 33%;
-  height: 290px !important;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  z-index: 1;
 
-}
-
-
-#ion-icon-people {
-    position: relative;
-    top: 30px;
-    left: 280%;
-    zoom: .7;
-}
 
 .consulting-title {
     position: relative;
-    bottom: 7%;
-    left: 15%;
+    top: 12px;
     font-family: 'Abril Fatface', cursive;
     font-size: 24px;
 }
 
 #services-3-description {
    position: relative;
-   right: 1.5%;
-   line-height: 170%;
-   zoom: .6;
-   font-size: 22px;
+    top: 20px;
+    line-height: 150%;
+    font-size: 15px;
 }
 #about-chevron {
     position: relative;
-    bottom: 100px;
-    left: 37%;
+    bottom: 170px;
+    left: 34%;
     width: 40%;
     height: 120px;
     z-index: 1;
+}
+
+.web-card {
+    background: white;
+    position: relative;
+    bottom: 90px;
+    height: 280px;
+}
+
+.wordpress-card {
+    background: white;
+    position: relative;
+    bottom: 380px;
+    left: 30%;
+    height: 280px;
+}
+
+.consulting-card {
+    background: white;
+    position: relative;
+    bottom: 670px;
+    left: 60%;
+    height: 280px;
 }

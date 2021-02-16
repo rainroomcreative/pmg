@@ -9,6 +9,13 @@
       name="description"
       content="Web site created using create-react-app"
     />
+      <!-- Google Font Link -->
+      <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Adamina&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -25,16 +32,6 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Portfolio</title>
-    <!-- AOS Link-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Google Font Link -->
-    <!-- Google Font Link -->
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Adamina&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -52,14 +49,6 @@
 <!-- jQUERY -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<!-- AOS-->
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-<!-- AOS-->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script type="text/javascript">
-  AOS.init({
-    duration: 1500
-  });
 </script>
 <!-- Font Awesome Link-->
 <script src="https://kit.fontawesome.com/595056b4d4.js" crossorigin="anonymous"></script>
@@ -69,20 +58,7 @@
 <!--Animation JS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
-<script>
-  var prevScrollpos = window.pageYOffset;
-  window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("test").style.display = "";
-      document.getElementById("dropdown-hide").style.visibility = "visible";
-    } else {
-      document.getElementById("test").style.display = "none";
-      document.getElementById("dropdown-hide").style.visibility = "hidden";
-    }
-    prevScrollpos = currentScrollPos;
-  }
-</script>
+
 <script type="text/javascript">
   /* 
   1. Creating a function that includes all mobile devices
