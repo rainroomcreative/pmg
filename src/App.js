@@ -1,5 +1,8 @@
+
+
 //Css Import
 import './stylesheets/app.scss';
+
 
 // Components
 import NavBarComp from './components/navbar';
@@ -13,21 +16,27 @@ import Test from "./components/test";
 import {
   BrowserRouter as Router,
   Route,
+  Switch
 } from "react-router-dom";
 
+import ScrollToTop from './components/ScrollToTop';
+
 function App() {
+
   return (
-    <Router>
-    <div className="container">
-      <NavBarComp />
-    <Route path="/" exact component={Home} />
-    <Route path="/portfolio"  component={Portfolio} />
-    <Route path="/aviation-time"  component={Aviation} />
-    <Route path="/contact"  component={Contact} />
-    <Route path="/test"  component={Test} />
-      < Footer />
-    </div>
-    </Router>
+      <Router>
+          <NavBarComp />
+          <ScrollToTop />
+    <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/portfolio"  component={Portfolio} />
+        <Route path="/aviation-time"  component={Aviation} />
+        <Route path="/contact"  component={Contact} />
+        <Route path="/test"  component={Test} />
+    </Switch>
+        < Footer />
+       </Router>
+   
   );
 }
 

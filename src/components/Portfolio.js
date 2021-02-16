@@ -1,13 +1,13 @@
 import React from 'react';
 
 
+
 // External imports
 import Fade from 'react-reveal/Fade';
 
 const Portfolio = () => {
     return ( 
          <div className="container">
-                  
                   <div className="row porfolio-row">
                         <div className=" col-xs col-sm col-md col-lg col-xl portfolio-col">
                               <h1 className="portfolio-content" id="port">Portfolio</h1>

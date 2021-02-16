@@ -38,7 +38,7 @@ export const Globe = () => {
          size="2x" 
          icon={faGlobe} 
         style={{
-        color: "#05A4B8"}} />
+        color: "black"}} />
     )
 }
 
@@ -49,7 +49,7 @@ export const WordpressComp = () => {
         size="2x" 
         icon={faDatabase}
          style={{
-            color: "#05A4B8"}} />
+            color: "black"}} />
     )
 }
 
@@ -60,7 +60,7 @@ export const PeopleIcon = () => {
          size="2x" 
          icon={faUserFriends} 
          style={{
-            color: "#05A4B8" }}/>
+            color: "black" }}/>
     )
 }
 

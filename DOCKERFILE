@@ -10,6 +10,6 @@ FROM node:12.18.3
 		
 
     # Have docker container use port 3000, that is the port that the node app is set to
-     EXPOSE 3000
+     EXPOSE 8080
    # Start the node app 
-   CMD ["npm", "start"]
+   CMD ["node", "server.js"]

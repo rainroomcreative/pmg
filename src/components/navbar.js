@@ -12,6 +12,8 @@ import {Link} from 'react-router-dom';
 import { Checkbox } from 'semantic-ui-react'
 
 
+
+
 const NavBarComp = () => {
   const [visible, setIsVisible] = useState(true);
   const box = useRef(null);
@@ -41,7 +43,7 @@ const NavBarComp = () => {
         toggle
         onChange={collapseHandler}/>
       </SidebarHeader>
-      <SidebarContent>
+      <SidebarContent className='side-content'>
         <Menu iconShape="square">
        
      <MenuItem icon={<HomeIcon />}>Home
