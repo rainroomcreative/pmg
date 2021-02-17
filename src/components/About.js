@@ -9,12 +9,12 @@
    
      return (
       <Card className="about-card" id='about'>
-        <Image src={url} alt='Bio image' />
+        <Image src={url} alt='Bio image' className='bio-pic' textAlign='center'/>
         <Card.Content>
-          <Card.Header>
+          <Card.Header textAlign='center'>
             <h1>About Me</h1>
           </Card.Header>
-          <Card.Description>
+          <Card.Description textAlign='left'>
             <p className="about-description">
             I’m August Shah. While a professional pilot by trade, I also work as a full stack web developer. Through
             working with
