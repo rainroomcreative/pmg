@@ -1,4 +1,459 @@
+/* Responsive Media Tags */
+@media only screen and (min-width: 1600px) and (max-width: 2500px) {
+  
 
+}
+
+@media only screen and (min-height: 1000px) and (max-height: 1600px) {
+  
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1500px) {
+
+
+     
+
+}
+
+@media only screen and (width: 812px) and (height: 375px) {
+    .company-logo, .company-contact {
+        position: relative;
+        left: 12%;
+        zoom: .8 !important;
+    }
+
+    .dropdown {
+        position: relative;
+        top: 15% !important;
+        left: 5%;
+    }
+        
+    #dropdown-id {
+          zoom: .5;
+        }
+
+    .august-1 {
+        position: relative;
+        bottom: 30px !important;
+        left: 1% !important;
+        zoom: .7;
+    }
+
+     .august-3 {
+        position: relative;
+        bottom: 21px;
+        left: 5%; 
+        zoom: .7;
+}
+
+
+    #august-4 {
+        font-size: 33px;
+    }
+
+    #see {
+        zoom: .9;
+    }
+
+    #see-id {
+        right: 45px !important;
+        zoom: .8;
+    }
+
+    #services-text {
+        bottom: 30px;
+        right: 25%;
+    }
+
+    #web-id {
+        bottom: 90px;
+        zoom: .8;
+    }
+    .word-col {
+        bottom: 90px;
+        zoom: .8;
+    }
+
+    .consulting-row {
+        position: relative;
+        right: 20px;
+        zoom: .8;
+    }
+    .consulting-col {
+        bottom: 660px !important; 
+    }
+    .consulting {
+        width: 280px !important;
+    }
+
+    .consulting-title {
+        left: 4% !important;
+    }
+
+   #about-chevron {
+        zoom: .7;
+    }
+    .about-link {
+        right: 15% !important;
+    }
+
+    .about-row {
+     position: relative; 
+     bottom: 290px;
+     zoom: .7;
+ }
+
+   
+}
+
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+      html, body {
+        width: 80% !important;
+    }
+   
+   
+    body {
+        background: black !important;
+    }
+    #video {
+        display: none;
+    }
+    
+    .company-col {
+        left: 5%;
+    }
+
+    i.btn {
+        zoom: 1.1;
+    }
+    .dropdown {
+        top: 90px !important;
+        left: 7%;
+        z-index: 10;
+        zoom: 1.6 !important;
+    }
+    #dropdown-id {
+        zoom: .4 !important;
+    }
+         .august-1 {
+        top: 70px !important;
+        left: 23% !important; 
+    } 
+    .august-3 {
+        top: 70px !important;
+        left: 30%;
+    }
+ 
+    .see-col {
+        top: 100px !important;
+        left: 38%;
+    }
+
+    #see-id {
+        right: 69% !important;
+    }
+     #services {
+        top: 600px !important;
+        left: 1% !important;
+        zoom: .8;
+    }
+      #services-text {
+        left: -7% !important;
+         top: -130px;
+    }
+
+      .web-row-contain {
+         top: -130px !important;
+        left: 45% !important;
+        width: 290px !important;
+    }
+    #web-id {
+        height: 260px !important;
+    }
+    
+    #ion-icon-globe {
+        left: 220% !important;
+    }
+
+     #web-text {
+        top: -10px;
+        left: -1% !important;
+        zoom: 1.1;
+    }
+
+    #services-1-description {
+          top: -10px;
+        left: -3% !important;
+        font-size: 12px !important;
+    }
+    
+      .wordpress {
+          top: -110px !important;
+        left: 45% !important;
+        width: 290px !important;
+    }
+
+    #word-id {
+        height: 260px !important;
+    }
+      #ion-icon-desktop {
+        left: 220% !important;
+    }
+    
+    #wordpress {
+        top: -19px;
+        left: 5% !important;
+        zoom: 1.1;
+    }
+    
+    #services-2-description {
+        top: -10px;
+        left: -3% !important;
+        font-size: 12px !important;
+    }
+    
+    .consulting {
+        top: -89px;
+        left: 45% !important;
+        width: 290px !important;
+ 
+    }
+    #consulting-id {
+        height: 270px !important;
+    }
+    #ion-icon-people {
+        left: 217% !important;
+    }
+  .consulting-title {
+        top: 4px;
+        left: 5% !important;
+        width: 200% !important;
+      zoom: 1.1;
+    }
+    #services-3-description {
+        top: 29px !Important;
+        font-size: 22px !important;
+    }
+
+     #about-chevron {
+        top: -90px !important;
+        left: 58% !important; 
+        width: 69% !important;
+        height: 170px !important;
+        zoom: .89;
+   
+    }
+
+    #me {
+        position: relative;
+        top: 45px !important;
+        left: 14%;
+        zoom: .9;
+    }
+    .about-link {
+        top: 60px !important;
+        left: 32% !important; 
+        zoom: .7;
+    }
+      #about {
+        top: 2200px !important;
+        left: 37% !important;
+        width: 100% !important;
+        height: 1200px !Important;
+        zoom: .3 !important;
+        box-shadow: 0px 3px 2px 1px rgb(74, 72, 72) !important;
+        border-radius: 5px;
+        background: #ffffff !important;
+    }
+      .about-me-content {
+        left: 18% !important;
+    }
+
+      #about-image {
+        top: 3% !important;
+        left: 15% !important;
+        zoom: .2 !important;
+    }
+    .about-description {
+        top: 60px !important;
+        line-height: 1.5!important;
+        font-size: 14px !important;
+        width: 95%;
+    }
+
+
+      footer {
+        top: 700px !important;
+        right: 50px !important;
+    }
+    
+     .copyright-text {
+        padding-left: 33% !important;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 375px) {
+     body {
+        background: black !important;
+    }
+    #video {
+        display: none;
+    }
+    .company-col {
+       left: 8%;
+   } 
+  .dropdown {
+        position: relative;
+        top: 15% !important;
+        left: 10%;
+        zoom: 1.7 !important;
+        z-index: 10;
+    }
+
+    #dropdown-id {
+        top: 250px !important;
+        left: 170% !important;
+        zoom: .1;
+    }
+
+
+    .august-1 {
+        left: 5% !important;
+        zoom: .9;
+    }
+
+    .august-3 {
+        left: 5%;
+        width: 100%;
+        zoom: .8;
+    }
+
+    .see-col {
+        left: 10%;
+    }
+
+    #see-id {
+        right: 60% !important;
+    }
+    
+    #services {
+        top: 700px !important;
+        left: 30% !important;
+        zoom: .7;
+    }
+
+    #services-text {
+        top: 40px;
+        right: 50%;
+    }
+
+    .web-row {
+        left: 10% !important;
+        width: 60% !important;
+    }
+
+    #ion-icon-globe {
+        left: 30% !important;
+    }
+    
+    #web-text {
+        left: -5% !important;
+        font-size: 22px !important;
+    }
+
+    
+    .wordpress {
+        left: 10% !important;
+        width: 180px !important;
+    }
+
+
+    #ion-icon-desktop {
+        left: 25% !important;
+    }
+
+    #wordpress {
+        left: -5% !important;
+        font-size: 22px !important;
+    }
+
+   .consulting-col {
+        bottom: 250px !important;
+        left: 9% !important;
+    }
+
+    .consulting {
+        width: 190px !important;
+    }
+
+    #ion-icon-people {
+        left: 30% !important; 
+    }
+
+    .consulting-title {
+        left: 10% !important;
+        font-size: 22px !important;
+    }
+
+    #about-chevron {
+        top: -275px !important;
+        left: -51% !important; 
+        width: 65%;
+        height: 170px !important;
+        zoom: .89;
+    }
+    #me {
+        position: relative;
+        top: 45px !important;
+        left: 14%;
+        zoom: .9;
+    }
+    .about-link {
+        left: 25% !important; 
+        top: 60px !important;
+        zoom: .7;
+    }
+
+     #about {
+        left: 10% !important;
+        top: 1300px !important;
+        width: 90% !important;
+        height: 600px !important;
+        zoom: .6 !important;    
+        box-shadow: 0px 3px 2px 1px lightgrey;
+        border-radius: 5px;
+        background: #f8f8f8;
+    }
+
+
+    .about-me-content {
+        position: relative;
+        top: 10px;
+        left: 30% !important;
+    }
+    #about-image {
+        bottom: 120% !important;
+        left: 23% !important;
+        zoom: .08 !important;
+    }
+
+
+
+
+    footer {
+        top: 380% !important;
+        width: 170%!important;
+    }
+    
+    .footer-content {
+        position: relative;
+        left: -20% !important;
+        zoom: .8 !important;
+    }
+
+} 
+ 
 
 
 
