@@ -18,7 +18,7 @@ build-App:
   services:
     - docker:dind
   script:
-    - echo   "REACT_APP_ServiceId =$REACT_APP_ServiceId" >> .env
+    - echo   "REACT_APP_ServiceId=$REACT_APP_ServiceId" >> .env
     - echo   "REACT_APP_TemplateId=$REACT_APP_TemplateId" >> .env
     - echo   "REACT_APP_UserId=$REACT_APP_UserId" >> .env
     - cat .env
