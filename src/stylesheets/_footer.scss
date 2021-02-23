@@ -4,20 +4,21 @@
 
 footer {
    position: relative;
-   top: 550px;
-   right: 30%;
+   //top: 550px;
+  // right: 30%; 
   background: #1a2d4e;
   color: #aaa;
   padding: 1% 0 1% 0;
-  width: 190% !important; 
+  //width: 190% !important;  
+  margin-top: 30vh;
 }
 
 
 .company-contact {
   font-size: 20px;
-  padding-left: 20%;
+  //padding-left: 20%;
   position: relative;
-  left: 12%;
+  //left: 12%; 
     a {
       color: #ffffff;
     }
@@ -25,7 +26,7 @@ footer {
 
 .copyright-text {
     color: #ffffff;
-    padding: 0% 0 0% 43%;
+    //padding: 0% 0 0% 43%; 
     font-size: 10px;
 }
 

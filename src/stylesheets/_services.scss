@@ -13,8 +13,9 @@
 
 #services {
     position: relative;
-    top: 700px;
-    left: 8%;
+    //top: 700px;
+    margin-top: 70vh;
+    //left: 8%; 
     width: 100%;
     font-family: 'Lora', serif;
     z-index: 1;
@@ -31,17 +32,18 @@ h3, h4 {
     color: black;
 }
 h1.services-text {
-    padding-left: 60%;
+    //padding-left: 60%;
 }
 
 #services-row {
     position: relative;
-    bottom: 150px;
+    //bottom: 100px;
+    margin-bottom: 12vh;
 }
 
 .services-text {
     position: relative;
-    right: 36.5%;
+    //right: 36.5%;
     color: white !important;
     font-size: 60px; 
     z-index: 1;
@@ -91,7 +93,7 @@ h1.services-text {
 .consulting-col{
     position: relative;
     bottom: 570px;
-    left: 66%;
+    //left: 66%;
 }
 
 
@@ -111,9 +113,9 @@ h1.services-text {
 }
 #about-chevron {
     position: relative;
-    bottom: 170px;
-    left: 33%;
-    width: 40%;
+    //bottom: 170px;
+    //left: 33%;
+    //width: 40%;
     height: 120px;
     z-index: 1;
 }
@@ -121,23 +123,25 @@ h1.services-text {
 .web-card {
     background: white;
     position: relative;
-    bottom: 90px;
-    left: 10%;
-    height: 280px;
+    //bottom: 90px;
+    //left: 10%;
+    height: 290px;
 }
 
 .wordpress-card {
     background: white;
     position: relative;
-    bottom: 380px;
-    left: 34%;
-    height: 280px;
+    //bottom: 380px;
+    //left: 34%;
+    height: 290px;
+    bottom: 1rem;
 }
 
 .consulting-card {
     background: white;
     position: relative;
-    bottom: 670px;
-    left: 57%;
-    height: 280px;
+    //bottom: 670px;
+    //left: 57%;
+    height: 290px;
+    bottom: 1rem;
 }

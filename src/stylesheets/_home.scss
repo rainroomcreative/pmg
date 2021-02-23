@@ -36,14 +36,14 @@
     .august-1 {
         position: relative;
         bottom: 30px !important;
-        left: 1% !important;
+        //left: 1% !important; 
         zoom: .7;
     }
 
      .august-3 {
         position: relative;
         bottom: 21px;
-        left: 5%; 
+        //left: 5%; 
         zoom: .7;
 }
 
@@ -57,7 +57,7 @@
     }
 
     #see-id {
-        right: 45px !important;
+        //right: 45px !important;
         zoom: .8;
     }
 
@@ -109,7 +109,7 @@
 
 @media only screen and (min-width: 400px) and (max-width: 500px) {
       html, body {
-        width: 80% !important;
+        //width: 80% !important; 
     }
    
    
@@ -121,178 +121,196 @@
     }
     
     .company-col {
-        left: 5%;
+        //left: 5%;
     }
 
     i.btn {
         zoom: 1.1;
     }
     .dropdown {
-        top: 90px !important;
-        left: 7%;
+        //top: 90px !important;
+        //left: 7%;
         z-index: 10;
         zoom: 1.6 !important;
     }
     #dropdown-id {
         zoom: .4 !important;
     }
-         .august-1 {
-        top: 70px !important;
-        left: 23% !important; 
+    .august-1 {
+        //top: 70px !important;
+        //left: 23% !important;  
     } 
     .august-3 {
-        top: 70px !important;
-        left: 30%;
+        //top: 70px !important;
+        //left: 30%; 
     }
  
     .see-col {
-        top: 100px !important;
-        left: 38%;
+        //top: 100px !important;
+        //left: 38%; 
     }
 
     #see-id {
-        right: 69% !important;
+        //right: 69% !important;
     }
      #services {
-        top: 600px !important;
-        left: 1% !important;
+        //top: 600px !important;
+        //left: 1% !important;
         zoom: .8;
     }
       #services-text {
-        left: -7% !important;
-         top: -130px;
+        //left: -7% !important;
+        // top: -130px;
     }
 
       .web-row-contain {
-         top: -130px !important;
-        left: 45% !important;
-        width: 290px !important;
+        // top: -130px !important;
+        //left: 45% !important;
+        //width: 290px !important;
     }
     #web-id {
         height: 260px !important;
     }
     
     #ion-icon-globe {
-        left: 220% !important;
+        //left: 220% !important;
     }
 
      #web-text {
-        top: -10px;
-        left: -1% !important;
+        //top: -10px;
+        //left: -1% !important;
         zoom: 1.1;
     }
 
     #services-1-description {
-          top: -10px;
-        left: -3% !important;
+        //  top: -10px;
+        //left: -3% !important;
         font-size: 12px !important;
     }
     
       .wordpress {
-          top: -110px !important;
-        left: 45% !important;
-        width: 290px !important;
+        //  top: -110px !important;
+        //left: 45% !important;
+        //width: 290px !important;
     }
 
     #word-id {
         height: 260px !important;
     }
       #ion-icon-desktop {
-        left: 220% !important;
+        //left: 220% !important;
     }
     
     #wordpress {
-        top: -19px;
-        left: 5% !important;
+        //top: -19px;
+        //left: 5% !important;
         zoom: 1.1;
     }
     
     #services-2-description {
-        top: -10px;
-        left: -3% !important;
+        //top: -10px;
+        //left: -3% !important;
         font-size: 12px !important;
     }
     
     .consulting {
-        top: -89px;
-        left: 45% !important;
-        width: 290px !important;
+        //top: -89px;
+        //left: 45% !important;
+        //width: 290px !important;
  
     }
     #consulting-id {
         height: 270px !important;
     }
     #ion-icon-people {
-        left: 217% !important;
+        //left: 217% !important;
     }
   .consulting-title {
-        top: 4px;
-        left: 5% !important;
-        width: 200% !important;
+        //top: 4px;
+        //left: 5% !important;
+        //width: 200% !important;
       zoom: 1.1;
     }
     #services-3-description {
-        top: 29px !Important;
-        font-size: 22px !important;
+        //top: 29px !important;
+        //font-size: 22px !important;
     }
 
      #about-chevron {
-        top: -90px !important;
-        left: 58% !important; 
-        width: 69% !important;
-        height: 170px !important;
-        zoom: .89;
+        //top: -90px !important;
+        //left: 58% !important; 
+        //width: 69% !important;
+        // height: 170px !important;
+        // zoom: .9;
+        zoom: .9;
+        margin-bottom: 60vh;
    
     }
 
     #me {
         position: relative;
-        top: 45px !important;
-        left: 14%;
+        //top: 45px !important;
+        //left: 14%;
         zoom: .9;
     }
     .about-link {
-        top: 60px !important;
-        left: 32% !important; 
+        //top: 60px !important;
+        //left: 32% !important; 
         zoom: .7;
     }
-      #about {
-        top: 2200px !important;
-        left: 37% !important;
-        width: 100% !important;
-        height: 1200px !Important;
-        zoom: .3 !important;
-        box-shadow: 0px 3px 2px 1px rgb(74, 72, 72) !important;
-        border-radius: 5px;
-        background: #ffffff !important;
-    }
+    
       .about-me-content {
-        left: 18% !important;
+        //left: 18% !important;
     }
 
       #about-image {
-        top: 3% !important;
-        left: 15% !important;
-        zoom: .2 !important;
+        //top: 3% !important;
+        //left: 15% !important;
+        //zoom: .2 !important;
     }
     .about-description {
-        top: 60px !important;
-        line-height: 1.5!important;
-        font-size: 14px !important;
-        width: 95%;
+        //top: 60px !important;
+        //line-height: 1.5!important;
+        //font-size: 14px !important;
+        //width: 95%;
     }
 
 
       footer {
-        top: 700px !important;
-        right: 50px !important;
+        //top: 700px !important;
+        //right: 50px !important; 
     }
     
      .copyright-text {
-        padding-left: 33% !important;
+        //padding-left: 33% !important;
+    }
+    
+}
+@media only screen and (max-width: 768.99px) {
+    .ui.card {
+        margin: 1rem auto !important;
+        width: 90%;
+        bottom: 0;
+    }
+    #about {
+        width: 90% !important;
+        zoom: .8 !important;
+        box-shadow: 0px 3px 2px 1px lightgrey;
+        border-radius: 5px;
+        background: #f8f8f8;
+    }
+    #about-chevron {
+        margin-bottom: 60vh;
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .web-card, .wordpress-card, .consulting-card {
+        width: 200px !important;
+        height: 410px !important;
+    }
+    
+}
 @media only screen and (min-width: 300px) and (max-width: 375px) {
      body {
         background: black !important;
@@ -319,33 +337,35 @@
 
 
     .august-1 {
-        left: 5% !important;
+        //left: 5% !important; 
         zoom: .9;
     }
 
     .august-3 {
-        left: 5%;
+        //left: 5%; 
         width: 100%;
         zoom: .8;
     }
 
     .see-col {
-        left: 10%;
+        //left: 10%;
+        //top: 209px !important;//
+        zoom: .9;
     }
 
     #see-id {
-        right: 60% !important;
+        //right: 60% !important;
     }
     
     #services {
-        top: 700px !important;
-        left: 30% !important;
-        zoom: .7;
+        //top: 700px !important;
+        //left: 30% !important;
+        zoom: .8;
     }
 
     #services-text {
         top: 40px;
-        right: 50%;
+        //right: 50%;
     }
 
     .web-row {
@@ -392,16 +412,17 @@
     }
 
     .consulting-title {
-        left: 10% !important;
+        //left: 10% !important;
         font-size: 22px !important;
     }
 
     #about-chevron {
-        top: -275px !important;
-        left: -51% !important; 
-        width: 65%;
-        height: 170px !important;
-        zoom: .89;
+        //top: -275px !important;
+        //left: -51% !important; 
+        //width: 65%;
+        //height: 170px !important;
+        zoom: .9;
+        margin-bottom: 60vh;
     }
     #me {
         position: relative;
@@ -410,17 +431,17 @@
         zoom: .9;
     }
     .about-link {
-        left: 25% !important; 
-        top: 60px !important;
-        zoom: .7;
+        //left: 25% !important; 
+        //top: 60px !important;
+        //zoom: .7;
     }
 
      #about {
-        left: 10% !important;
-        top: 1300px !important;
+        //left: 10% !important;
+        //top: 1300px !important;
         width: 90% !important;
-        height: 600px !important;
-        zoom: .6 !important;    
+        // height: 600px !important; 
+        zoom: .8 !important;    
         box-shadow: 0px 3px 2px 1px lightgrey;
         border-radius: 5px;
         background: #f8f8f8;
@@ -442,16 +463,23 @@
 
 
     footer {
-        top: 380% !important;
-        width: 170%!important;
+        //top: 380% !important;
+        //width: 170%!important; 
+        zoom: .9;
     }
     
     .footer-content {
         position: relative;
-        left: -20% !important;
+        //left: -20% !important; 
         zoom: .8 !important;
     }
 
+    .ui.card {
+        margin: 1rem auto !important;
+        width: 90% !important;
+        bottom: 0;
+    }
+    
 } 
  
 
@@ -483,8 +511,8 @@
 
 #more-chevron {
     position: relative;
-    top: 10px;
-    right: -52%;
+    //top: 10px;
+    //right: -52%;
     zoom: .9;
     z-index: 10;
 }
@@ -512,7 +540,7 @@
 }
 #see-id {
     position: relative;
-    right: 53%;
+    //right: 53%;
 }
 
 .ml7 {
@@ -542,14 +570,15 @@
 }
 .august-1 {
     position: relative !important;
-     bottom: -90px !important;
-     left: 24% !important;
+    // bottom: -90px !important;
+    margin-top: 11vh;
+    //  left: 24% !important; 
 }
 
 .august-3 {
     position: relative !important;
     bottom: -220px !important;
-    right: 25% !important;
+    //right: 25% !important; 
 }
 
 #august-4 {
@@ -560,13 +589,23 @@
 }
 .title-col {
     position: relative;
-    left: 4%;
+    //left: 4%; 
     z-index: 1;
 }
 
 
 .see-col {
    position: relative ;
-   top: 190px;
+   //top: 190px;
+   margin-top: 12vh;
 
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        background: black !important;
+    }
+    #video {
+        display: none;
+    }
 }

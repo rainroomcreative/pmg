@@ -12,7 +12,7 @@ body {
 
 @media only screen and (min-width: 400px) and (max-width: 500px) {
     html, body {
-        width: 80%; 
+        //width: 80%; 
     }
     
     .company-col {
@@ -38,32 +38,32 @@ body {
 }
     
     #port {
-        top: 250px !important;
-        left: 25% !important;
+        //top: 250px !important;
+        //left: 25% !important;
         font-size: 50px !important;
     }
     .portfolio-move {
-        top: 470px !important;
-        left:  -15% !important;
-        zoom:  .7 !important;
+        //top: 470px !important;
+        //left:  -15% !important;
+        //zoom:  .7 !important;
     }
     #portfolio-one-image {
-      width: 200% !important;
+      //width: 200% !important;
     }
     
     .new-row, .tea-row, .broadway-row, .coffee-row, .davie-row, .travel-row {
         position: relative;
-        right: 30%;
-        width: 205%;
+        //right: 30%;
+        //width: 205%;
     }
     
     footer {
-        right: 19%;
-        top: 400px !important;
+        //right: 19%;
+        //top: 400px !important;
     }
     
     .copyright-text{
-        padding-left: 30% !important;
+        //padding-left: 30% !important;
     }
 }
 
@@ -77,8 +77,9 @@ body {
 /*PORTFOLIO--------------------*/
 #port {
     position: relative;
-    top: 300%;
-    left: 9%;
+    // top: 300%;
+    margin-top: 35vh;
+    //left: 9%;
     font-family: 'Peddana', serif;
     font-weight: bolder;
     font-size: 80px;
@@ -93,15 +94,17 @@ body {
  
 
 #portfolio-one{
-    padding-top: 30%;
-    padding-left: 35%;
-     zoom: 1.3;
+    //padding-top: 30%;
+    //padding-left: 35%;
+    margin-top: 30vh;
+    zoom: 1.3;
 }
 
 #portfolio-two, #portfolio-six,#portfolio-three,#portfolio-four, #portfolio-five,
 #portfolio-seven {
-    padding-top: 30%;
-    padding-left: 35%;
+    // padding-top: 30%;
+    // padding-left: 35%;
+    margin-top: 30vh;
     zoom: 1.3;
 }
 

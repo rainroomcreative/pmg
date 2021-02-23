@@ -8,6 +8,7 @@
 
    
      return (
+      <div className="d-flex justify-content-center">
       <Card className="about-card" id='about'>
         <Image src={url} alt='Bio image' className='bio-pic' textAlign='center'/>
         <Card.Content>
@@ -36,6 +37,7 @@
           </Card.Description>
         </Card.Content>
       </Card>
+      </div>
      )
  }
 
