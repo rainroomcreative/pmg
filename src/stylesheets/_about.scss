@@ -2,9 +2,8 @@
 /*ABOUT-----------------------*/
 .about-link {
     position: relative;
-     //top: 100px;
-     margin-top: 12vh;
-    // left: 19.5%;
+    top: -400%;
+    left: 19.5%;
 }  
 
 #about {
@@ -16,10 +15,9 @@
 .about-card {
     background: white;
     position: relative;
-    //left: 33%;
-    //top: 1200px;
-    margin-top: 40vh !important;
-    //width: 35% !important;
+    left: 33%;
+    top: 800px;
+    width: 35% !important;
        
         h1 {
     font-family: 'Abril Fatface', cursive;
@@ -37,9 +35,7 @@
 }
 
 .bio-pic {
-  //width: 400px;
-  width: 50%;
-  margin: 0 auto;
-  //padding-left: 25% !important;
+   width: 400px;
+  padding-left: 25% !important;
   background: white !important;
 }

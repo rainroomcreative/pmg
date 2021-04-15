@@ -1,7 +1,7 @@
 import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 // Icon Import, just use icon name from website
-import {faHome, faFolder, faPlane, faEnvelope, faGlobe, faDatabase, faUserFriends, faBars} from '@fortawesome/free-solid-svg-icons';
+import {faHome, faFolder, faPlane, faEnvelope, faGlobe, faDatabase, faUserFriends} from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -61,15 +61,6 @@ export const PeopleIcon = () => {
          icon={faUserFriends} 
          style={{
             color: "black" }}/>
-    )
-}
-
-export const BarIcon = () => {
-    return ( 
-        <FontAwesomeIcon
-         size="1x" 
-         icon={faBars} 
-         />
     )
 }
 

@@ -28,9 +28,8 @@ const Contact = () => {
 
     return (
 <div className="container" id="container-loader">
-    <div className="row contact-row justify-content-center" id="contact-row-id">
-        {/* <div className="col-xs col-sm col-md col-lg col-xl contact-container" id="contact-container-id"> */}
-        <div className="col-11 col-xs-11 col-sm-11 col-md-8 col-lg-6 col-xl-6 contact-container" id="contact-container-id">
+    <div className="row contact-row" id="contact-row-id">
+        <div className="col-xs col-sm col-md col-lg col-xl contact-container" id="contact-container-id">
           <div className="form">
             <h1 className="contact-content">Contact Us</h1>
 
