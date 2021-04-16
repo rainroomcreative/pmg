@@ -3,9 +3,30 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'semantic-ui-css/semantic.min.css'
+import firebase from "firebase/app";
+import * as Globals from './Globals';
+
+
 
 // Importing Bootstrap with SCSS file
 import './main.scss';
+
+
+
+var firebaseConfig = {
+  apiKey: `${process.env.apiKey}`,
+  authDomain: `${process.env.authDomain}`,
+  projectId: `${process.env.projectId}`,
+  storageBucket: `${process.env.storageBucket}`,
+  messagingSenderId: `${process.env.messagingSenderId}`,
+  appId: `${process.env.appId}`,
+  measurementId: `${process.env.measurementId}`
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+
+
 
 ReactDOM.render(
   <React.StrictMode>

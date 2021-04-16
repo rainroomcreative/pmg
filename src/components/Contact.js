@@ -2,35 +2,47 @@
 import React, {useRef} from 'react';
 import emailjs from 'emailjs-com';
 import{ init } from 'emailjs-com';
-init(`${process.env.REACT_APP_UserId}`);
+import firebase from 'firebase';
+import * as Globals from '../Globals';
 
-// #TODO Configure Env variables for the EmailJS Client.
+
+
 
 
 
 const Contact = () => {
 
+  // Remoteconfig Variables
+  const remoteConfig = firebase.remoteConfig()
+  remoteConfig.defaultConfig = Globals.remoteConfigDefaults;
+  
+  const REACT_APP_UserId = remoteConfig.getValue('REACT_APP_UserId').asString();
+  const REACT_APP_TemplateId = remoteConfig.getValue('REACT_APP_TemplateId').asString();
+  const REACT_APP_ServiceId = remoteConfig.getValue('REACT_APP_ServiceId').asString();
+
+  init(REACT_APP_UserId);
+
 
     const sendEmail = (e)  => {
+
     e.preventDefault();
-      console.log(process.env);
+
     emailjs.sendForm(
-      `${process.env.REACT_APP_ServiceId}`,
-       `${process.env.REACT_APP_TemplateId}`, 
+       REACT_APP_ServiceId,
+       REACT_APP_TemplateId, 
        e.target, 
-       `${process.env.REACT_APP_UserId}`)
+       REACT_APP_UserId)
       .then((result) => {
-          console.log(result.text);
+          console.log(result);
       }, (error) => {
-          console.log(error.text);
+          console.log(error);
       });
   }
 
     return (
 <div className="container" id="container-loader">
-    <div className="row contact-row justify-content-center" id="contact-row-id">
-        {/* <div className="col-xs col-sm col-md col-lg col-xl contact-container" id="contact-container-id"> */}
-        <div className="col-11 col-xs-11 col-sm-11 col-md-8 col-lg-6 col-xl-6 contact-container" id="contact-container-id">
+    <div className="row contact-row" id="contact-row-id">
+        <div className="col-xs col-sm col-md col-lg col-xl contact-container" id="contact-container-id">
           <div className="form">
             <h1 className="contact-content">Contact Us</h1>
 
