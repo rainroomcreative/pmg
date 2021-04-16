@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+import firebase from 'firebase';
 
 
 // Components
@@ -13,6 +13,11 @@ import Fade from 'react-reveal';
 
 
 const Home = () => {
+    const remoteConfig = firebase.remoteConfig()
+    
+    const test = remoteConfig.getValue('test').asString();
+    console.log(test);
+
     return (
         <div>
                  <div  className=" title-col  text-center">

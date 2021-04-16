@@ -2,27 +2,40 @@
 import React, {useRef} from 'react';
 import emailjs from 'emailjs-com';
 import{ init } from 'emailjs-com';
-init(`${process.env.REACT_APP_UserId}`);
+import firebase from 'firebase';
+import * as Globals from '../Globals';
 
-// #TODO Configure Env variables for the EmailJS Client.
+
+
 
 
 
 const Contact = () => {
 
+  // Remoteconfig Variables
+  const remoteConfig = firebase.remoteConfig()
+  remoteConfig.defaultConfig = Globals.remoteConfigDefaults;
+  
+  const REACT_APP_UserId = remoteConfig.getValue('REACT_APP_UserId').asString();
+  const REACT_APP_TemplateId = remoteConfig.getValue('REACT_APP_TemplateId').asString();
+  const REACT_APP_ServiceId = remoteConfig.getValue('REACT_APP_ServiceId').asString();
+
+  init(REACT_APP_UserId);
+
 
     const sendEmail = (e)  => {
+
     e.preventDefault();
-      console.log(process.env);
+
     emailjs.sendForm(
-      `${process.env.REACT_APP_ServiceId}`,
-       `${process.env.REACT_APP_TemplateId}`, 
+       REACT_APP_ServiceId,
+       REACT_APP_TemplateId, 
        e.target, 
-       `${process.env.REACT_APP_UserId}`)
+       REACT_APP_UserId)
       .then((result) => {
-          console.log(result.text);
+          console.log(result);
       }, (error) => {
-          console.log(error.text);
+          console.log(error);
       });
   }
 

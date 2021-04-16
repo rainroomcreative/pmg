@@ -1,4 +1,6 @@
-
+import {useEffect} from "react";
+import firebase from 'firebase';
+import * as Globals from './Globals';
 
 //Css Import
 import './stylesheets/app.scss';
@@ -22,6 +24,22 @@ import {
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
+
+  const remoteConfig = firebase.remoteConfig();
+ 
+
+
+  useEffect(() => {
+    
+    remoteConfig.defaultConfig = Globals.remoteConfigDefaults;
+   // remoteConfig.settings.minimumFetchIntervalMillis = 10000;
+      remoteConfig.fetchAndActivate()
+      .then(() => {
+        console.log('YAY');
+      }).catch((error) => {console.log(error)});
+    
+    
+  }, [])
 
   return (
       <Router>
