@@ -12,7 +12,6 @@ import * as Globals from './Globals';
 import './main.scss';
 
 
-
 var firebaseConfig = {
   apiKey: `${process.env.apiKey}`,
   authDomain: `${process.env.authDomain}`,
