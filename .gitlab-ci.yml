@@ -33,6 +33,8 @@ build-App:
     - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
     - docker push $TAG_COMMIT
     - docker push $TAG_LATEST
+  only:
+    - master
 
 deploy-1:
   image: ubuntu:latest
