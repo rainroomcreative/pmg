@@ -11,7 +11,7 @@ import * as Globals from '../Globals';
 
 
 const Contact = () => {
-  console.log(`${process.env.REACT_APP_apiKey}`)
+  
   // Remoteconfig Variables
   const remoteConfig = firebase.remoteConfig();
   
@@ -19,7 +19,7 @@ const Contact = () => {
   const REACT_APP_UserId = remoteConfig.getValue('REACT_APP_UserId').asString();
   const REACT_APP_TemplateId = remoteConfig.getValue('REACT_APP_TemplateId').asString();
   const REACT_APP_ServiceId = remoteConfig.getValue('REACT_APP_ServiceId').asString();
-  console.log(REACT_APP_ServiceId);
+
 
   init(REACT_APP_UserId);
 
