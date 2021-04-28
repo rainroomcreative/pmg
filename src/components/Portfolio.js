@@ -84,15 +84,7 @@ const Portfolio = () => {
                   </div>
                  </Fade>
                   
-                  <Fade duration={1000} delay={800}>
-                     <div className="row travel-row">
-                  <div id="portfolio-seven" className="col-xs col-sm col-md col-lg col-xl portfolio-move">
-                        <a id="travel-link" href="/travel" target="_blank" rel="noreferrer">
-                              <img src="https://res.cloudinary.com/dyew1z2ms/image/upload/v1606430228/Portfolio/travels_qlcouy.jpg" className="img-fluid round" alt="Seventh portfolio logo" height="200" width="400" id="portfolio-seven-image" />
-                                    </a>
-                              </div>
-                  </div>
-                  </Fade>
+                
                  
               
             
