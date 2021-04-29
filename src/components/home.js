@@ -19,7 +19,7 @@ const Home = () => {
         <div>
                  <div  className=" title-col  text-center">
                      <Fade top>
-                        <div className="row">
+                        <div className="row" id="introduction-section">
                     <div className=" col-xs col-sm-10 col-md col-lg col-xl august-1">
                         <h1 id="august-2" className="ml7">
                             <span className="text-wrapper">
