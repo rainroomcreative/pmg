@@ -11,6 +11,6 @@ FROM node:12.18.3
       RUN npm run build
 
     # Have docker container use port 3000, that is the port that the node app is set to
-     EXPOSE 8080
+     EXPOSE 3000
    # Start the node app 
    CMD ["node", "server.js"]
