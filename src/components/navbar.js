@@ -34,7 +34,7 @@ const NavBarComp = () => {
 <header>        
       <ProSidebar className="sidebar" collapsed={visible}  toggled={true} breakPoint='sm'  width='200px'>
       <SidebarHeader>
-        <img src="https://res.cloudinary.com/dyew1z2ms/image/upload/c_scale,w_82/v1606430221/Portfolio/logo-site_fvm91j.png" 
+        <img src="https://res.cloudinary.com/dyew1z2ms/image/upload/v1626275129/Portfolio/Logo-smaller_4_130x130_wy9iwn.jpg" 
         alt="logo"
          className=""
          ref={box}/>
