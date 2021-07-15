@@ -14,6 +14,7 @@ import Aviation from "./components/Aviation";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Test from "./components/test";
+import { createBrowserHistory } from 'history';
 
 import {
   BrowserRouter as Router,
@@ -24,7 +25,8 @@ import {
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
-
+ 
+  const history = createBrowserHistory();
   const remoteConfig = firebase.remoteConfig();
  
 
@@ -40,8 +42,9 @@ function App() {
     
   }, [])
 
+
   return (
-      <Router>
+      <Router history={history}>
           <NavBarComp />
           <ScrollToTop />
     <Switch>
