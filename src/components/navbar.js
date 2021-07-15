@@ -56,10 +56,6 @@ const NavBarComp = () => {
      </MenuItem>
 
 
-     <MenuItem icon={<PlaneIcon />}>
-       Aviation
-      <Link to="/aviation-time" />
-     </MenuItem>
 
   
      <MenuItem icon={<EmailIcon />}>
