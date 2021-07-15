@@ -16,8 +16,8 @@ const Portfolio = () => {
                   <Fade right duration={1000}>
                     <div className="row pilot-row">
                         <div  className=" col-xs col-sm col-md col-lg col-xl" id="portfolio-one">
-                        <a id="pilot-link" href="https://www.02pilot.com" target="_blank" rel="noreferrer" >
-                              <img src="https://res.cloudinary.com/dyew1z2ms/image/upload/v1606430218/Portfolio/02pilot_jrdoxn.png" alt="first portfolio logo" height="200" width="400" className="round" id="portfolio-one-image" />
+                        <a id="pilot-link" href="https://invoice-dashboard-react.herokuapp.com/" target="_blank" rel="noreferrer" >
+                              <img src="https://res.cloudinary.com/dyew1z2ms/image/upload/v1626321506/Portfolio/Screen_Shot_2021-07-14_at_4.47.11_PM_wna2a9.png" alt="first portfolio logo" height="200" width="400" className="round" id="portfolio-one-image" />
                                     </a>
                               </div>
                         
@@ -83,12 +83,6 @@ const Portfolio = () => {
                               </div>
                   </div>
                  </Fade>
-                  
-                
-                 
-              
-            
-           
       </div>
     )
 }
