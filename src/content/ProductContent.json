@@ -1,0 +1,30 @@
+{
+  "title": "Principles",
+  "text": "Below are the principles that our agency abides by",
+  "section": [
+    {
+      "title": "Professionalism",
+      "content": "Our agency prides itself on a hassle free approach.",
+      "icon": "suitcase.svg",
+      "url": "reality.ai"
+    },
+    {
+      "title": "Affordability",
+      "content": "02DesignStudio provides premium services without premium pricing. We believe that custom web applications should be more accessible.",
+      "icon": "bank.svg",
+      "url": "thehhmp.org"
+    },
+    {
+      "title": "Customer Service",
+      "content": "You will never be in doubt what the status of your project is. We pride ourselves on open and clear communication.",
+      "icon": "customer-service-agent.svg",
+      "url": "02pilot.com"
+    },
+    {
+      "title": "Clean Code",
+      "content": "Our agency makes sure that your application is future proof and will scale with your business",
+      "icon": "code.svg",
+      "url": "02pilot.com"
+    }
+  ]
+}

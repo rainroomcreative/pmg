@@ -1,0 +1,26 @@
+{
+  "title": " Services",
+  "text": "Below are the services that our agency provides",
+  "section": [
+    {
+      "title": "Design",
+      "content": "Our team of designers will make sure to provide pixel perfect desgins that meet your exact specifications.",
+      "icon": "web-design.svg"
+    },
+    {
+      "title": "Development",
+      "content": "Our team of Developers will ensure your project is secure, maintainable, and can scale up with your business.",
+      "icon": "web-development.svg"
+    },
+    {
+      "title": "Optimization",
+      "content": "02DesignStudio will ensure that your project is optimized for both browser and mobile devices.",
+      "icon": "page-speed.svg"
+    },
+    {
+      "title": "Consulting",
+      "content": "If you have the team, but need help with project execution, we have you covered. Contact us today to learn more about how we can support your team.",
+      "icon": "talk.svg"
+    }
+  ]
+}
