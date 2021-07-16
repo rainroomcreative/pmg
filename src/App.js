@@ -52,7 +52,6 @@ function App() {
         <Route path="/portfolio"  component={Portfolio} />
         <Route path="/aviation-time"  component={Aviation} />
         <Route path="/contact"  component={Contact} />
-        <Route path="/test"  component={Test} />
     </Switch>
         < Footer />
        </Router>
