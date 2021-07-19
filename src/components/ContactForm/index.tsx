@@ -1,3 +1,4 @@
+import React, {useRef} from 'react';
 import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
 import { Slide, Zoom } from "react-awesome-reveal";
@@ -12,6 +13,7 @@ import { ContactContainer, FormGroup, Span, ButtonContainer } from "./styles";
 import emailjs from 'emailjs-com';
 import{ init } from 'emailjs-com';
 import firebase from 'firebase';
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = ({ title, content, id, t }: ContactProps) => {
 
@@ -22,7 +24,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
     const REACT_APP_UserId = remoteConfig.getValue('REACT_APP_UserId').asString();
     const REACT_APP_TemplateId = remoteConfig.getValue('REACT_APP_TemplateId').asString();
     const REACT_APP_ServiceId = remoteConfig.getValue('REACT_APP_ServiceId').asString();
-  
+    const recaptchaRef = React.createRef();
   
     init(REACT_APP_UserId);
   
@@ -98,10 +100,16 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                   onChange={handleChange}
                 />
                 <ValidationType type="message" />
+                <ReCAPTCHA
+               size="invisible"
+              sitekey={`${process.env.sitekey}`}
+              onChange={sendEmail}
+            />
               </Col>
               <ButtonContainer>
                 <Button name="submit">{t("Submit")}</Button>
               </ButtonContainer>
+
             </FormGroup>
           </Slide>
         </Col>
