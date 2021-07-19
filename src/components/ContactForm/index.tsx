@@ -103,10 +103,6 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
 
               </Col>
               <ButtonContainer>
-              <ReCAPTCHA
-                  sitekey={`${process.env.sitekey}`}
-                  onChange={sendEmail}
-                  />
                 <Button name="submit">{t("Submit")}</Button>
               </ButtonContainer>
             </FormGroup>  
