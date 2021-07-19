@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useState} from 'react';
 import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
 import { Slide, Zoom } from "react-awesome-reveal";
@@ -14,9 +14,21 @@ import emailjs from 'emailjs-com';
 import{ init } from 'emailjs-com';
 import firebase from 'firebase';
 import ReCAPTCHA from "react-google-recaptcha";
+import Snackbar from '@material-ui/core/Snackbar';
+import MuiAlert from '@material-ui/lab/Alert';
+import { makeStyles } from '@material-ui/core/styles';
+
+
+function Alert(props) {
+  return <MuiAlert elevation={6} variant="filled" {...props} />;
+}
+
+
 
 const Contact = ({ title, content, id, t }: ContactProps) => {
 
+  
+  const [open, setOpen] = useState(false);
     // Remoteconfig Variables
     const remoteConfig = firebase.remoteConfig();
   
@@ -24,13 +36,23 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
     const REACT_APP_UserId = remoteConfig.getValue('REACT_APP_UserId').asString();
     const REACT_APP_TemplateId = remoteConfig.getValue('REACT_APP_TemplateId').asString();
     const REACT_APP_ServiceId = remoteConfig.getValue('REACT_APP_ServiceId').asString();
-    const recaptchaRef = React.createRef();
+  
   
     init(REACT_APP_UserId);
   
   
-      const sendEmail = (e:any)  => {
+    const handleClose = (event, reason) => {
+      if (reason === 'clickaway') {
+        return;
+      }
   
+      setOpen(false);
+    };
+  
+  
+      const sendEmail = (e:any)  => {
+        setOpen(true);
+        
       e.preventDefault();
   
       emailjs.sendForm(
@@ -108,9 +130,14 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                   onChange={sendEmail}
                   />
                 <Button name="submit">{t("Submit")}</Button>
-              </ButtonContainer>
+              </ButtonContainer>          
             </FormGroup>  
           </Slide>
+          <Snackbar open={open} autoHideDuration={4000} onClose={handleClose}>
+                <Alert onClose={handleClose} severity="info">
+                  Your Email has been sent 😀
+                </Alert>
+              </Snackbar>  
         </Col>
       </Row>
     </ContactContainer>
