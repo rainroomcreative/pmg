@@ -21,6 +21,7 @@ export interface InputProps {
   name: string;
   placeholder: string;
   labelName: string;
+  required: boolean;
   t: any;
   type?: string;
   value?: string;

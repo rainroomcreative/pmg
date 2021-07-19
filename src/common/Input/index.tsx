@@ -3,7 +3,7 @@ import { Container, StyledInput } from "./styles";
 import { Label } from "../TextArea/styles";
 import { InputProps } from "../types";
 
-const Input = ({ name, placeholder , onChange, t, labelName}: InputProps) => (
+const Input = ({ name, placeholder , onChange, t, labelName, required}: InputProps) => (
   <Container>
     <Label htmlFor={name}>{labelName}</Label>
     <StyledInput
@@ -11,6 +11,7 @@ const Input = ({ name, placeholder , onChange, t, labelName}: InputProps) => (
       name={name}
       id={name}
       onChange={onChange}
+      required={required}
     />
   </Container>
 );

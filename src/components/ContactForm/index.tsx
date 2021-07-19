@@ -29,6 +29,8 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
 
   
   const [open, setOpen] = useState(false);
+  const [verified, setVerified] = useState(false);
+
     // Remoteconfig Variables
     const remoteConfig = firebase.remoteConfig();
   
@@ -48,25 +50,37 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
   
       setOpen(false);
     };
+    // function that sets the verfied state to true
+    const handleVerify = () => {
+      
+      setVerified(true);
+    
+    }
   
   
       const sendEmail = (e:any)  => {
-        setOpen(true);
-        
-      e.preventDefault();
-  
-      emailjs.sendForm(
-         REACT_APP_ServiceId ? REACT_APP_ServiceId : `${process.env.REACT_APP_ServiceId}`,
-         REACT_APP_TemplateId ? REACT_APP_TemplateId : `${process.env.REACT_APP_ServiceId}`, 
-         e.target, 
-         REACT_APP_UserId ? REACT_APP_UserId : `${process.env.REACT_APP_UserId}`)
-        .then((result) => {
-            console.log(result);
-        }, (error) => {
-            console.log(error);
-        });
-    }
 
+        if(verified) {
+
+          setOpen(true);
+        
+          e.preventDefault();
+      
+          // emailjs.sendForm(
+          //    REACT_APP_ServiceId ? REACT_APP_ServiceId : `${process.env.REACT_APP_ServiceId}`,
+          //    REACT_APP_TemplateId ? REACT_APP_TemplateId : `${process.env.REACT_APP_ServiceId}`, 
+          //    e.target, 
+          //    REACT_APP_UserId ? REACT_APP_UserId : `${process.env.REACT_APP_UserId}`)
+          //   .then((result) => {
+          //       console.log(result);
+          //   }, (error) => {
+          //       console.log(error);
+          //   });
+        } else {
+
+          return;
+    }
+  }
   const { values, errors, handleChange, handleSubmit } = useForm(
     validate
   ) as any;
@@ -99,6 +113,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                   value={values.name || ""}
                   onChange={handleChange}
                   labelName="Name"
+                  required
                 />
                 <ValidationType type="name" />
               </Col>
@@ -110,6 +125,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                   value={values.email || ""}
                   labelName="Email"
                   onChange={handleChange}
+                  required
                 />
                 <ValidationType type="email" />
               </Col>
@@ -120,6 +136,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                   name="message"
                   labelName="Message"
                   onChange={handleChange}
+                  required={false}
                 />
                 <ValidationType type="message" />
 
@@ -127,7 +144,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
               <ButtonContainer>
               <ReCAPTCHA
                   sitekey={`${process.env.REACT_APP_sitekey}`}
-                  onChange={sendEmail}
+                  onChange={handleVerify}
                   />
                 <Button name="submit">{t("Submit")}</Button>
               </ButtonContainer>          
@@ -135,7 +152,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
           </Slide>
           <Snackbar open={open} autoHideDuration={4000} onClose={handleClose}>
                 <Alert onClose={handleClose} severity="info">
-                  Your Email has been sent 😀
+                  Your Email has been sent 👍
                 </Alert>
               </Snackbar>  
         </Col>
