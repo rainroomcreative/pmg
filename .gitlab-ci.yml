@@ -28,7 +28,7 @@ build-App:
     - echo   "REACT_APP_messagingSenderId=$REACT_APP_messagingSenderId" >> .env
     - echo   "REACT_APP_appId=$REACT_APP_appId" >> .env
     - echo   "REACT_APP_measurementId=$REACT_APP_measurementId" >> .env
-    - echo   "sitekey=$sitekey" >> .env
+    - echo   "REACT_APP_sitekey=$REACT_APP_sitekey" >> .env
     - cat .env
     - docker build . -t $TAG_COMMIT -t $TAG_LATEST 
     - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
