@@ -100,17 +100,16 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                   onChange={handleChange}
                 />
                 <ValidationType type="message" />
-                <ReCAPTCHA
-               size="invisible"
-              sitekey={`${process.env.sitekey}`}
-              onChange={sendEmail}
-            />
+
               </Col>
               <ButtonContainer>
+              <ReCAPTCHA
+                  sitekey={`${process.env.sitekey}`}
+                  onChange={sendEmail}
+                  />
                 <Button name="submit">{t("Submit")}</Button>
               </ButtonContainer>
-
-            </FormGroup>
+            </FormGroup>  
           </Slide>
         </Col>
       </Row>
