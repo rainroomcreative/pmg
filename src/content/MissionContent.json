@@ -4,22 +4,22 @@
   "section": [
     {
       "title": "Design",
-      "content": "Our team of designers will make sure to provide pixel perfect desgins that meet your exact specifications.",
+      "content": "We love to work with our clients and provide them the utmost in customization. Our designers will make sure you have a pixel perfect design that meets your exact specifications.",
       "icon": "web-design.svg"
     },
     {
       "title": "Development",
-      "content": "Our team of Developers will ensure your project is secure, maintainable, and can scale up with your business.",
+      "content": "Our team of Developers will ensure your project is secure, maintainable, and scalable. We understand that business growth can be unpredictable, and we want to give you flexibility in scaling.",
       "icon": "web-development.svg"
     },
     {
       "title": "Optimization",
-      "content": "02DesignStudio will ensure that your project is optimized for both browser and mobile devices.",
+      "content": "02DesignStudio has the experience, expertise, and talent to ensure that your project is optimized for both browser and mobile devices. The company will also work with you every step of the way so that it meets all your needs as well as providing a high-quality product in an efficient amount of time.",
       "icon": "page-speed.svg"
     },
     {
       "title": "Consulting",
-      "content": "If you have the team, but need help with project execution, we have you covered. Contact us today to learn more about how we can support your team.",
+      "content": "We take the weight of your project off your shoulders. Utilizing our expertise, we can cut down on the time and effort needed to complete any job with a lower error rate than working alone. When projects go well, they're great for everyone involved - including you!",
       "icon": "talk.svg"
     }
   ]
