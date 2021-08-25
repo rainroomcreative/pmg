@@ -78,36 +78,31 @@ export default function Modal() {
                             <div className="col-md-6">
                                 <div className="form-outline">
                                 <i className="fa fa-user prefix"></i>
-                                <input type="text" className="form-control" name="first_name" id="firstname"  required/>
-                                <label className="form-label" for="firstname">First Name</label>
+                                <input type="text" className="form-control" name="first_name" id="firstname" placeholder="First Name"  required/>
                                 </div>
                             </div>
                             <div className="col-md-6">
                                 <div className="form-outline">
                                 <i className="fa fa-user prefix"></i>
-                                <input type="text" className="form-control" name="last_name" id="lastname" required/>
-                                <label className="form-label" for="lastname">Last Name</label>
+                                <input type="text" className="form-control" name="last_name" id="lastname" placeholder="Last Name" required/>
                                 </div>
                             </div>
                             <div className="col-md-6">
                                 <div className="form-outline">
                                 <i className="fa fa-envelope prefix"></i>
-                                <input type="email" className="form-control" name="email" id="emailad" required/>
-                                <label className="form-label" for="emailad">Email Address</label>
+                                <input type="email" className="form-control" name="email" id="emailad" placeholder="Email" required/>
                                 </div>
                             </div>
                             <div className="col-md-6">
                                 <div className="form-outline">
                                 <i className="fa fa-phone prefix"></i>
-                                <input type="number" className="form-control" name="phone_number" id="typePhone"/>
-                                <label className="form-label" for="typePhone">Phone No.</label>
+                                <input type="number" className="form-control" name="phone_number" id="typePhone" placeholder="Phone No."/>
                                 </div>
                             </div>
                             <div className="col-md-12">
                                 <div className="form-outline ah_textbox">
                                 <i className="fa fa-envelope-open-text prefix"></i>
-                                <textarea className="form-control" id="typemasage" name="message" rows="4" required></textarea>
-                                <label className="form-label" for="typemasage">Message</label>
+                                <textarea className="form-control" id="typemasage" name="message" rows="4"  placeholder="Message" required></textarea>
                                 </div>
                             </div>
                             </div>
