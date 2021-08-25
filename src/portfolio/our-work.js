@@ -9,13 +9,33 @@ export default function Ourwork() {
 
 
     const [works, setWorks] = useState(null);
+    const [loading, setLoading] = useState(true)
+
+    // useEffect(() => {
+    //     request(
+    //         'https://api-us-east-1.graphcms.com/v2/cksrlunl342hx01yu9obq083f/master',
+    //         `
+    //        {
+    //           portfolios(stage: PUBLISHED, locales: [en]) {
+    //               title
+    //               description
+    //               image {
+    //                 url
+    //               }
+    //               link
+    //             }
+    //        }
+    //     `
+    //       ).then((data) => console.log(data));
+    // }, [])
 
     useEffect(() => {
 
+         
 
       const fetchWorks = async () => {
 
-        await request(
+        const {portfolios} = await request(
           'https://api-us-east-1.graphcms.com/v2/cksrlunl342hx01yu9obq083f/master',
           `
          {
@@ -29,9 +49,9 @@ export default function Ourwork() {
               }
          }
       `
-        ).then((data) => setWorks(data));
-  
-        
+        )
+         setWorks(portfolios);
+        setLoading(false);
       };
   
       fetchWorks();
@@ -40,9 +60,10 @@ export default function Ourwork() {
 
     console.log(works);
 
-
-
-
+    if (loading) {
+        return <div className="App">Loading...</div>;
+      }
+ 
 
 
 
@@ -56,15 +77,15 @@ export default function Ourwork() {
                 <div className="row">
                     <div className="col-md-6">
                         <figure className="hover-overlay ripple ripple-surface ripple-surface-light">
-                            <img src={works.portfolios[0].image.url} alt="portfolio 1"/>
+                            <img src={works[0].image.url} alt="portfolio 1"/>
                         </figure>
                     </div>
                     <div className="col-md-6">
                         <div className="box">
-                            <h4>{works.portfolios[0].title}</h4>
-                            <p>{works.portfolios[0].description}.</p>
+                            <h4> {works[0].title} </h4>
+                            <p>{works[0].description}</p>
                             <ul>
-                                <li><a href={works.portfolios[0].link}>View Project</a></li>
+                                <li><a href={works[0].link}>View Project</a></li>
                             </ul>
                         </div>
                     </div>
@@ -76,16 +97,16 @@ export default function Ourwork() {
                 <div className="row">
                     <div className="col-md-6">
                         <div className="box">
-                            <h4>{works.portfolios[1].title}</h4>
-                            <p>{works.portfolios[1].description}.</p>
+                            <h4>{works[1].title}</h4>
+                            <p>{works[1].description}</p>
                             <ul>
-                                <li><a href={works.portfolios[1].link}>View Project</a></li>
+                                <li><a href={works[1].link}>View Project</a></li>
                             </ul>
                         </div>
                     </div>
                     <div className="col-md-6">
                         <figure className="hover-overlay ripple ripple-surface ripple-surface-light">
-                            <img src={works.portfolios[1].image.url} alt="portfolio 2" />
+                            <img src={works[1].image.url} alt="portfolio 2" />
                         </figure>
                     </div>
                 </div>
@@ -96,15 +117,15 @@ export default function Ourwork() {
                 <div className="row">
                     <div className="col-md-6">
                         <figure className="hover-overlay ripple ripple-surface ripple-surface-light">
-                            <img src={works.portfolios[2].image.url} alt="portfolio 3" />
+                            <img src={works[2].image.url} alt="portfolio 3" />
                         </figure>
                     </div>
                     <div className="col-md-6">
                         <div className="box">
-                            <h4>{works.portfolios[2].title}</h4>
-                            <p>{works.portfolios[2].description}.</p>
+                            <h4>{works[2].title}</h4>
+                            <p>{works[2].description}</p>
                             <ul>
-                                <li><a href={works.portfolios[2].link}>View Project</a></li>
+                                <li><a href={works[2].link}>View Project</a></li>
                             </ul>
                         </div>
                     </div>
