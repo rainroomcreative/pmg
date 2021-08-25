@@ -21,10 +21,6 @@ export default function Banner() {
                         alteration in some form, by injected humour, or randomised words which don't look even slightly
                         believable.</p>
                     <ul>
-                        <li>
-                            <button onClick={ModalOpen} type="button" className="btn"
-                            data-mdb-toggle="modal" data-mdb-target="#exampleModal"> Contact Us </button>
-                        </li>
                         <li><Link to="/portfolio"><img src={seework} alt="See Our Works"/>See our works</Link></li>
                     </ul>
                     </div>

@@ -9,6 +9,7 @@ import Header from './includes/header.js';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import firebase from "firebase/app";
+import 'firebase/analytics'
 
 var firebaseConfig = {
   apiKey: `${process.env.REACT_APP_apiKey}`,
