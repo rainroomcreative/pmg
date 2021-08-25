@@ -1,49 +1,31 @@
 {
-  "name": "portfolio-redesign",
+  "name": "ds",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^4.12.1",
-    "@material-ui/lab": "*",
-    "@types/node": "^15.6.0",
-    "@types/react": "^17.0.6",
-    "@types/react-dom": "^17.0.5",
-    "@types/react-router-dom": "^5.1.7",
-    "@types/styled-components": "^5.1.9",
-    "antd": "^4.10.3",
-    "axios": "^0.21.1",
-    "cypress": "^7.7.0",
-    "dotenv": "^8.2.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "emailjs": "^3.5.0",
     "emailjs-com": "^3.2.0",
-    "express": "^4.17.1",
-    "firebase": "^8.7.1",
-    "history": "^4.10.1",
-    "i18next": "^19.8.4",
-    "i18next-browser-languagedetector": "^6.0.1",
-    "i18next-xhr-backend": "^3.2.2",
-    "node-sass": "^6.0.1",
+    "mdbreact": "^5.1.0",
     "react": "^17.0.2",
-    "react-awesome-reveal": "^3.7.1",
     "react-dom": "^17.0.2",
-    "react-google-recaptcha": "^2.1.0",
-    "react-i18next": "^11.8.5",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "rsuite": "^4.10.2",
-    "styled-components": "^5.2.1",
-    "typescript": "^4.2.4",
-    "web-vitals": "^2.1.0"
+    "web-vitals": "^1.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run --record --key b672072e-adfa-49d2-9d52-3f99e64304af;"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
