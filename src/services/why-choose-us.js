@@ -52,7 +52,7 @@ export default function Whychooseus() {
                                 </figure>
                                 <div className="wcu_box">
                                     <h5>CLEAN CODE</h5>
-                                    <p>At our agency, we understand the challenges that come with growing a business. We make sure your application is future-proof and will scale as you grow so it doesn't hinder progress or potential success.</p>
+                                    <p>At our agency, we understand the challenges that come with growing a business. We make sure your application is future-proof and will scale as you grow so it doesn't hinder potential success.</p>
                                 </div>
                             </li>
                             

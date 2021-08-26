@@ -14,7 +14,7 @@ export default function Slogan() {
                 <div className="row">
                 <div className="col-md-2"></div>
                 <div className="col-md-8">
-                    <h4>A creative development team with a commitment to our clients</h4>
+                    <h4>A creative development team with a commitment to our CLIENTS</h4>
                     <p>We believe that success starts with strong partnerships. Every client is different, so we keep our operation lean to be able to adapt to our client’s needs. We create solutions that scale with your business and drive results. We are not satisfied until our clients are 100% satisfied.</p>
                     <a onClick={ModalOpen} className="btn" >Start a Project</a>
                 </div>

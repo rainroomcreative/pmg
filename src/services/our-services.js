@@ -13,7 +13,7 @@ export default function Ourservices() {
                     <div className="col-md-8">
                         <h4 className="mn-h4">
                             <small className="ttu">Our Services</small>
-                            Services to help your business succeed
+                            Services to help your business SUCCEED
                         </h4>
                     </div>
                     <div className="w-100 mb-5"></div>
@@ -31,7 +31,7 @@ export default function Ourservices() {
                             <span><img src={Development} alt="Development" /></span>
                             <figcaption>
                                 <h5>Development</h5>
-                                Our team of developers utilize the latest tools and frameworks to create, secure, scalable, high performing applications that drive results.
+                                Our team of developers utilize the latest tools and frameworks to create secure, scalable, high performing applications that drive results.
                             </figcaption>
                         </figure>
                     </div>

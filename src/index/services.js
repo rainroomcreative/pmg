@@ -40,7 +40,7 @@ export default function Services() {
                     <div className="serv-box serv-box2">
                     <span><img src={servicon3} alt="Optimization"/></span>
                     <h5>Optimization</h5>
-                    <p>02DesignStudio has the experience, expertise, and talent to ensure that your project is optimized for both browser and mobile devices. We will work with you every step of the way. 02DesignStudio will provide a high-quality product in an efficient amount of time.</p>
+                    <p>02DesignStudio has the experience, expertise, and talent to ensure that your project is optimized for both browser and mobile devices. We work with you every step of the way to ensure we provide a high-quality product in an efficient amount of time.</p>
                     </div>
                 </div>
                 <div className="col-md-4">

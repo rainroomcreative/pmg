@@ -10,8 +10,8 @@ export default function Banner() {
                     <div className="row">
                         <div className="col-md-6">
                             <div className="box">
-                                <h4>100% Customer Satisfaction</h4>
-                                <p>Our agency has a 100% customer satisfaction rate. We provide a premier customer service. Our team is not satisfied until YOU are.</p>
+                                <h4> <strong>100% Customer Satisfaction</strong></h4>
+                                <p>We provide a premier customer service with a team that is not satisfied until YOU are!</p>
                             </div>
                         </div>
                         <div className="col-md-5">
@@ -33,7 +33,7 @@ export default function Banner() {
                         <div className="col-md-6">
                             <div className="box">
                                 <h4>Why 02DesignStudio?</h4>
-                                <p>We're here to get the job done and provide a hassle-free experience, so you can focus on what matters.</p>
+                                <p>We're here to provide your business with the digital foot print it deserves, without the hassle so you can focus on what matters.</p>
                             </div>
                         </div>
                     </div>

@@ -16,10 +16,8 @@ export default function Banner() {
                 <div className="row">
                 <div className="col-md-5">
                     <div className="box">
-                    <h4>Create a new generation website for your business.</h4>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alteration in some form, by injected humour, or randomised words which don't look even slightly
-                        believable.</p>
+                    <h4>Pixel perfect CUSTOM solutions </h4>
+                    <p>A web and app design, development, and consulting agency focused on providing premium services, without premium prices.</p>
                     <ul>
                         <li><Link to="/portfolio"><img src={seework} alt="See Our Works"/>See our works</Link></li>
                     </ul>

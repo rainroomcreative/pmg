@@ -48,7 +48,7 @@ export default function Footer() {
                         <h4>Need Help?</h4>
                         
                         <ul>
-                            <li><Link to="/terms-and-privacy-policy">Privacy Policy</Link></li>
+                            <li><Link to="/terms-and-privacy-policy#privacy">Privacy Policy</Link></li>
                             <li><Link to="/terms-and-privacy-policy">Terms</Link></li>
                         </ul>
                     </div>
@@ -56,7 +56,7 @@ export default function Footer() {
                         <h4>Contact</h4>
                         <Router>
                         <ul>
-                        <li><Link to="facebook">Facebook</Link></li>
+                        <li><a target="_blank" href="https://www.facebook.com/real02Designstudio">Facebook</a></li>
                         </ul>
                         </Router>
                     </div>
