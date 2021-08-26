@@ -9,8 +9,8 @@ export default function Banner() {
                 <div className="row">
                     <div className="col-md-6">
                         <div className="box">
-                            <h4>Our Portfolio</h4>
-                            <p>Below you will find examples of our most recent works.</p>
+                            <h4><strong>Our Portfolio</strong></h4>
+                            <p>Below you will find examples of our most recent works:</p>
                         </div>
                     </div>
                     <div className="col-md-5">

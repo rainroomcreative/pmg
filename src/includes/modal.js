@@ -96,7 +96,7 @@ export default function Modal() {
                             <div className="col-md-6">
                                 <div className="form-outline">
                                 <i className="fa fa-phone prefix"></i>
-                                <input type="number" className="form-control" name="phone_number" id="typePhone" placeholder="Phone No."/>
+                                <input type="tel" className="form-control" name="phone_number" id="typePhone" placeholder="Phone No."/>
                                 </div>
                             </div>
                             <div className="col-md-12">
