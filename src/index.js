@@ -4,6 +4,7 @@ import 'mdbreact/dist/css/mdb.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import LogRocket from 'logrocket';
 import './index.css';
 import Header from './includes/header.js';
 import reportWebVitals from './reportWebVitals';
@@ -23,8 +24,7 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
-
-
+LogRocket.init(`${process.env.REACT_APP_appId}`);
 
 ReactDOM.render(
   <BrowserRouter>
