@@ -10,7 +10,7 @@ export default function Ourservices() {
         <section className="home-techno ah_services" style={{backgroundImage: `url(${technologybg})`  }}>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-8">
+                    <div className="col-md-8 business-succede">
                         <h4 className="mn-h4">
                             <small className="ttu">Our Services</small>
                             Services to help your business SUCCEED
@@ -18,7 +18,7 @@ export default function Ourservices() {
                     </div>
                     <div className="w-100 mb-5"></div>
                     <div className="col-md-3">
-                        <figure>
+                        <figure className="design-service">
                             <span><img src={Design} alt="Design"/></span>
                             <figcaption>
                                 <h5>Design</h5>
@@ -27,7 +27,7 @@ export default function Ourservices() {
                         </figure>
                     </div>
                     <div className="col-md-3">
-                        <figure>
+                        <figure className="development-service">
                             <span><img src={Development} alt="Development" /></span>
                             <figcaption>
                                 <h5>Development</h5>
@@ -36,7 +36,7 @@ export default function Ourservices() {
                         </figure>
                     </div>
                     <div className="col-md-3">
-                        <figure>
+                        <figure className="optimization-service">
                             <span><img src={optimization} alt="Optimization" /></span>
                             <figcaption>
                                 <h5>Optimization</h5>
@@ -45,10 +45,10 @@ export default function Ourservices() {
                         </figure>
                     </div>
                     <div className="col-md-3">
-                        <figure>
+                        <figure className="consulting-service">
                             <span><img src={Consulting} alt="Consulting" /></span>
                             <figcaption>
-                                <h5>Consulting</h5>
+                                <h5>Project Management</h5>
                                 We know what it takes to run a team efficiently to deliver a product on time. By utilizing our expertise, we cut down on the time and effort needed to complete any job with a lower error rate than working alone.
                             </figcaption>
                         </figure>

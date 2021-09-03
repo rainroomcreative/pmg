@@ -40,7 +40,7 @@ export default function Header() {
                                         <li><NavLink activeClassName='active' to='/services'>Services</NavLink></li>
                                         <li><NavLink activeClassName='active' to='/portfolio'>Portfolio</NavLink></li>
                                         <li><button onClick={ModalOpen}
-                                        type="button" className="btn"
+                                        type="button" className="btn contact-modal"
                                         data-mdb-toggle="modal" data-mdb-target="#exampleModal"> Contact Us </button></li>
                                     </ul>
                                     

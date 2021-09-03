@@ -6,7 +6,7 @@ export default function Banner() {
     <div>
         <section className="banner solution">
             <div className="container">
-                <div className="row">
+                <div className="row portfolio-intro">
                     <div className="col-md-6">
                         <div className="box">
                             <h4><strong>Our Portfolio</strong></h4>
@@ -25,7 +25,7 @@ export default function Banner() {
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
-                        <div className="box">
+                        <div className="box our-work-header">
                             <h4 className="mn-h4 mb-0">Some of Our Work</h4>
                         </div>
                     </div>

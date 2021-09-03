@@ -1,9 +1,7 @@
 import React, {useState, useEffect} from "react";
 import { request } from 'graphql-request';
 
-import work_1 from './img/work_1.png';
-import work_2 from './img/work_2.png';
-import work_3 from './img/work_3.png';
+
 
 export default function Ourwork() {
 
@@ -11,23 +9,6 @@ export default function Ourwork() {
     const [works, setWorks] = useState(null);
     const [loading, setLoading] = useState(true)
 
-    // useEffect(() => {
-    //     request(
-    //         'https://api-us-east-1.graphcms.com/v2/cksrlunl342hx01yu9obq083f/master',
-    //         `
-    //        {
-    //           portfolios(stage: PUBLISHED, locales: [en]) {
-    //               title
-    //               description
-    //               image {
-    //                 url
-    //               }
-    //               link
-    //             }
-    //        }
-    //     `
-    //       ).then((data) => console.log(data));
-    // }, [])
 
     useEffect(() => {
 
@@ -58,7 +39,6 @@ export default function Ourwork() {
       
     }, []);
 
-    console.log(works);
 
     if (loading) {
         return <div className="App">Loading...</div>;
@@ -74,7 +54,7 @@ export default function Ourwork() {
     <div>
         <section className="banner our-work bg-gray">
             <div className="container">
-                <div className="row">
+                <div className="row work-1">
                     <div className="col-md-6">
                         <figure className="hover-overlay ripple ripple-surface ripple-surface-light">
                             <img src={works[0].image.url} alt="portfolio 1"/>
@@ -94,7 +74,7 @@ export default function Ourwork() {
         </section>
         <section className="banner our-work">
             <div className="container">
-                <div className="row">
+                <div className="row work-2">
                     <div className="col-md-6">
                         <div className="box">
                             <h4>{works[1].title}</h4>
@@ -114,7 +94,7 @@ export default function Ourwork() {
         </section>
         <section className="banner our-work bg-gray mb-0">
             <div className="container">
-                <div className="row">
+                <div className="row work-3">
                     <div className="col-md-6">
                         <figure className="hover-overlay ripple ripple-surface ripple-surface-light">
                             <img src={works[2].image.url} alt="portfolio 3" />

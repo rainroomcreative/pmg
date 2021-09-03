@@ -46,7 +46,7 @@ export default function Services() {
                 <div className="col-md-4">
                     <div className="serv-box">
                     <span><img src={servicon4} alt="Consulting"/></span>
-                    <h5>Consulting</h5>
+                    <h5>Project Management</h5>
                     <p>We take the weight of your project off your shoulders. Utilizing our expertise, we can cut down on the time and effort needed to complete any job with a lower error rate than working alone. When projects go well, they're great for everyone involved - including you!</p>
                     </div>
                 </div>

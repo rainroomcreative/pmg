@@ -16,7 +16,6 @@ describe('Home Page', () => {
 
     it('Contains Services Section', () => {
       cy.get('.sevice-sec').should('be.visible');
-      cy.get('.sevice-sec').should('be.visible');
      });
 
      it('Contains Slogan Section', () => { 

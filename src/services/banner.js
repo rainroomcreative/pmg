@@ -5,7 +5,7 @@ import wfond from './img/wfond.png';
 export default function Banner() {
     return (
         <div>
-            <section className="banner solution">
+            <section className="banner solution satisfaction">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
@@ -22,7 +22,7 @@ export default function Banner() {
                     </div>
                 </div>
             </section>
-            <section className="banner solution">
+            <section className="banner solution why-now">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-5">
