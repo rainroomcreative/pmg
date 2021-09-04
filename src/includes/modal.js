@@ -38,6 +38,8 @@ export default function Modal() {
       
       }
 
+   
+
      const sendEmail = (e)  => {
 
         if(verified) {
@@ -111,7 +113,7 @@ export default function Modal() {
                                 sitekey={`${process.env.REACT_APP_sitekey}`}
                                 onChange={handleVerify}
                             />
-                            <button type="submit" className="btn btn-primary">Submit Now</button>
+                           {verified ? <button type="submit" className="btn btn-primary">Submit Now</button> : <button type="submit" className="btn btn-primary" disabled >Submit Now</button>}
                             </div>
                         </form>
                         </div> 

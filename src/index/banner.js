@@ -10,6 +10,7 @@ export default function Banner() {
         document.body.style.overflow="hidden"; 
         document.body.classList.add('modal-open');
       };
+      
     return (
         <section className="banner">
             <div className="container">

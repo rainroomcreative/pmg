@@ -21,7 +21,8 @@ export default function Index() {
       });
 
     const id = uuidv4();
-    LogRocket.identify(`${id}`);
+        //    uncomment line below before push to PROD
+    //LogRocket.identify(`${id}`);
 
     return (
         <main>
