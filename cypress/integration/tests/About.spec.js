@@ -7,7 +7,16 @@ describe('About Page', () => {
 
   it('Visits About Page', () => {
     cy.wait(300)
-    cy.visit('localhost:3000/about')
+    
+    if(process.env.NODE_ENV === 'production'){
+
+      cy.visit('02designstudio.com/about')
+    };
+    if(process.env.NODE_ENV === 'development'){
+
+      cy.visit('localhost:3000/about')
+    };
+    
   });
 
 

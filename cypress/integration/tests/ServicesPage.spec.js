@@ -6,8 +6,17 @@ describe('Services Page', () => {
   
 
     it('Visits the Landing Page', () => {
+
       cy.wait(300)
-      cy.visit('localhost:3000/services')
+
+      if(process.env.NODE_ENV === 'production'){
+
+        cy.visit('02designstudio.com/services')
+      };
+      if(process.env.NODE_ENV === 'development'){
+  
+        cy.visit('localhost:3000/services')
+      };
     });
     it('Contains Customer Satisfaction Banner', () => {
       cy.get('.satisfaction').should('be.visible');

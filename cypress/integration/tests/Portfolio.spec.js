@@ -7,7 +7,15 @@ describe('Portfolio Page', () => {
     it('Visits Portfolio Landing Page', () => {
         
       cy.wait(300)
-      cy.visit('localhost:3000/portfolio')
+
+      if(process.env.NODE_ENV === 'production'){
+
+        cy.visit('02designstudio.com/portfolio')
+      };
+      if(process.env.NODE_ENV === 'development'){
+  
+        cy.visit('localhost:3000/portfolio')
+      };
     });
 
   
