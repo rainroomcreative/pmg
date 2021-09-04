@@ -65,7 +65,7 @@ export default function Ourwork() {
                             <h4> {works[0].title} </h4>
                             <p>{works[0].description}</p>
                             <ul>
-                                <li><a target="_blank" href={works[0].link}>View Project</a></li>
+                                <li><a target="_blank" href={works[0].link} rel="noreferrer">View Project</a></li>
                             </ul>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ export default function Ourwork() {
                             <h4>{works[1].title}</h4>
                             <p>{works[1].description}</p>
                             <ul>
-                                <li><a target="_blank" href={works[1].link}>View Project</a></li>
+                                <li><a target="_blank" href={works[1].link} rel="noreferrer">View Project</a></li>
                             </ul>
                         </div>
                     </div>
@@ -105,7 +105,7 @@ export default function Ourwork() {
                             <h4>{works[2].title}</h4>
                             <p>{works[2].description}</p>
                             <ul>
-                                <li><a target="_blank" href={works[2].link}>View Project</a></li>
+                                <li><a target="_blank" href={works[2].link} rel="noreferrer">View Project</a></li>
                             </ul>
                         </div>
                     </div>

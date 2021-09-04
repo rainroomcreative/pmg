@@ -56,7 +56,7 @@ export default function Footer() {
                         <h4>Contact</h4>
                         <Router>
                         <ul>
-                        <li><a target="_blank" href="https://www.facebook.com/real02Designstudio">Facebook</a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/real02Designstudio" rel="noreferrer">Facebook</a></li>
                         </ul>
                         </Router>
                     </div>

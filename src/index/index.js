@@ -4,13 +4,17 @@ import { v4 as uuidv4 } from 'uuid';
 import  "firebase/analytics";
 import firebase from "firebase/app";
 
+
 import Footer from "./../includes/footer.js";
 import Banner from "./banner.js";
 import Services from "./services.js";
 import Slogan from "./slogan.js";
 import Weoffer from "./weoffer.js";
 
+
+
 export default function Index() {
+
 
     LogRocket.getSessionURL(function (sessionURL) {
         firebase.analytics().logEvent({

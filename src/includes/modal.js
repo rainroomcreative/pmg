@@ -4,7 +4,7 @@ import{ init } from 'emailjs-com';
 import ReCAPTCHA from "react-google-recaptcha";
 import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
-import { makeStyles } from '@material-ui/core/styles';
+
 
 
 
@@ -21,6 +21,7 @@ export default function Modal() {
      };
 
      init(`${process.env.REACT_APP_UserId}`);
+
      const [open, setOpen] = useState(false);
      const [verified, setVerified] = useState(false)
 
@@ -31,6 +32,7 @@ export default function Modal() {
     
         setOpen(false);
       };
+
       // function that sets the verfied state to true
       const handleVerify = () => {
         

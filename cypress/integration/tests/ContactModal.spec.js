@@ -13,8 +13,18 @@ describe('Home Page', () => {
   
 
     it('Visits Contact Landing Page', () => {
+
       cy.wait(300)
-      cy.visit('localhost:3000')
+      
+      if(process.env.NODE_ENV === 'production'){
+
+        cy.visit('02designstudio.com')
+      };
+      if(process.env.NODE_ENV === 'development'){
+  
+        cy.visit('localhost:3000')
+      };
+
     });
 
     it('Clicks Contact Us button in header', () => {

@@ -10,8 +10,8 @@ export default function Index() {
         <main>
             <Banner/>
             <Ourwork/>
-            <Ourservices/>
-            <WhyChooseus/>
+     {       /*<Ourservices/>
+            <WhyChooseus/> */}
             <Footer/>
         </main>
     )
