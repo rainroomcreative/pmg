@@ -9,14 +9,7 @@
 describe('Home Page', () => {
     it('Visits the Landing Page', () => {
 
-      if(process.env.NODE_ENV === 'production'){
-
-        cy.visit('02designstudio.com')
-      };
-      if(process.env.NODE_ENV === 'development'){
-  
-        cy.visit('localhost:3000')
-      };
+      cy.visit('localhost:3000')
 
     });
     it('Contains Introduction Banner', () => {

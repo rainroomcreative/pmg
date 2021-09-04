@@ -33,3 +33,4 @@ yarn-error.log*
 .gitlab-ci.yml
 Dockerfile
 server.js
+node_modules

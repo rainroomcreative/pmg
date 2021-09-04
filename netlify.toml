@@ -3,4 +3,19 @@
   from = "/*"
   to = "/index.html"
   status = 200
-  
+
+[build.environment]
+
+  CYPRESS_CACHE_FOLDER = "./node_modules/CypressBinary"
+  TERM = "xterm"
+
+[[plugins]]
+  package = "netlify-plugin-cypress"
+
+  [plugins.inputs.prebuild]
+      enabled = true
+      start = 'npm start'
+      wait-on = 'http://localhost:3000'
+      wait-on-timeout = '10'
+      record = true
+      spa = true
