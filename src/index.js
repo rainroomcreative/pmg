@@ -23,8 +23,13 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-firebase.analytics();
-LogRocket.init(`${process.env.REACT_APP_appId}`);
+
+if (process.env.NODE_ENV === 'production') {
+
+  LogRocket.init(`${process.env.REACT_APP_appId}`);
+  firebase.analytics();
+};
+
 
 ReactDOM.render(
   <BrowserRouter>
