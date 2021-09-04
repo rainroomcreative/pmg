@@ -20,11 +20,6 @@ export default function Index() {
         })
       });
 
-<<<<<<< HEAD
-    const id = uuidv4();
-        //    uncomment line below before push to PROD
-    LogRocket.identify(`${id}`);
-=======
     
 
     if (process.env.NODE_ENV === 'production') {
@@ -33,7 +28,6 @@ export default function Index() {
         LogRocket.identify(`${id}`);
 
       };
->>>>>>> develop
 
     return (
         <main>
