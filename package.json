@@ -33,7 +33,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "cypress run --record --key 0c3cdf03-7c00-4b7e-8bae-469cc493f975 & react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "cypress:open": "cypress open",
