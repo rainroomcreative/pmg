@@ -327,6 +327,9 @@ ul.img-ul li h5 {
 
 	.banner .box ul li a img { width: 4%; }
 	.banner figure { margin: 10% 0 0; }
+    .our-work figure {
+        margin-bottom: 20px;
+    }
 
 	.sevice-sec { background: transparent !important; }
 	.sevice-sec .serv-box { margin: 20px 0 0; }
