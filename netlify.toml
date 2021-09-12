@@ -1,5 +1,4 @@
-[build]
-  command = "sed -i \"s|onboarding_login|${onboarding_login}|g\" netlify.toml && npm build"
+
 
 [[redirects]]
   from = "/*"
