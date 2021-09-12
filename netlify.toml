@@ -1,5 +1,6 @@
 
-
+[build]
+  command = "sed -i s/ONBOARDING_LOGIN/$admin:Lemonade97989@/g netlify.toml && npm run build"
 
 [[redirects]]
   from = "/*"
@@ -11,4 +12,4 @@
 [[headers]]
   for = "/onboarding"
    [headers.values]
-    Basic-Auth = "admin:Lemonade97989@"
+    Basic-Auth = "ONBOARDING_LOGIN"
