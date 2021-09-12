@@ -12,6 +12,7 @@ import About from './../about/index';
 import Services from './../services/index';
 import Portfolio from './../portfolio/index';
 import TermsAndPrivactPolicy from "../terms/terms-and-privacy-policy";
+import Jotform from '../jotform/index';
 import Modal from "./modal";
 
 export default function Header() {
@@ -55,6 +56,7 @@ export default function Header() {
                     <Route path="/services" component={Services} />
                     <Route path="/portfolio" component={Portfolio} />
                     <Route path="/terms-and-privacy-policy" component={TermsAndPrivactPolicy} />
+                    <Route path="/onboarding" component={Jotform} />
                 </Switch>
             </Router>
         </div>
