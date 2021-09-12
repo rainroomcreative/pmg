@@ -11,4 +11,4 @@
 [[headers]]
   for = "/onboarding"
    [headers.values]
-    Basic-Auth = ONBOARDING_LOGIN
+    Basic-Auth = "ONBOARDING_LOGIN"
