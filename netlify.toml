@@ -1,5 +1,6 @@
 
 
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
@@ -10,4 +11,4 @@
 [[headers]]
   for = "/onboarding"
    [headers.values]
-    Basic-Auth = "onboarding_login"
+    Basic-Auth = ONBOARDING_LOGIN
