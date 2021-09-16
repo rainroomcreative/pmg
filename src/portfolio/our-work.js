@@ -112,6 +112,26 @@ export default function Ourwork() {
                 </div>
             </div>
         </section>
+        <section className="banner our-work">
+            <div className="container">
+                <div className="row work-2">
+                    <div className="col-md-6 order-md-1 order-2">
+                        <div className="box ">
+                            <h4>{works[3].title}</h4>
+                            <p>{works[3].description}</p>
+                            <ul>
+                                <li><a target="_blank" href={works[3].link} rel="noreferrer">View Project</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="col-md-6 order-md-2 order-1">
+                        <figure className="hover-overlay ripple ripple-surface ripple-surface-light">
+                            <img src={works[3].image.url} alt="portfolio 2" />
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     );
   }
