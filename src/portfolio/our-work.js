@@ -17,7 +17,7 @@ export default function Ourwork() {
       const fetchWorks = async () => {
 
         const {portfolios} = await request(
-          'https://api-us-east-1.graphcms.com/v2/cksrlunl342hx01yu9obq083f/master',
+          `https://api-us-east-1.graphcms.com/v2/${process.env.REACT_APP_GraphCMSKey}/master`,
           `
          {
             portfolios(stage: PUBLISHED, locales: [en]) {
@@ -97,15 +97,15 @@ export default function Ourwork() {
                 <div className="row work-3">
                     <div className="col-md-6">
                         <figure className="hover-overlay ripple ripple-surface ripple-surface-light">
-                            <img src={works[2].image.url} alt="portfolio 3" />
+                            <img src={works[4].image.url} alt="portfolio 3" />
                         </figure>
                     </div>
                     <div className="col-md-6">
                         <div className="box">
-                            <h4>{works[2].title}</h4>
-                            <p>{works[2].description}</p>
+                            <h4>{works[4].title}</h4>
+                            <p>{works[4].description}</p>
                             <ul>
-                                <li><a target="_blank" href={works[2].link} rel="noreferrer">View Project</a></li>
+                                <li><a target="_blank" href={works[4].link} rel="noreferrer">View Project</a></li>
                             </ul>
                         </div>
                     </div>
@@ -128,6 +128,26 @@ export default function Ourwork() {
                         <figure className="hover-overlay ripple ripple-surface ripple-surface-light">
                             <img src={works[3].image.url} alt="portfolio 2" />
                         </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section className="banner our-work bg-gray mb-0">
+            <div className="container">
+                <div className="row work-3">
+                    <div className="col-md-6">
+                        <figure className="hover-overlay ripple ripple-surface ripple-surface-light">
+                            <img src={works[2].image.url} alt="portfolio 3" />
+                        </figure>
+                    </div>
+                    <div className="col-md-6">
+                        <div className="box">
+                            <h4>{works[2].title}</h4>
+                            <p>{works[2].description}</p>
+                            <ul>
+                                <li><a target="_blank" href={works[2].link} rel="noreferrer">View Project</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
