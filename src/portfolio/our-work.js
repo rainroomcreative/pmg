@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { request } from 'graphql-request';
-
+import Chip from '@material-ui/core/Chip';
 
 
 export default function Ourwork() {
@@ -27,6 +27,10 @@ export default function Ourwork() {
                 url
               }
               link
+              isWebsite
+              isGraphicDesign
+              isApp
+              isPm
             }
           }
       `
@@ -43,8 +47,6 @@ export default function Ourwork() {
     if (loading) {
         return <div className="App">Loading...</div>;
       }
- 
-
    
       // The below function gets the even and odd indexes of the array and saves it to a new Array. 
       var even = [];
@@ -74,6 +76,10 @@ export default function Ourwork() {
                         <div className="col-md-6">
                             <div className="box">
                                 <h4> {item.title} </h4>
+                                {item.isWebsite ? <Chip label="Website" color="primary" size="small" className="chip"/> : null}
+                                {item.isApp ? <Chip label="App" color="secondary" size="small" className="chip"/> : null}
+                                {item.isGraphicDesign ? <Chip label="Graphic Design" style={{backgroundColor: "#ffb74d"}}  size="small" className="chip"/> : null}
+                                {item.isPm ? <Chip label="Project Management" style={{backgroundColor: "#8e24aa", color: "white"}} size="small" className="chip"/> : null}
                                 <p>{item.description}</p>
                                 {item.link ? 
                                 <ul>
@@ -94,6 +100,10 @@ export default function Ourwork() {
                         <div className="col-md-6 order-md-1 order-2">
                             <div className="box ">
                                 <h4>{item.title}</h4>
+                                {item.isWebsite ? <Chip label="Website" color="primary" size="small" className="chip"/> : null}
+                                {item.isApp ? <Chip label="App" color="secondary" size="small" className="chip"/> : null}
+                                {item.isGraphicDesign ? <Chip label="Graphic Design" style={{backgroundColor: "#ffb74d"}}  size="small" className="chip"/> : null}
+                                {item.isPm ? <Chip label="Project Management" style={{backgroundColor: "#8e24aa", color: "white"}} size="small" className="chip"/> : null}
                                 <p>{item.description}</p>
                                 {item.link ? 
                                 <ul>
