@@ -252,6 +252,7 @@ ul.img-ul li h5 {
     margin-bottom: 10px;
 }
 /* Prot */
+
 .bg-gray {
     background-color: #F9F6F6;
 }
@@ -348,3 +349,8 @@ ul.img-ul li h5 {
 }
 
 
+.chip {
+   margin-top: -20px;
+   margin-bottom: 30px;
+   padding: 0px 5px !important;
+}
