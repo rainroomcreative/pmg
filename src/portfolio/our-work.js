@@ -47,7 +47,6 @@ export default function Ourwork() {
     if (loading) {
         return <div className="App">Loading...</div>;
       }
-      console.log(works);
    
       // The below function gets the even and odd indexes of the array and saves it to a new Array. 
       var even = [];
@@ -78,9 +77,9 @@ export default function Ourwork() {
                             <div className="box">
                                 <h4> {item.title} </h4>
                                 {item.isWebsite ? <Chip label="Website" color="primary" size="small" className="chip"/> : null}
-                                {item.GraphicDesign ? <Chip label="Grahpic Design" color="primary" size="small" className="chip"/> : null}
-                                {item.isApp ? <Chip label="App" color="primary" size="small" className="chip"/> : null}
-                                {item.isPM ? <Chip label="Project Management" color="primary" size="small" className="chip"/> : null}
+                                {item.isApp ? <Chip label="App" color="secondary" size="small" className="chip"/> : null}
+                                {item.isGraphicDesign ? <Chip label="Graphic Design" style={{backgroundColor: "#ffb74d"}}  size="small" className="chip"/> : null}
+                                {item.isPm ? <Chip label="Project Management" style={{backgroundColor: "#8e24aa", color: "white"}} size="small" className="chip"/> : null}
                                 <p>{item.description}</p>
                                 {item.link ? 
                                 <ul>
@@ -102,9 +101,9 @@ export default function Ourwork() {
                             <div className="box ">
                                 <h4>{item.title}</h4>
                                 {item.isWebsite ? <Chip label="Website" color="primary" size="small" className="chip"/> : null}
-                                {item.GraphicDesign ? <Chip label="Grahpic Design" color="primary" size="small" className="chip"/> : null}
-                                {item.isApp ? <Chip label="App" color="primary" size="small" className="chip"/> : null}
-                                {item.isPM ? <Chip label="Project Management" color="primary" size="small" className="chip"/> : null}
+                                {item.isApp ? <Chip label="App" color="secondary" size="small" className="chip"/> : null}
+                                {item.isGraphicDesign ? <Chip label="Graphic Design" style={{backgroundColor: "#ffb74d"}}  size="small" className="chip"/> : null}
+                                {item.isPm ? <Chip label="Project Management" style={{backgroundColor: "#8e24aa", color: "white"}} size="small" className="chip"/> : null}
                                 <p>{item.description}</p>
                                 {item.link ? 
                                 <ul>
