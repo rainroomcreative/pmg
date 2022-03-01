@@ -11,9 +11,7 @@ export default function Ourwork() {
     const [data, setData] = useState([]);
     const [sortType, setSortType] = useState('');
 
-    useEffect(() => {
-
-      const fetchWorks = async () => {
+    const fetchWorks = async () => {
         const {portfolios} = await request(
           `https://api-us-east-1.graphcms.com/v2/${process.env.REACT_APP_GraphCMSKey}/master`,
           `
@@ -38,46 +36,46 @@ export default function Ourwork() {
       };
   
       fetchWorks();
-      
-    }, []);
 
     
-    useEffect(() => {
-    }, [sortType])
     
     if (loading) {
         return <div className="App">Loading...</div>;
     }
     
     
-    const sortArray = type => {
-        console.log('RUN', type);
-        const types = {
-            Website: 'isWebsite',
-            App: 'isApp',
-            "Project Management": 'isPM',
-            'Graphic Design': 'isGraphicDesign',
+    setTimeout(() => {
+        const sortArray = type => {
+            console.log('RUN', type);
+            const types = {
+                Website: 'isWebsite',
+                App: 'isApp',
+                "Project Management": 'isPM',
+                'Graphic Design': 'isGraphicDesign',
+            };
+            const sortProperty = types[type];
+            const sorted = works?.sort((a, b) => b[sortProperty] - a[sortProperty]);
+            setData(sorted);
         };
-        const sortProperty = types[type];
-        const sorted = works.sort((a, b) => b[sortProperty] - a[sortProperty]);
-        setData(sorted);
-    };
+        sortArray(sortType)
+    }, 1);
+    
 
 
      
       // The below function gets the even and odd indexes of the array and saves it to a new Array. 
       var even = [];
      const dynamicArray = (a) => {
-        for (var i = 0; i < a.length; i++) {
+        for (var i = 0; i < a?.length; i++) {
             if(i % 2 === 0) { // index is even
                 even.push(a[i]);
             } else {
                 even.push(a[i]);
             }
         }
-        return works
+        return data ? data : works;
      }
-     dynamicArray(works);
+     dynamicArray(data ? data : works);
      // Mapping over the new array and creating new UI elements.
     const dynamicWorks = even.map((item, index) => {
         if(index % 2 === 0) {
@@ -93,10 +91,10 @@ export default function Ourwork() {
                         <div className="col-md-6">
                             <div className="box">
                                 <h4> {item.title} </h4>
-                                {item.isWebsite ? <Chip  label="Website" color="primary" size="small" className="chip" onClick={(e) => sortArray(e.target.innerText)}/> : null}
-                                {item.isApp ? <Chip  label="App" color="secondary" size="small" className="chip" onClick={(e) => sortArray(e.target.innerText)}/> : null}
-                                {item.isGraphicDesign ? <Chip  label="Graphic Design" style={{backgroundColor: "#ffb74d"}}  size="small" className="chip" onClick={(e) => sortArray(e.target.innerText)}/> : null}
-                                {item.isPm ? <Chip label="Project Management" style={{backgroundColor: "#8e24aa", color: "white"}} size="small" className="chip" onClick={(e) => sortArray(e.target.innerText)}/> : null}
+                                {item.isWebsite ? <Chip  label="Website" color="primary" size="small" className="chip" onClick={(e) => setSortType(e.target.innerText)}/> : null}
+                                {item.isApp ? <Chip  label="App" color="secondary" size="small" className="chip" onClick={(e) => setSortType(e.target.innerText)}/> : null}
+                                {item.isGraphicDesign ? <Chip  label="Graphic Design" style={{backgroundColor: "#ffb74d"}}  size="small" className="chip" onClick={(e) => setSortType(e.target.innerText)}/> : null}
+                                {item.isPm ? <Chip label="Project Management" style={{backgroundColor: "#8e24aa", color: "white"}} size="small" className="chip" onClick={(e) => setSortType(e.target.innerText)}/> : null}
                                 <p>{item.description}</p>
                                 {item.link ? 
                                 <ul>
@@ -117,10 +115,10 @@ export default function Ourwork() {
                         <div className="col-md-6 order-md-1 order-2">
                             <div className="box ">
                                 <h4>{item.title}</h4>
-                                {item.isWebsite ? <Chip  label="Website" color="primary" size="small" className="chip" onClick={(e) => sortArray(e.target.innerText)}/> : null}
-                                {item.isApp ? <Chip  label="App" color="secondary" size="small" className="chip" onClick={(e) => sortArray(e.target.innerText)}/> : null}
-                                {item.isGraphicDesign ? <Chip  label="Graphic Design" style={{backgroundColor: "#ffb74d"}}  size="small" className="chip" onClick={(e) => sortArray(e.target.innerText)}/> : null}
-                                {item.isPm ? <Chip label="Project Management" style={{backgroundColor: "#8e24aa", color: "white"}} size="small" className="chip" onClick={(e) => sortArray(e.target.innerText)}/> : null}
+                                {item.isWebsite ? <Chip  label="Website" color="primary" size="small" className="chip" onClick={(e) => setSortType(e.target.innerText)}/> : null}
+                                {item.isApp ? <Chip  label="App" color="secondary" size="small" className="chip" onClick={(e) => setSortType(e.target.innerText)}/> : null}
+                                {item.isGraphicDesign ? <Chip  label="Graphic Design" style={{backgroundColor: "#ffb74d"}}  size="small" className="chip" onClick={(e) => setSortType(e.target.innerText)}/> : null}
+                                {item.isPm ? <Chip label="Project Management" style={{backgroundColor: "#8e24aa", color: "white"}} size="small" className="chip" onClick={(e) => setSortType(e.target.innerText)}/> : null}
                                 <p>{item.description}</p>
                                 {item.link ? 
                                 <ul>
