@@ -61,7 +61,6 @@ export default function Header() {
                 </Switch> : null}
             </Router>
             {window.location.host.split(".")[0] == "client-onboarding" ? <Jotform /> : null}
-            {window.location.host.split(".")[0] == "onboarding" ? <OnboardingForm /> : null}
         </div>
     );
   }
