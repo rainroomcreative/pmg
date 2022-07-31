@@ -50,8 +50,6 @@ export default function Header() {
                         </div>
                     </div>
                 </header>
-                {window.location.host.split(".")[0] == "client-onboarding" ? <Jotform /> : null}
-                {window.location.host.split(".")[0] == "onboarding" ? <OnboardingForm /> : null}
                 <Modal/>
                 <Switch>
                     <Route exact path="/" component={Home} />
@@ -60,6 +58,8 @@ export default function Header() {
                     <Route path="/portfolio" component={Portfolio} />
                     <Route path="/terms-and-privacy-policy" component={TermsAndPrivactPolicy} />
                 </Switch>
+                {window.location.host.split(".")[0] == "client-onboarding" ? <Jotform /> : null}
+                {window.location.host.split(".")[0] == "onboarding" ? <OnboardingForm /> : null}
             </Router>
         </div>
     );
