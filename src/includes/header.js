@@ -51,13 +51,14 @@ export default function Header() {
                     </div>
                 </header>
                 <Modal/>
+                {window.location.host == "www.02designstudio.com" ? 
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route path="/about" component={About} />
                     <Route path="/services" component={Services} />
                     <Route path="/portfolio" component={Portfolio} />
                     <Route path="/terms-and-privacy-policy" component={TermsAndPrivactPolicy} />
-                </Switch>
+                </Switch> : null}
                 {window.location.host.split(".")[0] == "client-onboarding" ? <Jotform /> : null}
                 {window.location.host.split(".")[0] == "onboarding" ? <OnboardingForm /> : null}
             </Router>
