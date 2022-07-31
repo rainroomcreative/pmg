@@ -27,8 +27,10 @@ export default function Header() {
   };
     return (
         <div>
-            <Router>
-                <header className="header">
+            {window.location.host.split(".")[0] === "onboarding" ? <OnboardingForm /> : null}      
+                {window.location.host === "www.02designstudio.com" || "localhost:3000" ? 
+                <Router>
+                     <header className="header">
                     <div className="container">
                         <div className="row">
                             <div className="col-md-5">
@@ -51,16 +53,14 @@ export default function Header() {
                     </div>
                 </header>
                 <Modal/>
-                {window.location.host == "www.02designstudio.com" || "localhost:3000" ? 
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route path="/about" component={About} />
                     <Route path="/services" component={Services} />
                     <Route path="/portfolio" component={Portfolio} />
                     <Route path="/terms-and-privacy-policy" component={TermsAndPrivactPolicy} />
-                </Switch> : null}
-            </Router>
-            {window.location.host.split(".")[0] == "client-onboarding" ? <Jotform /> : null}
+                </Switch>
+                </Router> : null}
         </div>
     );
   }
