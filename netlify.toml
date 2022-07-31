@@ -8,11 +8,11 @@
 [[headers]]
   for = "/client-onboarding"
    [headers.values]
-   Basic-Auth: admin:02DS2022! 
+   Basic-Auth = admin:02DS2022! 
 
 [[headers]]
   for = "/employee-onboarding"
    [headers.values]
-   Basic-Auth: admin:02DS2022!   
+   Basic-Auth =  admin:02DS2022!   
 
 
