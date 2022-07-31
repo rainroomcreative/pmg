@@ -1,6 +1,4 @@
 import React from "react";
-import JotformEmbed from 'react-jotform-embed';
-
 
 
 export default function Index() {
@@ -8,7 +6,7 @@ export default function Index() {
  
     return(
         <div className="pt-5">
-           <JotformEmbed src={process.env.REACT_APP_JotFormEmbed} />
+           <iframe width='100%' height='900px' src={process.env.REACT_APP_ClickupOnboarding} />
         </div>
     )
 }
