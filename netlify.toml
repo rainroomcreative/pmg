@@ -5,14 +5,6 @@
   to = "/index.html"
   status = 200
 
-[[headers]]
-  for = "/client-onboarding"
-   [headers.values]
-   Basic-Auth = admin:02DS2022! 
-
-[[headers]]
-  for = "/employee-onboarding"
-   [headers.values]
-   Basic-Auth =  admin:02DS2022!   
+  
 
 
