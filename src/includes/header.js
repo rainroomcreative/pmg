@@ -59,9 +59,9 @@ export default function Header() {
                     <Route path="/portfolio" component={Portfolio} />
                     <Route path="/terms-and-privacy-policy" component={TermsAndPrivactPolicy} />
                 </Switch> : null}
-                {window.location.host.split(".")[0] == "client-onboarding" ? <Jotform /> : null}
-                {window.location.host.split(".")[0] == "onboarding" ? <OnboardingForm /> : null}
             </Router>
+            {window.location.host.split(".")[0] == "client-onboarding" ? <Jotform /> : null}
+            {window.location.host.split(".")[0] == "onboarding" ? <OnboardingForm /> : null}
         </div>
     );
   }
