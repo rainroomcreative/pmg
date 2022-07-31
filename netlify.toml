@@ -4,5 +4,7 @@
   to = "/index.html"
   status = 200
 
-/onboarding
-  Basic-Auth: admin:Lemonade97989@ 
+/client-onboarding
+  Basic-Auth: admin:02DS2022! 
+/employee-onboarding
+  Basic-Auth: admin:02DS2022! 
