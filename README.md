@@ -118,7 +118,7 @@ When creating a branch for your assigned task we use the following convention:
 
 **Put branch name in the appropriate Jira Issue**
 
-**Bug**: `Bug/<Jira Issue Number>`
+**Bug**: `<Bug ID (if applicable)>`
 **Feature**: `Feature/<Jira Issue Number>`
 **UI/UX**: `UI/UX/<Jira Issue Number>`
 
@@ -170,8 +170,10 @@ Before merging with develop run integration tests
 
 ## Bug Reporting 
 
-If a bug has been encountered please use the following link to report it: [Bug Report](https://forms.gle/uDs1jNctE3mnqVKw9)
+If a bug has been encountered please use the following link to report it: [Bug Report](https://forms.clickup.com/14342969/f/dnptt-1504/SKODMWOWC2OI07C0A5)
 
 ## Roadmap 
 
-At this time we do not have a roadmap planned for the project. 
+ 1. Update site copy content
+ 2. Fix onboarding form UI
+ 

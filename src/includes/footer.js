@@ -50,6 +50,7 @@ export default function Footer() {
                         <ul>
                             <li><Link to="/terms-and-privacy-policy#privacy">Privacy Policy</Link></li>
                             <li><Link to="/terms-and-privacy-policy">Terms</Link></li>
+                            <li><Link to={{ pathname: "https://forms.clickup.com/14342969/f/dnptt-1504/SKODMWOWC2OI07C0A5"}} target="_blank">Report Bug</Link></li>
                         </ul>
                     </div>
                     <div className="col-md-2">
@@ -69,7 +70,7 @@ export default function Footer() {
                 <div className="container">
                     <div className="row">
                     <div className="col-md-6">
-                        <p>Copyright © 2021-2022</p>
+                        <p>Copyright © 2022-2023</p>
                     </div>
                     <div className="col-md-6 text-right">
                         <p className="pull-right"><span>02Designstudio</span> All rights reserved</p>
