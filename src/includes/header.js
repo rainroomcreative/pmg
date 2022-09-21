@@ -12,7 +12,6 @@ import About from './../about/index';
 import Services from './../services/index';
 import Portfolio from './../portfolio/index';
 import TermsAndPrivactPolicy from "../terms/terms-and-privacy-policy";
-import Jotform from '../jotform/index';
 import OnboardingForm from '../Clickup/index';
 import Modal from "./modal";
 
