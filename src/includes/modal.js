@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import emailjs from 'emailjs-com';
-import{ init } from 'emailjs-com';
+import emailjs from '@emailjs/browser';
+import{ init } from '@emailjs/browser';
 import ReCAPTCHA from "react-google-recaptcha";
 import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
