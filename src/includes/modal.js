@@ -67,7 +67,7 @@ export default function Modal() {
   }
 
     return (
-    <div className="modal fade customodal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    <div className="modal fade customodal" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
                     <div className="modal-dialog modal-lg">
                     <div className="modal-content">
