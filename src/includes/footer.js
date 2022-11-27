@@ -15,6 +15,7 @@ export default function Footer() {
         document.body.style.overflow="hidden"; 
         document.body.classList.add('modal-open');
       };
+      let emailString = "02designstudio.com";
     return (
         <footer className="footer" style={{backgroundImage: `url(${footerbg})`  }}>
             <div className="container">
@@ -57,6 +58,8 @@ export default function Footer() {
                         <h4>Contact</h4>
                         <Router>
                         <ul>
+                        <li><a href="mailto:support@02designstudio.com" rel="noreferrer">support@02designstudio.com</a></li>
+                        <li><a href="tel:+12159774687" rel="noreferrer">(215)-977-4687</a></li>
                         <li><a target="_blank" href="https://www.facebook.com/real02Designstudio" rel="noreferrer">Facebook</a></li>
                         </ul>
                         </Router>
