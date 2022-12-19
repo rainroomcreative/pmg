@@ -12,25 +12,47 @@ export default function Ourwork() {
     const [sortType, setSortType] = useState('');
 
     const fetchWorks = async () => {
-        const {portfolios} = await request(
-          `https://api-us-east-1.graphcms.com/v2/${process.env.REACT_APP_GraphCMSKey}/master`,
-          `
-          {
-            portfolios(stage: PUBLISHED, locales: [en], orderBy: createdAt_DESC) {
-              title
-              description
-              image {
-                url
-              }
-              link
-              isWebsite
-              isGraphicDesign
-              isApp
-              isPm
+        // FIXME - MAIN USA REQUEST
+    //     const {portfolios} = await request(
+    //       `https://api-us-east-1.graphcms.com/v2/${process.env.REACT_APP_GraphCMSKey}/master`,
+    //       `
+    //       {
+    //         portfolios(stage: PUBLISHED, locales: [en], orderBy: createdAt_DESC) {
+    //           title
+    //           description
+    //           image {
+    //             url
+    //           }
+    //           link
+    //           isWebsite
+    //           isGraphicDesign
+    //           isApp
+    //           isPm
+    //         }
+    //       }
+    //   `
+    //     )
+    
+    //FIXME - BACKUP EU REQUEST
+    const {portfolios} = await request(
+        `https://api-eu-west-2.hygraph.com/v2/${process.env.REACT_APP_GraphCMSKey}/master`,
+        `
+        {
+          portfolios(stage: PUBLISHED, locales: [en], orderBy: createdAt_DESC) {
+            title
+            description
+            image {
+              url
             }
+            link
+            isWebsite
+            isGraphicDesign
+            isApp
+            isPm
           }
-      `
-        )
+        }
+    `
+      )
          setWorks(portfolios);
         setLoading(false);
       };
