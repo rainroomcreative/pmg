@@ -398,7 +398,32 @@ ul.img-ul li h5 {
 .team-grid-img-wrap {
     position: relative;
     z-index: 10;
+    overflow: hidden;
 }
+
+.team-grid-img-wrap:after {
+    content: "";
+    position:absolute;
+    margin:-20px;
+    width:40px;
+    height:40px;
+    transform:rotate(45deg);
+    background-color:#fff; /* to see where it is */
+    z-index: 30;
+  }
+
+  .team-grid-img-wrap:before {
+    content: "";
+    position:absolute;
+    bottom: 0;
+    margin:-20px;
+    width:40px;
+    height:40px;
+    transform:rotate(45deg);
+    background-color:#fff; /* to see where it is */
+    z-index: 30;
+
+  }
 
 .team-grid-item-overlay {
     position: absolute;
