@@ -73,7 +73,7 @@ export default function Footer() {
                 <div className="container">
                     <div className="row">
                     <div className="col-md-6">
-                        <p>Copyright © 2022-2023</p>
+                        <p>Copyright © 2023-2024</p>
                     </div>
                     <div className="col-md-6 text-right">
                         <p className="pull-right"><span>02Designstudio</span> All rights reserved</p>

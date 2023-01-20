@@ -12,7 +12,6 @@ import About from './../about/index';
 import Services from './../services/index';
 import Portfolio from './../portfolio/index';
 import TermsAndPrivactPolicy from "../terms/terms-and-privacy-policy";
-import OnboardingForm from '../Clickup/index';
 import Modal from "./modal";
 
 export default function Header() {
@@ -25,8 +24,7 @@ export default function Header() {
     document.body.classList.add('modal-open');
   };
     return (
-        <div>
-            {window.location.host.split(".")[0] === "onboarding" ? <OnboardingForm /> : null}      
+        <div>      
                 {window.location.host === "www.02designstudio.com" || "localhost:3000" ? 
                 <Router>
                      <header className="header">
