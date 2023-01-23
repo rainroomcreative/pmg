@@ -43,7 +43,7 @@ export default function Team() {
                         />
                         <TeamMember 
                             img={jeff} 
-                            name="Jeff MacBride - (PMP, LSS)" 
+                            name="Jeff MacBride - (PMP, LSS, CSM)" 
                             title="Project Manager" 
                             bio={"Jeff is a passionate leader with over 15 years of experience in project and operations management. He has spent much of his career leading cross-functional teams and delivering strategic technology solutions to a wide range of customers. He has overseen system and software design, development, integration, and testing of multiple projects at various stages of the project lifecycle, leveraging both waterfall and agile methodologies. As a consultant, he has stood up project management offices for small companies with rapid growth in need of structure and process implementation. In his free time, Jeff enjoys going to the movies, traveling, working out, and spending time with family and friends."}
                         />
