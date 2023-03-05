@@ -7,6 +7,7 @@ import jeff from './img/Jeff.jpg';
 import ben from './img/Ben.jpg';
 import shaelyn from './img/Shaelyn.jpg';
 import sabrina from './img/sabrina.jpg';
+import al from './img/al.png';
 
 
 
@@ -52,6 +53,13 @@ export default function Team() {
                             name="Shaelyn Ventrano - (PMP)" 
                             title="Project Manager" 
                             bio={"Shaelyn has over 10 years of project management experience in subjects of creative design, website development, e-learning, e-commerce, and small business social media planning.\n\n She has extensive experience in developing and implementing Standard Operating Procedures (SOPs) and developing and outlining comp\n\n Shaelyn holds an MS in Purchasing, Procurement/Acquisitions, Contract Management; BS in Business Administration, and a current PMP certification."}
+                            
+                        />
+                           <TeamMember 
+                            img={al} 
+                            name="Al Sterling- (PMP)" 
+                            title="Project Manager" 
+                            bio={"Al has over 20 years of experience as a technical project mananger. Al has spent majority of his career working with leading telecommunication companies on projects that will future proof their infrastructure. \n\n Al Graduated from Texas Tech University with his Bachelors in Computer Engineering. "}
                             
                         />
                         <TeamMember 
