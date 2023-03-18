@@ -35,7 +35,7 @@ export default function Ourwork() {
     
     //FIXME - BACKUP EU REQUEST
     const {portfolios} = await request(
-        `https://api-eu-west-2.hygraph.com/v2/${process.env.REACT_APP_GraphCMSKey}/master`,
+        `https://api-us-east-1.hygraph.com/v2/${process.env.REACT_APP_GraphCMSKey}/master`,
         `
         {
           portfolios(stage: PUBLISHED, locales: [en], orderBy: createdAt_DESC) {
