@@ -9,6 +9,7 @@ module.exports = {
       'purple': '#292945',
       'black': '#0F0F0F',
       'white': '#F2F2F2',
+      'gold': '#D3A222',
     },
     fontFamily: {
       sans: ['Oxygen', 'sans-serif'],
@@ -20,7 +21,15 @@ module.exports = {
       'xl': '1280px',
       '2xl': '1536px',
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'grid-lines': "url('/src/includes/images/grid-lines.svg')",
+        'smoke': "url('/src/home/images/Smoke.svg')",
+      },
+      spacing: {
+        '128': '32rem',
+      },
+    },
   },
   plugins: [],
 }
