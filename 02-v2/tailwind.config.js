@@ -25,9 +25,27 @@ module.exports = {
       backgroundImage: {
         'grid-lines': "url('/src/includes/images/grid-lines.svg')",
         'smoke': "url('/src/home/images/Smoke.svg')",
+        'gears': "url('/src/home/images/Gears_White_1.svg')",
+        'hourglass': "url('/src/home/images/Hourglass_White_1.svg')",
+        'lightbulb': "url('/src/home/images/Lightbulb_White_1.svg')",
+        'money': "url('/src/home/images/Money_White_1.svg')",
+        'whiteFade': "linear-gradient(0deg, rgba(242,242,242,.95) 0%, rgba(242,242,242,0) 100%)",
       },
       spacing: {
         '128': '32rem',
+        '150': '47.5rem',
+      },
+      animation: {
+        'scrollRight': 'scrollRight 1s linear infinite',
+        'scrollLeft': 'scrollLeft 1s linear infinite',
+      },
+      keyframes: {
+        scrollRight: {
+          to: { transform: 'translateX(-300px)' }
+        },
+        scrollLeft: {
+          to: { transform: 'translateX(300px)' }
+        }
       },
     },
   },

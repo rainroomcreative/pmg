@@ -23,7 +23,7 @@ class App extends React.Component {
         <Router>
           <div className="App">
             <Header />
-            <div className="bg-grid-lines bg-cover">
+            <div className="bg-grid-lines bg-cover bg-fixed">
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
