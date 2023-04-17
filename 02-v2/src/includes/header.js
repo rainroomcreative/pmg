@@ -45,7 +45,7 @@ class Header extends React.Component {
                             <Hamburger className={this.state.nav ? "hidden" : "block"}/>
                             <Close className={this.state.nav ? "block" : "hidden"} />
                         </div>
-                        <ul className={"text-white font-normal text-sm flex-col absolute top-32 w-full gap-11 lg:flex-row lg:justify-end lg:items-center lg:gap-14 lg:static" + `${this.state.nav ? " flex lg:flex" : " hidden lg:flex"}`}>
+                        <ul className={"text-white font-normal text-sm flex-col absolute top-32 w-full gap-11 lg:flex-row lg:justify-end lg:items-center lg:gap-14 lg:static" + `${this.state.nav ? " flex lg:flex" : " hidden lg:flex"}`} onClick={this.MobileNav}>
                             <li className="lg:pb-0.5 lg:border-b-solid lg:border-b lg:border-b-blue hover:lg:border-b-white"><Link to="/about">Why PMG?</Link></li>
                             <li className="lg:pb-0.5 lg:border-b-solid lg:border-b lg:border-b-blue hover:lg:border-b-white"><Link to="/portfolio">Case Studies</Link></li>
                             <li className="lg:pb-0.5 lg:border-b-solid lg:border-b lg:border-b-blue hover:lg:border-b-white"><Link to="/services">Services</Link></li>

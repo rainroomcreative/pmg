@@ -15,19 +15,30 @@ body {
   display: none;
 }
 
-.service-card.active {
+.service-card:hover {
   background-color: #fff;
   color: #113953;
 }
 
-.service-card.active svg path {
+.service-card:hover svg path {
   fill: #113953;
 }
 
-.service-card.active .hidden-text {
+.service-card:hover .stroke-svg path {
+  stroke: #113953;
+  fill: transparent;
+}
+
+.service-card:hover .hidden-text {
   display: block;
 }
 
-.service-card.active .toggle-arrow {
+.service-card:hover .toggle-arrow {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .service-card:hover h2 {
+    display: none;
+  }
 }
