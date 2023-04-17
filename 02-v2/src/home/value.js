@@ -1,5 +1,6 @@
 import React from "react";
 import { Parallax } from 'react-scroll-parallax';
+import { ParallaxController } from 'parallax-controller';
 import Hourglass from "./images/Hourglass_White_2.svg";
 import Lightbulb from "./images/Lightbulb_White_2.svg";
 import Money1 from "./images/Money_White_2.svg";
@@ -11,7 +12,7 @@ import Gears2 from "./images/Gears_White_3.svg";
 const Value = () => {
 
     return (
-        <div className="w-screen snap-x snap-mandatory px-6 md:h-screen md:px-0">
+        <div className="w-screen px-6 md:h-screen md:px-0 snap-always snap-center">
             <div className="font-bold text-blue text-left flex gap-36 flex-col justify-between items-center w-full md:h-full md:flex-row md:container md:gap-4">
                 <div className="hidden md:flex flex-row justify-center items-center h-full gap-8 w-3/5 bg-blue rounded-r-3xl text-white pl-6 pr-24">
                     <div className="flex flex-col border-l border-l-white border-l-solid">
@@ -20,35 +21,34 @@ const Value = () => {
                         <h3 className="pl-2.5" data-name="lightbulb">03</h3>
                         <h3 className="pl-2.5" data-name="gears">04</h3>
                     </div>
-                    <div className="overflow-scroll h-full hide-scroll">
-                        <div className="flex flex-col justify-center items-start hourglass h-full">
+                    <div className="overflow-scroll h-full hide-scroll snap-y snap-mandatory" id="valueScrollController">
+                        <div className="flex flex-col justify-center items-start hourglass h-full snap-always snap-center">
                             <h3 className="text-3xl">Get your time back</h3>
                             <p className="text-base leading-8 mt-7">We specialize in taking the burden of inefficient and repetitive tasks off your plate and lets you focus your valuable time on what matters most - your business.</p>
                         </div>
-                        <div className="flex flex-col justify-center items-start money h-full">
+                        <div className="flex flex-col justify-center items-start money h-full snap-always snap-center">
                             <h3 className="text-3xl">Maximize Your Profits</h3>
                             <p className="text-base leading-8 mt-7">Cut expenses and maximize profits by making the most of your company’s time and resources. Our cost-effective services are custom tailored to fit your budget, so you can get the help you need without breaking the bank.</p>
                             <a href="/portfolio" className="w-full mt-5 bg-transparent border border-solid border-white text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See Case Studies</a>
                         </div>
-                        <div className="flex flex-col justify-center items-start h-full lightbulb">
+                        <div className="flex flex-col justify-center items-start h-full lightbulb snap-always snap-center">
                             <h3 className="text-3xl">Work Smarter</h3>
                             <p className="text-base leading-8 mt-7">We specialize in taking the burden of inefficient and repetitive tasks off your plate and lets you focus your valuable time on what matters most - your business.</p>
                         </div>
-                        <div className="flex flex-col justify-center items-start h-full gears">
+                        <div className="flex flex-col justify-center items-start h-full gears snap-always snap-center">
                             <h3 className="text-3xl">Access Industry Professionals</h3>
                             <p className="text-base leading-8 mt-7">In addition to fractional project management, our team has experience in design, web development, and marketing - giving you access to a diverse range of tools and skillsets.</p>
                             <a href="/services" className="w-full mt-5 bg-transparent border border-solid border-white text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See our Services</a>
                         </div>
                     </div>
                 </div>
-                <div className="hidden md:flex flex-col w-2/5 h-screen relative justify-bottom items-center overflow-hidden">
-                    <div className="mx-auto bg-hourglass bg-bottom bg-no-repeat bg-contain hourglass h-screen">
+                <div className="hidden md:flex flex-col w-2/5 h-screen relative justify-bottom items-center overflow-scroll snap-y snap-mandatory hide-scroll" id="valueScroll" onLoad={newScrollInit}>
+                    <div className="mx-auto bg-hourglass bg-bottom bg-no-repeat bg-contain hourglass h-full snap-always snap-center relative">
                         <Parallax translateY={[15, -20]}>
                             <img src={Hourglass} alt="Get your time back" className="mx-auto" />
                         </Parallax>
-                        <div className="bg-whiteFade h-72 w-full absolute bottom-0"></div>
                     </div>
-                    <div className="mx-auto bg-money bg-no-repeat bg-contain w-full money h-screen opacity-0">
+                    <div className="mx-auto bg-money bg-no-repeat bg-contain w-full money h-full snap-always snap-center relative">
                         <Parallax translateY={[25, -70]} className="absolute top-4 z-20">
                             <img src={Money3} alt="Get your time back" className="mx-auto" />
                         </Parallax>
@@ -58,25 +58,22 @@ const Value = () => {
                         <Parallax translateY={[0, -30]} className="absolute top-12 z-0">
                             <img src={Money1} alt="Get your time back" className="mx-auto" />
                         </Parallax>
-                        <div className="bg-whiteFade h-72 w-full absolute bottom-0"></div>
                     </div>
-                    <div className="mx-auto bg-lightbulb bg-bottom bg-no-repeat bg-contain h-screen h-full opacity-0 lightbulb">
+                    <div className="mx-auto bg-lightbulb bg-bottom bg-no-repeat bg-contain h-full lightbulb snap-always snap-center relative">
                         <Parallax translateY={[15, -20]}>
                             <img src={Lightbulb} alt="Lightbulb" className="mx-auto" />
                         </Parallax>
-                        <div className="bg-whiteFade h-72 w-full absolute bottom-0"></div>
                     </div>
-                    <div className="mx-auto bg-gears bg-no-repeat bg-contain w-full h-screen opacity-0 gears">
+                    <div className="mx-auto bg-gears bg-no-repeat bg-contain w-full h-full gears snap-always snap-center relative">
                         <Parallax translateY={[25, -50]} className="absolute top-4 z-10">
                             <img src={Gears2} alt="Gears" className="mx-auto" />
                         </Parallax>
                         <Parallax translateY={[0, -30]} className="absolute top-20 z-0">
                             <img src={Gears1} alt="Gears" className="mx-auto" />
                         </Parallax>
-                        <div className="bg-whiteFade h-72 w-full absolute bottom-0"></div>
                     </div>
                 </div>
-                <div className="flex flex-col justify-end items-center min-h-screen relative snap-always snap-center md:hidden">
+                <div className="flex flex-col justify-end items-center min-h-screen relative md:hidden">
                     <div className="mx-auto bg-hourglass bg-bottom bg-no-repeat bg-contain w-full absolute top-0 z-0">
                         <Parallax translateY={[15, -20]}>
                             <img src={Hourglass} alt="Get your time back" className="mx-auto" />
@@ -142,6 +139,16 @@ const Value = () => {
             </div>
         </div>
     )
+}
+
+function newScrollInit() {
+    const scrollContainer = document.getElementById('valueScroll');
+    const scrollController = document.getElementById('valueScrollController');
+    const newScroll = ParallaxController.init({
+        scrollAxis: 'vertical',
+        scrollContainer: scrollContainer,
+    });
+    newScroll.updateScrollContainer(scrollController);
 }
 
 export default Value;

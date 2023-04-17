@@ -14,3 +14,20 @@ body {
 .hide-scroll::-webkit-scrollbar {
   display: none;
 }
+
+.service-card.active {
+  background-color: #fff;
+  color: #113953;
+}
+
+.service-card.active svg path {
+  fill: #113953;
+}
+
+.service-card.active .hidden-text {
+  display: block;
+}
+
+.service-card.active .toggle-arrow {
+  display: none;
+}
