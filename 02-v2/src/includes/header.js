@@ -32,7 +32,7 @@ class Header extends React.Component {
 
     render (props) {
         return (
-            <div className={"bg-blue px-6 flex" + `${this.state.nav ? " h-screen items-start lg:items-center" : " items-center"}`}>
+            <div className={"bg-blue px-6 flex" + `${this.state.nav ? " h-screen items-start lg:items-center lg:h-fit" : " items-center"}`}>
                 <header className="flex shrink-0 flex-row justify-between items-center w-full relative h-32">
                     <div className="w-3/12">
                         <Link to="/">
