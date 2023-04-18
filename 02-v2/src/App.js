@@ -21,7 +21,7 @@ class App extends React.Component {
     return (
       <ParallaxProvider>
         <Router>
-          <div className="App">
+          <div className="App scroll-smooth">
             <Header />
             <div className="bg-grid-lines bg-cover bg-fixed">
               <Routes>

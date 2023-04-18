@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {ReactComponent as FractionalPMIcon} from "./images/fractionalPM.svg";
 import {ReactComponent as ProcessAuditsIcon} from "./images/ProcessAudits-icon.svg";
 import {ReactComponent as UXIcon} from "./images/UXUIDesign-icon.svg";
@@ -6,14 +6,10 @@ import {ReactComponent as WebDevIcon} from "./images/WebDev-icon.svg";
 import {ReactComponent as Arrow} from "./images/arrow-drop-down.svg"
 
 const Services = () => {
-    const [pmIsActive, setPmActive] = useState(false);
-    const [auditsIsActive, setAuditsActive] = useState(false);
-    const [uxIsActive, setUxActive] = useState(false);
-    const [devIsActive, setDevActive] = useState(false);
 
     return (
-        <div className="w-full flex flex-col px-6 lg:h-screen container mx-auto">
-            <div className="text-blue text-left py-24">
+        <div className="w-full flex flex-col px-6 lg:h-200 container mx-auto">
+            <div className="text-blue text-left font-bold py-24">
                 <h1 className="text-5xl">What We Can Do For You</h1>
                 <p className="text-base leading-8 mt-10">We work closely with our clients to ensure that our services are aligned with their business objectives, and we strive to deliver the highest level of quality and professionalism in everything we do. Whatever your business needs may be, we are committed to providing the best possible service and helping you achieve your goals.</p>
             </div>
@@ -46,17 +42,5 @@ const Services = () => {
         </div>
     );
 }
-
-/*const toggleCard = (card) => {
-    console.log(card);
-    let cards = document.querySelectorAll(".service-card");
-    let currentCard = document.querySelector(`[data-name=${card}]`);
-
-    cards.forEach(card => {
-        card.classList.remove("active");
-    })
-
-    currentCard.classList.toggle("active");
-}*/
 
 export default Services;

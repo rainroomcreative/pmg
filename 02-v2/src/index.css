@@ -42,3 +42,7 @@ body {
     display: none;
   }
 }
+
+.white-check path {
+  stroke: #f2f2f2;
+}
