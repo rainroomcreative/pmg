@@ -37,6 +37,31 @@ body {
   display: none;
 }
 
+.calc-sticky-blue-wrap-size {
+  height: calc(4 * 100vh);
+  width: calc(45% + calc(.5 * 13rem));
+}
+
+.calc-sticky-blue-size {
+  height: calc(100vh - 1em)
+}
+
+.prog-numbers {
+  transition: all 500ms ease-in-out;
+}
+
+.max-width-parallax {
+  max-width: 700px;
+}
+
+.max-width-textbox {
+
+}
+
+.prog-numbers.show {
+  font-size: 64px !important;
+}
+
 @media screen and (min-width: 768px) {
   .service-card:hover h2 {
     display: none;
