@@ -35,11 +35,14 @@ module.exports = {
         'money': "url('/src/home/images/Money_White_1.svg')",
         'whiteFade': "linear-gradient(0deg, rgba(242,242,242,.95) 0%, rgba(242,242,242,0) 100%)",
         'aboutHero': "url('/src/about/images/gearsOnPedestal.svg')",
+        'hoverGradient': "linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))",
+        'popupGradient': "linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))"
       },
       spacing: {
         '120': '60vh',
         '128': '32rem',
         '150': '47.5rem',
+        '160': '80vh',
         '200': '120vh',
       },
       animation: {

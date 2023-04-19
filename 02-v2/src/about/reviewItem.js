@@ -2,7 +2,7 @@ import React from "react";
 
 const ReviewItem = ({ review, active }) => {
     const { companyName, reviewContent } = review;
-    console.log (review.id + " is " + active)
+
     return (
         <div className={"flex-col justify-center items-center gap-14 opacity-0 duration-700 transition-opacity" + `${active? " opacity-100 flex" : " hidden"}`}>
             <h3 className="text-3xl">{companyName}</h3>
