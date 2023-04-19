@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from './hero';
 import LogoBanner from './logo-banner';
 import Mission from './mission';
-import Value from './Value';
+import Value from './value';
 
 function Home() {
     return (
