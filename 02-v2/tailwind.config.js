@@ -48,6 +48,7 @@ module.exports = {
       animation: {
         'scrollRight': 'scrollRight 1s linear infinite',
         'scrollLeft': 'scrollLeft 1s linear infinite',
+        'fadeInUp': 'fadeInUp 1s ease-in-out',
       },
       keyframes: {
         scrollRight: {
@@ -55,7 +56,11 @@ module.exports = {
         },
         scrollLeft: {
           to: { transform: 'translateX(300px)' }
-        }
+        },
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
       },
       dropShadow: {
         '3xl': '0 0 15px rgba(0, 0, 0, 0.80)',

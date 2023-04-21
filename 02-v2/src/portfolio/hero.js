@@ -8,8 +8,8 @@ const Hero = () => {
                 <h1 className="text-5xl">Proven Success</h1>
                 <p className="text-base leading-8">Project Management Groups has a proven track record of success when it comes to project management consulting. Our team of seasoned professionals brings years of experience to the table, allowing us to deliver top-notch services to our clients. We've worked with businesses of all sizes across various industries, and have helped them achieve their goals and objectives through effective project management. We take pride in our ability to consistently exceed client expectations, delivering high-quality services that are tailored to their specific needs.</p>
             </div>
-            <div className="flex flex-row justify-center text-white font-bold container mx-auto gap-12">
-                <div className="w-1/4 bg-blue rounded-3xl p-6">
+            <div className="flex flex-col lg:flex-row justify-center text-blue lg:text-white font-bold container mx-auto gap-12">
+                <div className="w-full lg:w-1/4 lg:bg-blue rounded-3xl p-6">
                         <CountUp
                         start={0}
                         end={50}
@@ -22,7 +22,7 @@ const Hero = () => {
                         </CountUp>
                     <h4 className="text-sm mt-6">Cheaper than competitors.</h4>
                 </div>
-                <div className="w-1/4 bg-blue rounded-3xl p-6">
+                <div className="w-full lg:w-1/4 lg:bg-blue rounded-3xl p-6">
                     <CountUp
                     start={0}
                     end={1.2}
@@ -39,7 +39,7 @@ const Hero = () => {
                     </CountUp>
                     <h4 className="text-sm mt-6">Managed Projects </h4>
                 </div>
-                <div className="w-1/4 bg-blue rounded-3xl p-6">
+                <div className="w-full lg:w-1/4 lg:bg-blue rounded-3xl p-6">
                     <CountUp
                         start={0}
                         end={2000}
@@ -52,7 +52,7 @@ const Hero = () => {
                     </CountUp>
                     <h4 className="text-sm mt-6">Client hours saved</h4>
                 </div>
-                <div className="w-1/4 bg-blue rounded-3xl p-6">
+                <div className="w-full lg:w-1/4 lg:bg-blue rounded-3xl p-6">
                     <CountUp
                         start={0}
                         end={300}

@@ -21,10 +21,14 @@ const Portfolio = () => {
               url
             }
             companyName
-            description
-            statistic1
-            statistic2
-            statistic3
+            shortDescription
+            statisticNumber1
+            statisticText1
+            statisticNumber2
+            statisticText2
+            statisticNumber3
+            statisticText3
+            id
           }
         }
     `
@@ -40,10 +44,11 @@ const Portfolio = () => {
     return (
         <div>
           <Hero />
+          <div className="w-full caseStudy-container">
             {caseStudies && caseStudies.map((caseStudy, index) => (
-              <CaseStudy caseStudy={caseStudy} key={index} index={index}/>
-            ))}
-            
+                <CaseStudy caseStudy={caseStudy} key={caseStudy.id} index={index}/>
+              ))}
+          </div>
         </div>
     );
 }
