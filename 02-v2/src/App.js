@@ -14,6 +14,7 @@ import Pricing from './pricing/pricing';
 import Services from './services/services';
 import ContactForm from './includes/contact';
 import Footer from './includes/footer';
+import Article from './blog/article';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 class App extends React.Component {
@@ -31,6 +32,7 @@ class App extends React.Component {
                 <Route path="/services" element={<Services />} />
                 <Route path="/pricing" element={<Pricing />} />
                 <Route path="/blog" element={<Blog />} />
+                <Route path="/blog/:slug" element={<Article />} />
               </Routes>
               <ContactForm />
             </div>
