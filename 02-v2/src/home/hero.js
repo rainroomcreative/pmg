@@ -4,19 +4,6 @@ import Stats from "./stats"
 
 
 class Hero extends React.Component {
-    /*constructor(props) {
-        super(props);
-        this.state = {
-            rocketPosition: 0,
-        }
-
-        this.handleScrollRocket = this.handleScrollRocket.bind(this);
-    }
-
-    handleScrollRocket = () => {
-        new Rocket().scrollRocket();
-    }*/
-
     render() {
         return (
             <div className="container px-6 py-12 mx-auto relative min-h-screen md:h-screen md:grid md:grid-cols-2 md:grid-rows-2">

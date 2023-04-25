@@ -1,7 +1,18 @@
 import React from "react";
+import Hero from "./hero";
+import ReviewsCarousel from "./reviewsCarousel";
+import Beliefs from "./beliefs";
+import Team from "./team";
 
-function About () {
-    return <h1>About Page</h1>
+const About = () => {
+    return (
+        <div>
+            <Hero />
+            <ReviewsCarousel />
+            <Beliefs />
+            <Team />
+        </div>
+    )
 }
 
 export default About;

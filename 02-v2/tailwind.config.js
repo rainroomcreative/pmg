@@ -10,6 +10,10 @@ module.exports = {
       'black': '#0F0F0F',
       'white': '#F2F2F2',
       'gold': '#D3A222',
+      'lightBlue1': '#D7E1E7',
+      'lightBlue2': '#D1E0EA',
+      'lightBlue3': '#ACBECA',
+      'fadedBlack': 'rgba(0, 0, 0, 0.2)',
     },
     fontFamily: {
       sans: ['Oxygen', 'sans-serif'],
@@ -30,14 +34,21 @@ module.exports = {
         'lightbulb': "url('/src/home/images/Lightbulb_White_1.png')",
         'money': "url('/src/home/images/Money_White_1.svg')",
         'whiteFade': "linear-gradient(0deg, rgba(242,242,242,.95) 0%, rgba(242,242,242,0) 100%)",
+        'aboutHero': "url('/src/about/images/gearsOnPedestal.svg')",
+        'hoverGradient': "linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))",
+        'popupGradient': "linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))"
       },
       spacing: {
+        '120': '60vh',
         '128': '32rem',
         '150': '47.5rem',
+        '160': '80vh',
+        '200': '120vh',
       },
       animation: {
         'scrollRight': 'scrollRight 1s linear infinite',
         'scrollLeft': 'scrollLeft 1s linear infinite',
+        'fadeInUp': 'fadeInUp 1s ease-in-out',
       },
       keyframes: {
         scrollRight: {
@@ -45,7 +56,14 @@ module.exports = {
         },
         scrollLeft: {
           to: { transform: 'translateX(300px)' }
-        }
+        },
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      dropShadow: {
+        '3xl': '0 0 15px rgba(0, 0, 0, 0.80)',
       },
     },
   },

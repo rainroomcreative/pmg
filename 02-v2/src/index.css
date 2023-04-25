@@ -71,3 +71,11 @@ body {
     mask-image: linear-gradient(to top, rgba(0, 0, 0, 1.0) 50%, transparent 100%);
     -webkit-mask-image: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 1.0)  10%);
 }
+
+.white-check path {
+  stroke: #f2f2f2;
+}
+
+.team-member:hover .on-hover {
+  display: flex;
+}
