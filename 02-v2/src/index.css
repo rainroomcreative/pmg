@@ -37,10 +37,39 @@ body {
   display: none;
 }
 
+.calc-sticky-blue-wrap-size {
+  height: calc(4 * 100vh);
+  width: calc(45% + calc(.5 * 13rem));
+}
+
+.calc-sticky-blue-size {
+  height: calc(100vh - 1em)
+}
+
+.prog-numbers {
+  transition: all 500ms ease-in-out;
+}
+
+.max-width-parallax {
+  max-width: 700px;
+}
+
+
+
+.prog-numbers.show {
+  font-size: 64px !important;
+}
+
 @media screen and (min-width: 768px) {
   .service-card:hover h2 {
     display: none;
   }
+}
+
+
+.pedestal-gradient {
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1.0) 50%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 1.0)  10%);
 }
 
 .white-check path {
