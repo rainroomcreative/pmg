@@ -12,7 +12,7 @@ const Portfolio = () => {
     const fetchCaseStudies = async () => {
       console.log('fetching case studies');
       const {caseStudies} = await request(
-        `https://us-east-1-shared-usea1-02.cdn.hygraph.com/content/clg1lau9f8j5c01uigtgl5pl5/master`,
+        `https://us-east-1-shared-usea1-02.cdn.hygraph.com/content/${process.env.REACT_APP_CS_KEY}/master`,
         `
         {
           caseStudies {

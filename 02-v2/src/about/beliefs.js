@@ -11,10 +11,10 @@ const Beliefs = () => {
             </div>
             <div className="flex flex-col text-white gap-9 justify-center font-bold items-start lg:flex-row">
                 {coreValues.map((value) => (
-                    <div key={value.id} className="bg-blue px-5 py-6 text-left w-full rounded-3xl flex flex-col justify-center items-start gap-6 service-card h-52 hover:h-80 lg:w-1/4 lg:h-60 transition-all">
+                    <div key={value.id} className="bg-blue px-5 py-6 text-left w-full rounded-3xl flex flex-col shrink justify-center items-start gap-6 service-card h-52 hover:h-80 lg:w-1/4 lg:h-60 transition-all">
                         <h3 className="text-5xl">{value.number}</h3>
                         <div className="flex flex-row justify-between items-center w-full">
-                            <h2 className="text-3xl">{value.title}</h2>
+                            <h2 className="text-3xl lg:text-2xl xl:text-3xl">{value.title}</h2>
                             <Arrow className="toggle-arrow lg:hidden"/>
                         </div>
                         <p className="hidden text-base leading-8 text-left hidden-text">{value.description}</p>

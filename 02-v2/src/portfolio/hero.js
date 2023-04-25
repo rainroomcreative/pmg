@@ -17,7 +17,7 @@ const Hero = () => {
                         suffix="%"
                         >
                             {({ countUpRef, start }) => (
-                                <h3 className="text-5xl" ref={countUpRef} onLoad={start}></h3>                                
+                                <h3 className="text-3xl xl:text-5xl" ref={countUpRef} onLoad={start}></h3>                                
                             )}
                         </CountUp>
                     <h4 className="text-sm mt-6">Cheaper than competitors.</h4>
@@ -34,7 +34,7 @@ const Hero = () => {
                     suffix="M"
                     >
                         {({ countUpRef, start }) => (
-                            <h3 className="text-5xl" ref={countUpRef} onLoad={start}></h3>                                
+                            <h3 className="text-3xl xl:text-5xl" ref={countUpRef} onLoad={start}></h3>                                
                         )}
                     </CountUp>
                     <h4 className="text-sm mt-6">Managed Projects </h4>
@@ -47,7 +47,7 @@ const Hero = () => {
                         duration={1.5}
                         >
                             {({ countUpRef, start }) => (
-                                <h3 className="text-5xl" ref={countUpRef} onLoad={start}></h3>                                
+                                <h3 className="text-3xl xl:text-5xl" ref={countUpRef} onLoad={start}></h3>                                
                             )}
                     </CountUp>
                     <h4 className="text-sm mt-6">Client hours saved</h4>
@@ -62,7 +62,7 @@ const Hero = () => {
                         suffix="k+"
                         >
                             {({ countUpRef, start }) => (
-                                <h3 className="text-5xl" ref={countUpRef} onLoad={start}></h3>                                
+                                <h3 className="text-3xl xl:text-5xl" ref={countUpRef} onLoad={start}></h3>                                
                             )}
                     </CountUp>
                     <h4 className="text-sm mt-6">Saved in our clients expenses</h4>

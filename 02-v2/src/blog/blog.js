@@ -18,7 +18,7 @@ const Blog = () => {
         const fetchArticles = async () => {
             console.log('fetching articles');
             const {blogPosts} = await request(
-                `https://us-east-1-shared-usea1-02.cdn.hygraph.com/content/clg1mb29m8cjs01uo9vsv7610/master`,
+                `https://us-east-1-shared-usea1-02.cdn.hygraph.com/content/${process.env.REACT_APP_BLOG_KEY}/master`,
                 `
                 {
                     blogPosts {
@@ -28,6 +28,7 @@ const Blog = () => {
                         id
                         tagLine
                         title
+                        slug
                     }
                 }
                 `
