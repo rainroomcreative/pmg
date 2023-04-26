@@ -10,7 +10,7 @@ function Rocket() {
                 <img
                 src={RocketImage}
                 alt="Rocket"
-                className="mx-auto z-10"
+                className="mx-auto z-10 pointer-events-none"
                 />
             </Parallax>
         </div>

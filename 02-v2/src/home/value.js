@@ -51,21 +51,21 @@ const Value = () => {
                         {/* ANCHOR Desktop Hourglass */}
                         <div>
                             <InView as="div" threshold={.8} onChange={(inView, entry) => inView ? handleProgress(0) : console.log("not in view")} className="snap-start max-width-parallax flex flex-col justify-center items-start hourglass h-full bg-red-500 basis-9/12 flex-1 pl-8 pr-8 text-left text-white value-text-box">
-                                <h3 className="text-3xl">Get your time back</h3>
-                                <p className="text-base leading-8 mt-7">We specialize in taking the burden of inefficient and repetitive tasks off your plate and lets you focus your valuable time on what matters most - your business.</p>
+                                <h3 className="text-3xl pointer-events-none">Get your time back</h3>
+                                <p className="text-base leading-8 mt-7 pointer-events-none">We specialize in taking the burden of inefficient and repetitive tasks off your plate and lets you focus your valuable time on what matters most - your business.</p>
                             </InView>
                             <InView as="div" threshold={.8} onChange={(inView, entry) => inView ? handleProgress(1) : console.log("not in view")} className="snap-start max-width-parallax flex flex-col justify-center items-start money h-full basis-full flex-1 pl-8 pr-8 text-left text-white value-text-box">
-                                <h3 className="text-3xl">Maximize Your Profits</h3>
-                                <p className="text-base leading-8 mt-7">Cut expenses and maximize profits by making the most of your company’s time and resources. Our cost-effective services are custom tailored to fit your budget, so you can get the help you need without breaking the bank.</p>
+                                <h3 className="text-3xl pointer-events-none">Maximize Your Profits</h3>
+                                <p className="text-base leading-8 mt-7 pointer-events-none">Cut expenses and maximize profits by making the most of your company’s time and resources. Our cost-effective services are custom tailored to fit your budget, so you can get the help you need without breaking the bank.</p>
                                 <a href="/portfolio" className="w-full mt-5 bg-transparent border border-solid border-white text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See Case Studies</a>
                             </InView>
                             <InView as="div" threshold={.8} onChange={(inView, entry) => inView ? handleProgress(2) : console.log("not in view")}  className="snap-start max-width-parallax flex flex-col justify-center items-start h-full lightbulb basis-full flex-1 pl-8 pr-8 text-left text-white value-text-box">
-                                <h3 className="text-3xl">Work Smarter</h3>
-                                <p className="text-base leading-8 mt-7">We specialize in taking the burden of inefficient and repetitive tasks off your plate and lets you focus your valuable time on what matters most - your business.</p>
+                                <h3 className="text-3xl pointer-events-none">Work Smarter</h3>
+                                <p className="text-base leading-8 mt-7 pointer-events-none">We specialize in taking the burden of inefficient and repetitive tasks off your plate and lets you focus your valuable time on what matters most - your business.</p>
                             </InView>
                             <InView as="div" threshold={.8} onChange={(inView, entry) => inView ? handleProgress(3) : console.log("not in view")}  className="snap-start max-width-parallax flex flex-col justify-center items-start h-full gears basis-full flex-1 pl-8 pr-8 text-left text-white value-text-box">
-                                <h3 className="text-3xl">Access Industry Professionals</h3>
-                                <p className="text-base leading-8 mt-7">In addition to fractional project management, our team has experience in design, web development, and marketing - giving you access to a diverse range of tools and skillsets.</p>
+                                <h3 className="text-3xl pointer-events-none">Access Industry Professionals</h3>
+                                <p className="text-base leading-8 mt-7 pointer-events-none">In addition to fractional project management, our team has experience in design, web development, and marketing - giving you access to a diverse range of tools and skillsets.</p>
                                 <a href="/services" className="w-full mt-5 bg-transparent border border-solid border-white text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See our Services</a>
                             </InView>
                         </div>
