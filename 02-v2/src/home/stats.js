@@ -17,10 +17,10 @@ class Stats extends React.Component {
                             onStart={() => console.log('Started! 💨')}
                             >
                                 {({ countUpRef, start }) => (
-                                    <h3 className="text-3xl" ref={countUpRef} onLoad={start}></h3>                                
+                                    <h3 className="text-3xl pointer-events-none" ref={countUpRef} onLoad={start}></h3>                                
                                 )}
                             </CountUp>
-                        <h4 className="text-sm mt-6">Cheaper than competitors.</h4>
+                        <h4 className="text-sm mt-6 pointer-events-none">Cheaper than competitors.</h4>
                     </div>
                     <div className="w-1/3">
                         <CountUp
@@ -36,10 +36,10 @@ class Stats extends React.Component {
                         onStart={() => console.log('Started! 💨')}
                         >
                             {({ countUpRef, start }) => (
-                                <h3 className="text-3xl" ref={countUpRef} onLoad={start}></h3>                                
+                                <h3 className="text-3xl pointer-events-none" ref={countUpRef} onLoad={start}></h3>                                
                             )}
                         </CountUp>
-                        <h4 className="text-sm mt-6">Managed Projects </h4>
+                        <h4 className="text-sm mt-6 pointer-events-none">Managed Projects </h4>
                     </div>
                     <div className="w-1/3">
                         <CountUp
@@ -51,10 +51,10 @@ class Stats extends React.Component {
                             onStart={() => console.log('Started! 💨')}
                             >
                                 {({ countUpRef, start }) => (
-                                    <h3 className="text-3xl" ref={countUpRef} onLoad={start}></h3>                                
+                                    <h3 className="text-3xl pointer-events-none" ref={countUpRef} onLoad={start}></h3>                                
                                 )}
                         </CountUp>
-                        <h4 className="text-sm mt-6">Client hours saved</h4>
+                        <h4 className="text-sm mt-6 pointer-events-none">Client hours saved</h4>
                     </div>
                 </div>
                 <a href="/portfolio" className="bg-blue hover:bg-gold text-white py-3 px-14 rounded-3xl">See Case Studies</a>

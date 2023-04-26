@@ -35,11 +35,11 @@ function ContactForm() {
   return (
     <div className="w-full flex flex-col py-12 px-6 text-left text-blue font-bold lg:flex-row lg:justify-between lg:gap-28 container mx-auto" id="contact">
       <div className="mb-12 lg:w-1/2">
-        <h2 className="text-5xl mb-12">Ready To Start?</h2>
-        <p className="text-base leading-8">Save time and money through our expert fractional project management consulting services. We look forward to building a successful partnership with you!</p>
+        <h2 className="text-5xl mb-12 pointer-events-none">Ready To Start?</h2>
+        <p className="text-base leading-8 pointer-events-none">Save time and money through our expert fractional project management consulting services. We look forward to building a successful partnership with you!</p>
       </div>
       <div className="lg:w-1/2">
-        <h3 className="text-3xl border-b-blue border-b-solid border-b pb-5">Send Us a Message</h3>
+        <h3 className="text-3xl border-b-blue border-b-solid border-b pb-5 pointer-events-none">Send Us a Message</h3>
         <form className="mt-12 gap-2.5 flex flex-col w-full md:grid" onSubmit={sendEmail}>
           <div className="w-full flex flex-col gap-2 md:col-span-1">
             <label className="text-sm" htmlFor="first_name">First Name*</label>

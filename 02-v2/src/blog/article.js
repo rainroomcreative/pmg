@@ -33,7 +33,7 @@ const Article = () => {
 
 
     if (blogPosts.length === 0 || !blogPosts[0]) {
-        return <div>Loading...</div>
+        return <div className="pointer-events-none text-blue font-bold text-3xl">Loading...</div>
     } else {
         const article = blogPosts[0]
         const dateFormatted = article ? new Date(article.datePosted).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'}) : null;
@@ -42,10 +42,10 @@ const Article = () => {
             <div className="w-full">
                 <div className="flex flex-col text-left text-black font-bold py-24 px-6 gap-16 mx-auto container">
                     <div className="flex flex-col gap-6">
-                        <h1 className="text-5xl">{article.title}</h1>
-                        <p className="text-sm">Date: {dateFormatted}</p>
+                        <h1 className="text-5xl pointer-events-none">{article.title}</h1>
+                        <p className="text-sm pointer-events-none">Date: {dateFormatted}</p>
                     </div>
-                    <div className="text-base leading-8">
+                    <div className="text-base leading-8 pointer-events-none">
                         {article.blogPost}
                     </div>
                 </div>

@@ -18,7 +18,7 @@ const Team = () => {
     return (
         <div className="font-bold text-white w-full bg-blue px-6 py-10 mt-52 relative">
             <div className="container mx-auto text-left mb-20">
-                <h2 className="text-5xl">Team</h2>
+                <h2 className="text-5xl pointer-events-none">Team</h2>
             </div>
             <div className="container mx-auto flex flex-col gap-20 md:gap-x-11 md:gap-y-20 md:place-content-center md:grid md:grid-cols-2 lg:grid-cols-4">
                 {teamMembers.map((member) => (

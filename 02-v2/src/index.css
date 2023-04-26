@@ -54,8 +54,6 @@ body {
   max-width: 700px;
 }
 
-
-
 .prog-numbers.show {
   font-size: 64px !important;
 }
@@ -78,4 +76,17 @@ body {
 
 .team-member:hover .on-hover {
   display: flex;
+}
+
+.caseStudy .caseStudy-description {
+  max-height: 275px;
+  overflow: hidden;
+}
+
+.caseStudy.active .caseStudy-description {
+  overflow: scroll;
+}
+
+.remove-bg {
+  background-image: none !important;
 }

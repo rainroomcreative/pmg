@@ -9,10 +9,10 @@ const TeamMemberBio = ({ member, active, onClick }) => {
             <Close onClick={onClick}/>
         </div>
         <div className="flex flex-col gap-4 w-full">
-            <h3 className="text-5xl font-bold">{name}</h3>
-            <p className="text-sm font-normal">{title}</p>
+            <h3 className="text-5xl font-bold pointer-events-none">{name}</h3>
+            <p className="text-sm font-normal pointer-events-none">{title}</p>
         </div>
-        <p className="text-base font-normal leading-8">{bio}</p>
+        <p className="text-base font-normal leading-8 pointer-events-none">{bio}</p>
       </div>
     );
 }

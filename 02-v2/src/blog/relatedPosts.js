@@ -43,7 +43,7 @@ const RelatedPosts = ({slug}) => {
         <div className="pb-24 pt-12 w-full border-t-solid border-t-black border-t">
             <div className="mx-auto container px-6">
                 <div className="mb-12">
-                    <h2 className="text-5xl font-bold text-black text-center">More Blog Posts</h2>
+                    <h2 className="text-5xl font-bold text-black text-center pointer-events-none">More Blog Posts</h2>
                 </div>
                 <div className={"flex-col gap-14 md:grid md:grid-cols-3" + `${loading ? " flex" : " hidden"}`}>
                     {!loading && relatedPosts.map((blogPost, index) => (
