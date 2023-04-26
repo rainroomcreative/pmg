@@ -36,7 +36,7 @@ module.exports = {
         'whiteFade': "linear-gradient(0deg, rgba(242,242,242,.95) 0%, rgba(242,242,242,0) 100%)",
         'whiteFade2': "linear-gradient(0deg, rgba(242,242,242,1) 0%, rgba(242,242,242,1) 10%, rgba(242,242,242,0) 50%)",
         'blueFade': "linear-gradient(0deg, rgba(17,57,83,1) 0%, rgba(17,57,83,1) 10%, rgba(17,57,83,0) 50%)",
-        'aboutHero': "url('/src/about/images/gearsOnPedestal.svg')",
+        'aboutHero': "url('/src/about/images/gearsOnPedestal.png')",
         'hoverGradient': "linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))",
         'popupGradient': "linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))"
       },
@@ -65,7 +65,10 @@ module.exports = {
         },
       },
       dropShadow: {
-        '3xl': '0 0 15px rgba(0, 0, 0, 0.80)',
+        '3xl': '0 0 15px rgba(0, 0, 0, 0.30)',
+      },
+      transitionDuration: {
+        '3000': '3000ms',
       },
     },
   },

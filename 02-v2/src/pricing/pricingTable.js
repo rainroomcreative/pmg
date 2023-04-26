@@ -32,7 +32,7 @@ const PricingTable = () => {
                         </li>
                     </ul>
                 </div>
-                <a href="#contact" className="border-black border border-solid rounded-3xl bg-transparent text-black text-sm py-3 text-center hover:bg-gold hover:text-white hover:border-gold">Make an Inquiry</a>
+                <a href="#contact" className="border-black border border-solid rounded-3xl bg-transparent duration-150 transition-colors text-black text-sm py-3 text-center hover:bg-gold hover:text-white hover:border-gold">Make an Inquiry</a>
             </div>
 
             <div className="bg-blue px-5 py-6 rounded-3xl flex flex-col justify-between align-center gap-6 drop-shadow-3xl text-white lg:basis-[46%] xl:basis-1/4 flex-initial">
@@ -63,7 +63,7 @@ const PricingTable = () => {
                         </li>
                     </ul>
                 </div>
-                <a href="#contact" className="border-white border border-solid rounded-3xl bg-transparent text-white text-sm py-3 text-center hover:bg-gold hover:text-white hover:border-gold">Make an Inquiry</a>
+                <a href="#contact" className="border-white border border-solid rounded-3xl bg-transparent duration-150 transition-colors text-white text-sm py-3 text-center hover:bg-gold hover:text-white hover:border-gold">Make an Inquiry</a>
             </div>
 
             <div className="bg-lightBlue3 px-5 py-6 rounded-3xl flex flex-col justify-between align-center gap-6 lg:basis-[46%] xl:basis-1/4 flex-initial">
@@ -94,7 +94,7 @@ const PricingTable = () => {
                         </li>
                     </ul>
                 </div>
-                <a href="#contact" className="border-black border border-solid rounded-3xl bg-transparent text-black text-sm py-3 text-center hover:bg-gold hover:text-white hover:border-gold">Make an Inquiry</a>
+                <a href="#contact" className="border-black border border-solid rounded-3xl bg-transparent duration-150 transition-colors text-black text-sm py-3 text-center hover:bg-gold hover:text-white hover:border-gold">Make an Inquiry</a>
             </div>
 
             <div className="bg-lightBlue2 px-5 py-6 rounded-3xl flex flex-col justify-between align-center gap-6 lg:basis-[46%] xl:basis-1/4 flex-initial">
@@ -129,7 +129,7 @@ const PricingTable = () => {
                         </li>
                     </ul>
                 </div>
-                <a href="#contact" className="border-black border border-solid rounded-3xl bg-transparent text-black text-sm py-3 text-center hover:bg-gold hover:text-white hover:border-gold">Make an Inquiry</a>
+                <a href="#contact" className="border-black border border-solid rounded-3xl bg-transparent duration-150 transition-colors text-black text-sm py-3 text-center hover:bg-gold hover:text-white hover:border-gold">Make an Inquiry</a>
             </div>
         </div>
     )

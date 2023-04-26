@@ -1,5 +1,6 @@
 import React from "react";
 import CountUp from 'react-countup';
+import {Link} from 'react-router-dom';
 
 class Stats extends React.Component {
 
@@ -57,7 +58,7 @@ class Stats extends React.Component {
                         <h4 className="text-sm mt-6 pointer-events-none">Client hours saved</h4>
                     </div>
                 </div>
-                <a href="/portfolio" className="bg-blue hover:bg-gold text-white py-3 px-14 rounded-3xl">See Case Studies</a>
+                <Link to="/portfolio" className="bg-blue hover:bg-gold text-white py-3 px-14 rounded-3xl">See Case Studies</Link>
             </div>
         )
     }

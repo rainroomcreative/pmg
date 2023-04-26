@@ -4,7 +4,7 @@ import {coreValues} from "./coreValues";
 
 const Beliefs = () => {
     return (
-        <div className="w-full flex flex-col px-6 lg:h-200 container mx-auto">
+        <div className="w-full flex flex-col px-6 container mx-auto">
             <div className="text-blue text-left font-bold py-24">
                 <h1 className="text-5xl pointer-events-none">Our Core Values</h1>
                 <p className="text-base leading-8 mt-10 pointer-events-none">We are a dedicated fractional project management consulting firm that is committed to delivering exceptional services that exceed our clients' expectations. Our focus on continuous improvement and attention to detail ensures that every project is completed to the highest standard, while our commitment to client satisfaction sets us apart from the competition.</p>

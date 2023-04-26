@@ -8,7 +8,7 @@ import {ReactComponent as Arrow} from "./images/arrow-drop-down.svg"
 const Services = () => {
 
     return (
-        <div className="w-full flex flex-col px-6 lg:h-200 container mx-auto">
+        <div className="w-full flex flex-col px-6 py-12 container mx-auto">
             <div className="text-blue text-left font-bold py-24">
                 <h1 className="text-5xl pointer-events-none">What We Can Do For You</h1>
                 <p className="text-base leading-8 mt-10 pointer-events-none">We work closely with our clients to ensure that our services are aligned with their business objectives, and we strive to deliver the highest level of quality and professionalism in everything we do. Whatever your business needs may be, we are committed to providing the best possible service and helping you achieve your goals.</p>

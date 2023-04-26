@@ -85,6 +85,11 @@ body {
 
 .caseStudy.active .caseStudy-description {
   overflow: scroll;
+  max-height: 60vh;
+}
+
+.caseStudy.active {
+  min-height: fit-content;
 }
 
 .remove-bg {
