@@ -35,7 +35,8 @@ const Value = () => {
         
         <div className="w-screen " >
                 <ScrollSync>
-                <div className="hidden md:flex flex-row relative h-auto mb-32">
+                    
+                    <div className="hidden md:flex flex-row sticky top-0 h-auto mb-32">
                     {/* <div className="absolute top-0 left-0 calc-sticky-blue-wrap-size">
                         <div className="bg-blue w-full sticky rounded-e-2xl top-0 calc-sticky-blue-size"></div>
                     </div> */}
@@ -74,7 +75,7 @@ const Value = () => {
                         <div className="w-1/2 max-h-[700px] overflow-scroll hide-scroll snap-y rounded-e-[20px]">
                             {/* ANCHOR Desktop Hourglass */}
                             <div className="h-full relative flex justify-center items-center overflow-hidden">
-                                <motion.img src={Hourglass} alt="Get your time back" className="mx-auto absolute top-0 z-[10]" animate={{ y: progress[0] ? 100 : -500}} transition={{duration: .5, delay: 0}} />
+                                <motion.img src={Hourglass} alt="Get your time back" className="mx-auto absolute top-0 z-[10]" animate={{ y: progress[0] ? 100 : -50}} transition={{duration: 2.5, delay: .2, ease: "easeInOut"}} />
                                 <div className="pedestal-gradient ">
                                     <div className="bg-hourglass bg-bottom bg-no-repeat bg-contain hourglass w-[540px] h-[540px] relative basis-full flex-1 flex flex-column justify-center max-width-parallax ">
                                     
@@ -84,9 +85,9 @@ const Value = () => {
 
                             {/* ANCHOR Desktop Money */}
                             <div className="h-full relative flex justify-center items-center overflow-hidden">
-                                <motion.img src={Money1} alt="Money" className="mx-auto absolute top-0 z-[10]" animate={{ y: progress[1] ?  50 :-500 }} transition={{duration: .25, delay: .2, ease: "easeIn"}}/>
-                                <motion.img src={Money2} alt="Money" className="mx-auto absolute top-0 z-[11]" animate={{ y: progress[1] ?  50 :-700 }} transition={{duration: .25, delay: .4, ease: "easeIn"}}/>
-                                <motion.img src={Money3} alt="Money" className="mx-auto absolute top-0 z-[12]" animate={{ y: progress[1] ?  50 :-900 }} transition={{duration: .25, delay: .6, ease: "easeIn"}}/>
+                                <motion.img src={Money1} alt="Money" className="mx-auto absolute top-0 z-[10]" animate={{ y: progress[1] ?  50 : 0 }} transition={{duration: 2.5, delay: .2, ease: "easeInOut"}}/>
+                                <motion.img src={Money2} alt="Money" className="mx-auto absolute top-0 z-[11]" animate={{ y: progress[1] ?  50 :-50 }} transition={{duration: 2.5, delay: .4, ease: "easeInOut"}}/>
+                                <motion.img src={Money3} alt="Money" className="mx-auto absolute top-0 z-[12]" animate={{ y: progress[1] ?  50 : -100 }} transition={{duration: 2.5, delay: .6, ease: "easeInOut"}}/>
                                 <div className="pedestal-gradient ">
                                     <div className="bg-money bg-bottom bg-no-repeat bg-contain hourglass w-[540px] h-[540px] relative basis-full flex-1 flex flex-column justify-center max-width-parallax ">
                                         
@@ -98,7 +99,7 @@ const Value = () => {
 
                             {/* ANCHOR Desktop Lightbulb */}
                             <div className="h-full relative flex justify-center items-center overflow-hidden">
-                                <motion.img src={Lightbulb} alt="Lightbulb" className="mx-auto absolute top-0 z-[10]" animate={{ y: progress[2] ?  100 :-700 }} transition={{duration: .5, delay: .2}}/>
+                                <motion.img src={Lightbulb} alt="Lightbulb" className="mx-auto absolute top-0 z-[10]" animate={{ y: progress[2] ?  100 :50}} transition={{duration: 2.5, delay: .2, ease: "easeInOut"}}/>
 
                                 <div className="pedestal-gradient ">
                                     <div className="bg-lightbulb bg-bottom bg-no-repeat bg-contain hourglass w-[540px] h-[540px] relative basis-full flex-1 flex flex-column justify-center max-width-parallax ">
@@ -110,8 +111,8 @@ const Value = () => {
 
                             {/* ANCHOR Desktop Gears */}
                             <div className="h-full relative flex justify-center items-center overflow-hidden">
-                                <motion.img src={Gears2} alt="Gears" className="mx-auto absolute top-0 z-[12]" animate={{ y: progress[3] ?  70 :-700 }} transition={{duration: .75, delay: .2}}/>
-                                <motion.img src={Gears1} alt="Gears" className="mx-auto absolute top-0 z-[11]" animate={{ y: progress[3] ?  100 :-500 }}  transition={{duration: .5, delay: .2}}/>
+                                <motion.img src={Gears2} alt="Gears" className="mx-auto absolute top-0 z-[12]" animate={{ y: progress[3] ?  70 :20 }} transition={{duration: 2.75, delay: .2}}/>
+                                <motion.img src={Gears1} alt="Gears" className="mx-auto absolute top-0 z-[11]" animate={{ y: progress[3] ?  100 : 50 }}  transition={{duration: 2.5, delay: .2}}/>
                                 
                                 <div className="pedestal-gradient ">
                                     <div className="bg-gears bg-bottom bg-no-repeat bg-contain hourglass w-[540px] h-[540px] relative basis-full flex-1 flex flex-column justify-center max-width-parallax ">
@@ -121,7 +122,7 @@ const Value = () => {
                             </div>
                             
 
-
+                        
                         </div>
                     </ScrollSyncPane>
 
@@ -131,7 +132,8 @@ const Value = () => {
                         
 
                         
-                </div>
+                    </div>
+                    
                 </ScrollSync>
                 
             <div className="px-6 font-bold text-blue text-left flex gap-36 flex-col justify-between items-center w-full md:h-full md:flex-row md:container md:gap-4">
