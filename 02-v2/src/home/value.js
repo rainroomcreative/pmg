@@ -33,7 +33,7 @@ const Value = () => {
     
     return (
         
-        <div className="w-screen " >
+        <div className="w-screen" >
                 <ScrollSync>
                     
                     <div className="hidden md:flex flex-row sticky top-0 h-auto mb-32">
@@ -41,7 +41,7 @@ const Value = () => {
                         <div className="bg-blue w-full sticky rounded-e-2xl top-0 calc-sticky-blue-size"></div>
                     </div> */}
                     <ScrollSyncPane>
-                    <div className="w-1/2  max-h-[700px] overflow-scroll hide-scroll bg-blue flex flex-row snap-y rounded-e-[20px]" id="valueScrollController">
+                    <div className="w-1/2  max-h-[700px] overflow-scroll hide-scroll bg-blue flex flex-row snap-y snap-mandatory rounded-e-[20px]" id="valueScrollController">
                         <div className="sticky top-[270px] self-start  flex flex-col justify-center items centerborder-l border-l-white border-l-solid sticky-element w-52 pl-8 text-left">
                             <h3 className={`pl-4 border-l border-white text-white prog-numbers ${ progress[0] ? "show" : ""}`} data-name="hourglass">01</h3>
                             <h3 className={`pl-4 border-l border-white text-white prog-numbers ${ progress[1] ? "show" : ""}`} data-name="money">02</h3>
@@ -49,7 +49,7 @@ const Value = () => {
                             <h3 className={`pl-4 border-l border-white text-white prog-numbers ${ progress[3] ? "show" : ""}`} data-name="gears">04</h3>
                         </div>
                         {/* ANCHOR Desktop Hourglass */}
-                        <div>
+                        <div className="snap-y snap-mandatory">
                             <InView as="div" threshold={.8} onChange={(inView, entry) => inView ? handleProgress(0) : console.log("not in view")} className="snap-start max-width-parallax flex flex-col justify-center items-start hourglass h-full bg-red-500 basis-9/12 flex-1 pl-8 pr-8 text-left text-white value-text-box">
                                 <h3 className="text-3xl pointer-events-none">Get your time back</h3>
                                 <p className="text-base leading-8 mt-7 pointer-events-none">We specialize in taking the burden of inefficient and repetitive tasks off your plate and lets you focus your valuable time on what matters most - your business.</p>
