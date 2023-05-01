@@ -3,7 +3,7 @@ import {ReactComponent as Check} from "./images/checkmark.svg";
 
 const PricingTable = () => {
     return (
-        <div className="flex flex-col gap-8 lg:justify-center lg:flex-wrap xl:flex-nowrap lg:flex-row text-black container pb-24">
+        <div className="flex flex-col gap-x-8 gap-y-16 lg:justify-center lg:flex-wrap xl:flex-nowrap lg:flex-row text-black container pb-24">
             <div className="bg-lightBlue1 px-5 py-6 rounded-3xl flex flex-col justify-between align-center gap-6 lg:basis-[46%] xl:basis-1/4 flex-initial">
                 <div className="flex flex-col gap-6 align-center justify-center">
                     <h2 className="text-3xl pointer-events-none">Basic</h2>

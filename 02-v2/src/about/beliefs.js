@@ -15,7 +15,7 @@ const Beliefs = () => {
                         <h3 className="text-5xl pointer-events-none">{value.number}</h3>
                         <div className="flex flex-col justify-between items-center w-full gap-6">
                             <h2 className="text-3xl lg:text-2xl xl:text-3xl pointer-events-none">{value.title}</h2>
-                            <Arrow className="toggle-arrow lg:hidden"/>
+                            <Arrow className="toggle-arrow w-12 lg:hidden"/>
                         </div>
                         <p className="hidden text-base leading-8 text-left hidden-text pointer-events-none">{value.description}</p>
                     </div>
