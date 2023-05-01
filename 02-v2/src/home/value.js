@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Parallax } from 'react-scroll-parallax';
-import { ParallaxController } from 'parallax-controller';
+import {Link} from "react-router-dom";
 import Hourglass from "./images/Hourglass_White_2.svg";
 import Lightbulb from "./images/Lightbulb_White_2.svg";
 import Money1 from "./images/Money_White_2.svg";
@@ -57,7 +57,7 @@ const Value = () => {
                             <InView as="div" threshold={.8} onChange={(inView, entry) => inView ? handleProgress(1) : console.log("not in view")} className="snap-start max-width-parallax flex flex-col justify-center items-start money h-full basis-full flex-1 pl-8 pr-8 text-left text-white value-text-box">
                                 <h3 className="text-3xl pointer-events-none">Maximize Your Profits</h3>
                                 <p className="text-base leading-8 mt-7 pointer-events-none">Cut expenses and maximize profits by making the most of your company’s time and resources. Our cost-effective services are custom tailored to fit your budget, so you can get the help you need without breaking the bank.</p>
-                                <a href="/portfolio" className="w-full mt-5 bg-transparent border border-solid border-white text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See Case Studies</a>
+                                <Link to="/portfolio" className="w-full mt-5 bg-transparent border border-solid border-white text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See Case Studies</Link>
                             </InView>
                             <InView as="div" threshold={.8} onChange={(inView, entry) => inView ? handleProgress(2) : console.log("not in view")}  className="snap-start max-width-parallax flex flex-col justify-center items-start h-full lightbulb basis-full flex-1 pl-8 pr-8 text-left text-white value-text-box">
                                 <h3 className="text-3xl pointer-events-none">Work Smarter</h3>
@@ -66,7 +66,7 @@ const Value = () => {
                             <InView as="div" threshold={.8} onChange={(inView, entry) => inView ? handleProgress(3) : console.log("not in view")}  className="snap-start max-width-parallax flex flex-col justify-center items-start h-full gears basis-full flex-1 pl-8 pr-8 text-left text-white value-text-box">
                                 <h3 className="text-3xl pointer-events-none">Access Industry Professionals</h3>
                                 <p className="text-base leading-8 mt-7 pointer-events-none">In addition to fractional project management, our team has experience in design, web development, and marketing - giving you access to a diverse range of tools and skillsets.</p>
-                                <a href="/services" className="w-full mt-5 bg-transparent border border-solid border-white text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See our Services</a>
+                                <Link to="/services" className="w-full mt-5 bg-transparent border border-solid border-white text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See our Services</Link>
                             </InView>
                         </div>
                     </div>
@@ -168,7 +168,7 @@ const Value = () => {
                         <h2 className="text-5xl leading-loose border-b border-b-blue border-b-solid mb-5">02</h2>
                         <h3 className="text-3xl">Maximize Your Profits</h3>
                         <p className="text-base leading-8 mt-7">Cut expenses and maximize profits by making the most of your company’s time and resources. Our cost-effective services are custom tailored to fit your budget, so you can get the help you need without breaking the bank.</p>
-                        <a href="/portfolio" className="w-full mt-5 text-blue bg-transparent border border-solid border-blue text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See Case Studies</a>
+                        <Link to="/portfolio" className="w-full mt-5 text-blue bg-transparent border border-solid border-blue text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See Case Studies</Link>
                     </div>
                 </div>
                 <div className="flex flex-col justify-end items-center min-h-screen relative snap-always snap-center md:hidden">
@@ -198,7 +198,7 @@ const Value = () => {
                         <h2 className="text-5xl leading-loose border-b border-b-blue border-b-solid mb-5">04</h2>
                         <h3 className="text-3xl">Access Industry Professionals</h3>
                         <p className="text-base leading-8 mt-7">In addition to fractional project management, our team has experience in design, web development, and marketing - giving you access to a diverse range of tools and skillsets.</p>
-                        <a href="/services" className="w-full mt-5 text-blue bg-transparent border border-solid border-blue text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See our Services</a>
+                        <Link to="/services" className="w-full mt-5 text-blue bg-transparent border border-solid border-blue text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See our Services</Link>
                     </div>
                 </div>
             </div>

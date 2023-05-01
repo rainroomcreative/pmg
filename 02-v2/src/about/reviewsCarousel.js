@@ -29,9 +29,9 @@ const ReviewsCarousel = () => {
     return (
         <div className="bg-blue w-full text-white font-bold flex flex-col items-center py-20 px-6 relative md:flex-row md:justify-center md:py-8">
             <LeftArrow className={"hidden absolute left-6 md:block" + `${isActiveSlide <= 1 ? "hidden" : ""}`} onClick={decrement}/>
-            <div className="flex flex-col gap-14 justify-center items-center md:w-3/5">
+            <div className="flex flex-col gap-14 justify-center items-center w-full md:w-3/5">
                 <Quote className="hidden md:block" />
-                <div className="relative h-44 w-full">
+                <div className="relative h-60 md:h-44 w-full">
                     {reviews.map((review) => (
                         <ReviewItem key={review.id} review={review} active={isActiveSlide === review.id}/>
                     ))}

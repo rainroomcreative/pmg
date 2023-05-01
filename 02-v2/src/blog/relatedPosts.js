@@ -45,7 +45,8 @@ const RelatedPosts = ({slug}) => {
                 <div className="mb-12">
                     <h2 className="text-5xl font-bold text-black text-center pointer-events-none">More Blog Posts</h2>
                 </div>
-                <div className={"flex-col gap-14 md:grid md:grid-cols-3" + `${loading ? " flex" : " hidden"}`}>
+                <h3 className={"text-3xl font-bold text-blue pointer-events-none" + `${loading ? " flex" : " hidden"}`}>Loading...</h3>
+                <div className={"flex-col gap-14 md:grid md:grid-cols-3" + `${loading ? " hidden" : " flex"}`}>
                     {!loading && relatedPosts.map((blogPost, index) => (
                         <ArticleCard blogPost={blogPost} key={blogPost.id} index={index}/>
                     ))}
