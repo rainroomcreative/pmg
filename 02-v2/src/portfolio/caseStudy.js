@@ -3,7 +3,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 const CaseStudy = ({ caseStudy, index, onToggle, active }) => {
     const [isEven, setIsEven] = useState(false);
-
+    const [tabActive, setTabActive] = useState("1");
     
     useEffect(() => {
         const isEven = () => {
@@ -15,6 +15,10 @@ const CaseStudy = ({ caseStudy, index, onToggle, active }) => {
         } 
         isEven();
     }, []);
+
+    const changeTab = (id) => {
+        setTabActive(id);
+    }
 
     function handleMonth(stat, id) {
         let moIndex = stat.indexOf('/mo');
@@ -35,11 +39,19 @@ const CaseStudy = ({ caseStudy, index, onToggle, active }) => {
                     </div>
                     <div className="w-full lg:w-1/2 text-left flex flex-col gap-6 font-bold">
                         <h2 className="text-5xl pointer-events-none">{caseStudy.companyName}</h2>
-                        <div className="relative">
-                            <p className="text-base leading-8 caseStudy-description hide-scroll">{caseStudy.description}</p>
-                            <div className={"w-full top-0 flex flex-col justify-end items-center pb-1" + `${ isEven ? " bg-blueFade" : " bg-whiteFade2"}` + `${ active ? " remove-bg" : " absolute h-full"}`}>
-                                <p className="text-base font-normal cursor-pointer hover:text-gold" onClick={onToggle}>{active ? "Show Less" : "Show More"}</p>
-                            </div>
+                        <div className="flex flex-row gap-4">
+                            <p className={"text-sm md:text-base cursor-pointer p-1 border-b-solid" + `${ tabActive === '1' ? " border-b" : ""}` + `${ isEven ? " border-b-white" : " border-b-black"}`} onClick={() => changeTab('1')}>Background</p>
+                            <p className={"text-sm md:text-base cursor-pointer p-1 border-b-solid" + `${ tabActive === '2' ? " border-b" : ""}` + `${ isEven ? " border-b-white" : " border-b-black"}`} onClick={() => changeTab('2')}>Challenges</p>
+                            <p className={"text-sm md:text-base cursor-pointer p-1 border-b-solid" + `${ tabActive === '3' ? " border-b" : ""}` + `${ isEven ? " border-b-white" : " border-b-black"}`} onClick={() => changeTab('3')}>Solution</p>
+                            <p className={"text-sm md:text-base cursor-pointer p-1 border-b-solid" + `${ tabActive === '4' ? " border-b" : ""}` + `${ isEven ? " border-b-white" : " border-b-black"}`} onClick={() => changeTab('4')}>Results</p>
+                            <p className={"text-sm md:text-base cursor-pointer p-1 border-b-solid" + `${ tabActive === '5' ? " border-b" : ""}` + `${ isEven ? " border-b-white" : " border-b-black"}`} onClick={() => changeTab('5')}>Conclusion</p>
+                        </div>
+                        <div className="relative h-64 text-base leading-8">
+                            <p className={"pointer-events-none absolute top left transition-opacity duration-1000" + `${ tabActive === '1' ? " opacity-100" : " opacity-0"}`}>{caseStudy.backgroundCopy}</p>
+                            <p className={"pointer-events-none absolute top left transition-opacity duration-1000" + `${ tabActive === '2' ? " opacity-100" : " opacity-0"}`}>{caseStudy.challengesCopy}</p>
+                            <p className={"pointer-events-none absolute top left transition-opacity duration-1000" + `${ tabActive === '3' ? " opacity-100" : " opacity-0"}`}>{caseStudy.solutionCopy}</p>
+                            <p className={"pointer-events-none absolute top left transition-opacity duration-1000" + `${ tabActive === '4' ? " opacity-100" : " opacity-0"}`}>{caseStudy.resultsCopy}</p>
+                            <p className={"pointer-events-none absolute top left transition-opacity duration-1000" + `${ tabActive === '5' ? " opacity-100" : " opacity-0"}`}>{caseStudy.conclusionCopy}</p>
                         </div>
                         <div className="flex flex-row gap-5 justify-between items-start text-center">
                             <div className="w-1/3 gap-2 flex flex-column items-center justify-center">

@@ -33,7 +33,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="w-full flex flex-col py-12 px-6 text-left text-blue font-bold lg:flex-row lg:justify-between lg:gap-28 container mx-auto" id="contact">
+    <div className="w-full flex flex-col py-14 px-6 text-left text-blue font-bold lg:flex-row lg:justify-between lg:gap-28 container mx-auto" id="contact">
       <div className="mb-12 lg:w-1/2">
         <h2 className="text-5xl mb-12 pointer-events-none">Ready To Start?</h2>
         <p className="text-base leading-8 pointer-events-none">Save time and money through our expert fractional project management consulting services. We look forward to building a successful partnership with you!</p>

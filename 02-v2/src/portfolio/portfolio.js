@@ -37,7 +37,11 @@ const Portfolio = () => {
               url
             }
             companyName
-            description
+            backgroundCopy
+            challengesCopy
+            conclusionCopy
+            resultsCopy
+            solutionCopy
             statisticNumber1
             statisticText1
             statisticNumber2
