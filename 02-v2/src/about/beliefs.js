@@ -11,7 +11,7 @@ const Beliefs = () => {
             </div>
             <div className="flex flex-col text-white gap-11 justify-center font-bold items-start lg:flex-row">
                 {coreValues.map((value) => (
-                    <div key={value.id} className="bg-blue px-5 py-6 text-left w-full rounded-3xl flex flex-col shrink justify-center items-start gap-6 service-card h-52 hover:h-80 lg:w-1/4 lg:h-60 transition-all">
+                    <div key={value.id} className="bg-blue px-5 py-6 text-left w-full rounded-3xl flex flex-col shrink justify-center items-start gap-6 duration-500 service-card h-52 hover:h-80 lg:w-1/4 lg:h-60 transition-all">
                         <h3 className="text-5xl pointer-events-none">{value.number}</h3>
                         <div className="flex flex-col justify-between items-center w-full gap-6">
                             <h2 className="text-3xl lg:text-2xl xl:text-3xl pointer-events-none">{value.title}</h2>

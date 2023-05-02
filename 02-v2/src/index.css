@@ -78,20 +78,6 @@ body {
   display: flex;
 }
 
-.caseStudy .caseStudy-description {
-  max-height: 275px;
-  overflow: hidden;
-}
-
-.caseStudy.active .caseStudy-description {
-  overflow: scroll;
-  max-height: 60vh;
-}
-
-.caseStudy.active {
-  min-height: fit-content;
-}
-
 .remove-bg {
   background-image: none !important;
 }

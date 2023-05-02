@@ -1,5 +1,5 @@
 import React from "react";
-import RocketImage from "./images/Rocket.svg";
+import RocketImage from "./images/Rocket.png";
 import { Parallax } from 'react-scroll-parallax';
 
 function Rocket() {

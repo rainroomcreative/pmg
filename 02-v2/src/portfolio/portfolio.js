@@ -8,6 +8,7 @@ import CaseStudy from "./caseStudy";
 const Portfolio = () => {
   const [caseStudies, setCaseStudy] = useState(null);
   const [isActive, setIsActive] = useState("0");
+  const [loading, setLoading] = useState(true);
 
   const toggleCaseStudy = (id) => {
     console.log('id: ', id)
@@ -54,7 +55,7 @@ const Portfolio = () => {
     `
     );
       setCaseStudy(caseStudies);
-          
+      setLoading(false);
     }
     fetchCaseStudies();
   }, []);
@@ -65,7 +66,8 @@ const Portfolio = () => {
         <div>
           <Hero />
           <div className="w-full caseStudy-container">
-            {caseStudies && caseStudies.map((caseStudy, index) => (
+          <h2 className={"pointer-events-none text-blue font-bold text-3xl" + `${loading ? " block" : " hidden"}`}>Loading...</h2>
+            {!loading && caseStudies.map((caseStudy, index) => (
                 <CaseStudy caseStudy={caseStudy} key={caseStudy.id} index={index} onToggle={() => toggleCaseStudy(caseStudy.id)} active={isActive === caseStudy.id}/>
               ))}
           </div>

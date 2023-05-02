@@ -25,7 +25,9 @@ const Team = () => {
                     <TeamMember key={member.id} member={member} onClick={() => handleShowBio(member.id)}/>
                 ))}
             </div>
-            <div className={"fixed top-0 left-0 px-6 z-20 w-screen h-screen bg-popupGradient flex-col justify-center items-center delay-1000 ease-in-out duration-1000 opacity-0 transition-opacity" + `${showBio > 0 ? " flex opacity-100 transition-opacity" : " hidden"}`}>
+            <div className={"fixed top-0 left-0 px-6 w-screen h-screen flex-col z-20 justify-center items-center delay-1000 ease-in-out duration-1000 opacity-0 transition-opacity" + `${showBio > 0 ? " flex opacity-100 transition-opacity" : " hidden"}`}>
+                <div className={"absolute top-0 left-0 w-screen h-screen bg-popupGradient z-30 cursor-pointer"} onClick={() => handleShowBio(showBio)}>
+                </div>
                 {teamMembers.map((member) => (
                     <TeamMemberBio key={member.id} member={member} active={showBio === member.id} onClick={() => handleShowBio(member.id)}/>
                 ))}

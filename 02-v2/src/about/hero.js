@@ -9,7 +9,7 @@ class Hero extends React.Component {
                     <h1 className="text-5xl pointer-events-none">Why Project Management Group?</h1>
                     <p className="text-base leading-8 mt-10 pointer-events-none">Project Management Group remains committed to its mission of delivering client-focused project management services that prioritize measurable outcomes while being affordable. Our team recognizes the importance of delivering customized solutions that are tailored to meet the unique requirements of each client without breaking the bank. We strive to ensure that our clients receive the highest quality service that exceeds their expectations and look forward to the opportunity to work with you.</p>
                 </div>
-                <div className="row-span-2 col-span-1 bg-aboutHero h-screen bg-cover bg-no-repeat bg-top md:bg-contain md:bg-bottom">
+                <div className="row-span-2 col-span-1 bg-aboutHero h-120 md:h-screen bg-cover bg-no-repeat bg-top md:bg-contain md:bg-bottom">
                 </div>
             </div>
         );
