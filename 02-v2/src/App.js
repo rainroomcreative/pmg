@@ -19,6 +19,7 @@ import TermsAndPrivacyPolicy from './terms/terms-and-privacy-policy';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import ScrollToTop from './includes/scrollToTop';
 
+
 class App extends React.Component {
   render() {
     return (

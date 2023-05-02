@@ -5,10 +5,6 @@
   "proxy": "http://localhost:3000",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "env-cmd": "^10.1.0",
     "framer-motion": "^10.12.4",
     "graphql": "^16.6.0",
     "graphql-request": "^6.0.0",
@@ -25,8 +21,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "analyze-build-bundle": "node scripts/analyze_build_bundle.js",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build --stats",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:staging": "env-cmd -f .env.staging npm run build"
@@ -50,7 +47,13 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
     "dotenv": "^16.0.3",
-    "tailwindcss": "^3.3.1"
+    "env-cmd": "^10.1.0",
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "tailwindcss": "^3.3.1",
+    "webpack-bundle-analyzer": "^4.8.0"
   }
 }
