@@ -15,9 +15,11 @@ const Hero = () => {
                         end={50}
                         duration={1.5}
                         suffix="%"
+                        enableScrollSpy={true}
+                        scrollSpyOnce={true}
                         >
                             {({ countUpRef, start }) => (
-                                <h3 className="text-3xl xl:text-5xl pointer-events-none" ref={countUpRef} onLoad={start}></h3>                                
+                                <h3 className="text-3xl xl:text-5xl pointer-events-none" ref={countUpRef}></h3>                                
                             )}
                         </CountUp>
                     <h4 className="text-sm mt-6 pointer-events-none">Cheaper than competitors.</h4>
@@ -32,9 +34,12 @@ const Hero = () => {
                     decimal="."
                     prefix="$"
                     suffix="M"
+                    enableScrollSpy={true}
+                    scrollSpyOnce={true}
+                    scrollSpyDelay={1500}
                     >
                         {({ countUpRef, start }) => (
-                            <h3 className="text-3xl xl:text-5xl pointer-events-none" ref={countUpRef} onLoad={start}></h3>                                
+                            <h3 className="text-3xl xl:text-5xl pointer-events-none" ref={countUpRef}></h3>                                
                         )}
                     </CountUp>
                     <h4 className="text-sm mt-6 pointer-events-none">Managed Projects </h4>
@@ -45,9 +50,12 @@ const Hero = () => {
                         end={2000}
                         delay={3}
                         duration={1.5}
+                        enableScrollSpy={true}
+                        scrollSpyOnce={true}
+                        scrollSpyDelay={3000}
                         >
                             {({ countUpRef, start }) => (
-                                <h3 className="text-3xl xl:text-5xl pointer-events-none" ref={countUpRef} onLoad={start}></h3>                                
+                                <h3 className="text-3xl xl:text-5xl pointer-events-none" ref={countUpRef}></h3>                                
                             )}
                     </CountUp>
                     <h4 className="text-sm mt-6 pointer-events-none">Client hours saved</h4>
@@ -60,9 +68,12 @@ const Hero = () => {
                         duration={1.5}
                         prefix="$"
                         suffix="k+"
+                        enableScrollSpy={true}
+                        scrollSpyOnce={true}
+                        scrollSpyDelay={4500}
                         >
                             {({ countUpRef, start }) => (
-                                <h3 className="text-3xl xl:text-5xl pointer-events-none" ref={countUpRef} onLoad={start}></h3>                                
+                                <h3 className="text-3xl xl:text-5xl pointer-events-none" ref={countUpRef}></h3>                                
                             )}
                     </CountUp>
                     <h4 className="text-sm mt-6 pointer-events-none">Saved in our clients expenses</h4>

@@ -23,7 +23,7 @@
   "scripts": {
     "analyze-build-bundle": "node scripts/analyze_build_bundle.js",
     "start": "react-scripts start",
-    "build": "react-scripts build --stats",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:staging": "env-cmd -f .env.staging npm run build"
