@@ -17,7 +17,6 @@ class Footer extends React.Component {
                             <li><Link to="/about">Why PMG?</Link></li>
                             <li><Link to="/portfolio">Case Studies</Link></li>
                             <li><Link to="/pricing">Pricing</Link></li>
-                            <li><Link to="/blog">Blog</Link></li>
                             <li><Link to="/services">Services</Link></li>
                         </ul>
                     </div>
