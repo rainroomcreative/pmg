@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import ScrollAnimation from 'react-animate-on-scroll';
+import {ReactComponent as Chart} from './images/chart.svg';
 
 const CaseStudy = ({ caseStudy, index, onToggle, active }) => {
     const [isEven, setIsEven] = useState(false);
@@ -59,9 +60,18 @@ const CaseStudy = ({ caseStudy, index, onToggle, active }) => {
                         <div className="flex flex-row gap-5 justify-between items-start text-center">
                             <div className="w-1/3 gap-2 flex flex-column items-center justify-center">
                                 <ScrollAnimation animateIn="fadeInUp" delay={500} animateOnce="true">
-                                    {!!(caseStudy.statisticNumber1) ? 
-                                        <p className="text-3xl pointer-events-none" id={caseStudy.companyName + '-statisticNumber1'}>{caseStudy.statisticNumber1.includes('/mo') ? handleMonth(caseStudy.statisticNumber1, caseStudy.companyName + '-statisticNumber1') : caseStudy.statisticNumber1}</p>
-                                    : null }
+                                    <p className="text-3xl pointer-events-none" id={caseStudy.companyName + '-statisticNumber1'}>{
+                                        !!(caseStudy.statisticNumber1) ? (
+                                            caseStudy.statisticNumber1.includes('/mo') ?
+                                            handleMonth(caseStudy.statisticNumber1, caseStudy.companyName + '-statisticNumber1')
+                                            : caseStudy.statisticNumber1
+                                        )
+                                        :(
+                                            !!(caseStudy.statisticText1) ? 
+                                            <Chart />
+                                            : null
+                                        )
+                                    }</p>
                                     {!!(caseStudy.statisticText1) ?
                                         <p className="text-sm font-normal pointer-events-none">{caseStudy.statisticText1}</p>
                                     : null }
@@ -69,9 +79,18 @@ const CaseStudy = ({ caseStudy, index, onToggle, active }) => {
                             </div>
                             <div className="w-1/3 gap-2 flex flex-column items-center justify-center">
                                 <ScrollAnimation animateIn="fadeInUp" delay={1000} animateOnce="true">
-                                    {!!(caseStudy.statisticNumber2) ? 
-                                        <p className="text-3xl pointer-events-none" id={caseStudy.companyName + '-statisticNumber2'}>{caseStudy.statisticNumber2.includes('/mo') ? handleMonth(caseStudy.statisticNumber2, caseStudy.companyName + '-statisticNumber2') : caseStudy.statisticNumber2}</p>
-                                    : null }
+                                        <p className="text-3xl pointer-events-none" id={caseStudy.companyName + '-statisticNumber2'}>{
+                                            !!(caseStudy.statisticNumber2) ? (
+                                                caseStudy.statisticNumber2.includes('/mo') ?
+                                                handleMonth(caseStudy.statisticNumber2, caseStudy.companyName + '-statisticNumber2')
+                                                : caseStudy.statisticNumber2
+                                            )
+                                            : (
+                                                !!(caseStudy.statisticText2) ? 
+                                                <Chart />
+                                                : null
+                                            )
+                                        }</p>
                                     {!!(caseStudy.statisticText2) ?
                                         <p className="text-sm font-normal pointer-events-none">{caseStudy.statisticText2}</p>
                                     : null }
@@ -79,11 +98,21 @@ const CaseStudy = ({ caseStudy, index, onToggle, active }) => {
                             </div>
                             <div className="w-1/3 gap-2 flex flex-column items-center justify-center">
                                 <ScrollAnimation animateIn="fadeInUp" delay={1500} animateOnce="true">
-                                    {!!(caseStudy.statisticNumber3) ?
-                                        <p className="text-3xl pointer-events-none" id={caseStudy.companyName + '-statisticNumber3'}>{caseStudy.statisticNumber3.includes('/mo') ? handleMonth(caseStudy.statisticNumber3, caseStudy.companyName + '-statisticNumber3') : caseStudy.statisticNumber3}</p>
-                                    : null }
+                                    <p className="text-3xl pointer-events-none" id={caseStudy.companyName + '-statisticNumber3'}>{
+                                        !!(caseStudy.statisticNumber3) ? 
+                                        (
+                                            caseStudy.statisticNumber3.includes('/mo') ? 
+                                            handleMonth(caseStudy.statisticNumber3, caseStudy.companyName + '-statisticNumber3')
+                                            : caseStudy.statisticNumber3
+                                        )
+                                        : (
+                                            !!(caseStudy.statisticText3) ? 
+                                            <Chart />
+                                            : null
+                                        )
+                                    }</p>
                                     {!!(caseStudy.statisticText3) ?
-                                        <p className="text-sm font-normal pointer-events-none">{caseStudy.statisticText3}</p>
+                                    <p className="text-sm font-normal pointer-events-none">{caseStudy.statisticText3}</p>
                                     : null }
                                 </ScrollAnimation>
                             </div>
