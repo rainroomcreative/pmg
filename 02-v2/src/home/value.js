@@ -162,7 +162,7 @@ const Value = () => {
                             <img src={Money1} alt="Get your time back" className="mx-auto" />
                         </Parallax>
                     </div>
-                    <div className="flex flex-col justify-end items-start h-full z-30 pt-60">
+                    <div className="relative top-48 pb-48 flex flex-col justify-end items-start h-full z-30 pt-60">
                         <h2 className="text-5xl leading-loose border-b border-b-blue border-b-solid mb-5">02</h2>
                         <h3 className="text-3xl">Maximize Your Profits</h3>
                         <p className="text-base leading-8 mt-7">Cut expenses and maximize profits by making the most of your company’s time and resources. Our cost-effective services are custom tailored to fit your budget, so you can get the help you need without breaking the bank.</p>
@@ -191,7 +191,7 @@ const Value = () => {
                             <img src={Gears1} alt="Gears" className="mx-auto" />
                         </Parallax>
                     </div>
-                    <div className="flex flex-col justify-end items-start h-full z-20 pt-60">
+                    <div className="relative top-48 pb-48 flex flex-col justify-end items-start h-full z-20 pt-60">
                         <h2 className="text-5xl leading-loose border-b border-b-blue border-b-solid mb-5">04</h2>
                         <h3 className="text-3xl">Access Industry Professionals</h3>
                         <p className="text-base leading-8 mt-7">In addition to fractional project management, our team has experience in design, web development, and marketing - giving you access to a diverse range of tools and skillsets.</p>
