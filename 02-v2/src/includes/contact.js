@@ -4,15 +4,10 @@ import{ init } from '@emailjs/browser';
 import ReCAPTCHA from "react-google-recaptcha";
 
 function ContactForm() {
-  const [verified, setVerified] = React.useState(true);
+  const [verified, setVerified] = React.useState(false);
   const form = useRef();
 
-  // init(`${process.env.REACT_APP_PUBLIC_KEY}`);
-  init('cNk1mfqpT9FV0hid4');//qyO_84NGytDS3n3DeB5MZ
-
-  console.log('process.env.REACT_APP_SERVICE_ID', process.env.REACT_APP_SERVICE_ID);
-  console.log('process.env.REACT_APP_TEMPLATE_ID', process.env.REACT_APP_TEMPLATE_ID);
-  console.log('process.env.REACT_APP_PUBLIC_KEY', process.env.REACT_APP_PUBLIC_KEY);
+  init(`${process.env.REACT_APP_PUBLIC_KEY}`);
 
   const handleVerify = () => {
     setVerified(true);
@@ -32,7 +27,7 @@ function ContactForm() {
           e.target.innerHTML = "Message Sent!";
           e.target.setAttribute('disabled', 'true');
           e.target.style.pointerEvents = 'none';
-          e.target.backgroundColor = '#d3a223';
+          e.target.style.backgroundColor = '#d3a223';
           console.log(result.text);
         },
         (error) => {
