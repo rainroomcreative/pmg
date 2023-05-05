@@ -36,7 +36,7 @@ const CaseStudy = ({ caseStudy, index, onToggle, active }) => {
         <div className={"w-full min-h-screen px-6 pt-12 pb-24 flex flex-col items-center justify-center lg:pt-24 lg:sticky top-0 caseStudy" + `${ isEven ? " bg-blue text-white" : " bg-grid-lines bg-cover bg-fixed text-black"}` + `${active ? " active" : ""}`} style={{zIndex: {index} + 100}}>
             <ScrollAnimation animateIn="fadeInUp" animateOnce="true" className="w-full">
                 <div className={"container mx-auto w-full flex flex-col items-center md:gap-28 md:justify-between" + `${ isEven ? " md:flex-row" : " md:flex-row-reverse"}`}>
-                    <div className="w-full flex justify-center items-center px-6 lg:w-1/2">
+                    <div className="w-full flex justify-center items-center px-6 pb-12 lg:w-1/2">
                         {!!caseStudy.logoWhite && !!caseStudy.logoBlack && (
                         <img src={isEven ? caseStudy.logoWhite.url : caseStudy.logoBlack.url} alt={caseStudy.companyName} />
                         )}
