@@ -55,6 +55,6 @@ export const questions = [
     {
         id: 8,
         question: "What types of projects can you help with?",
-        answer: "This is an answer"
+        answer: "At the Partnered Program, we are proud to have a team of highly experienced project managers with over 30 years of combined expertise. Our project managers have the knowledge, skills, and tools needed to work with any project that your organization may have. With their expertise, they can help you streamline your project management processes, identify potential risks and opportunities, and deliver successful outcomes. Whether you're starting a new project or need to revamp your existing ones, our team is here to help you achieve your project goals."
     },
 ]
