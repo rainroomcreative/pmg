@@ -7,7 +7,7 @@ const TermsAndPrivacyPolicy = () => {
             <div className="py-24" id="privacy-policy">
                 <div className="font-bold text-left text-left flex flex-col gap-6 text-base mb-6">
                     <h1 className="text-5xl pointer-events-none">Privacy Policy for Partnered Management Group LLC</h1>
-                    <p className="text-base leading-8 pointer-events-none">At Partnered Management Group, accessible from 02designstudio.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Partnered Management Group and how we use it.</p>
+                    <p className="text-base leading-8 pointer-events-none">At Partnered Management Group, accessible from partneredmg.com and partneredmanagementgroup.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Partnered Management Group and how we use it.</p>
                     <p className="text-base leading-8 pointer-events-none">If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
                     <p className="text-base leading-8 pointer-events-none">This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Partnered Management Group. This policy is not applicable to any information collected offline or via channels other than this website.</p>
                 </div>
