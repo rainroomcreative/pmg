@@ -11,7 +11,7 @@ const FaqItem = ({faq, onToggle, active}) => {
                     <h4 className="cursor-pointer">{question}</h4>
                     <Plus className={active? 'rotate-45 transition-all' : 'rotate-0 transition-all'}/>
                 </div> 
-                <div className={"font-normal mt-8 transition-all pointer-events-none" + `${active? ' block' : ' hidden'}`}>{answer}</div>
+                <div className={"font-normal mt-8 transition-all pointer-events-none" + `${active? ' block' : ' hidden'}`} dangerouslySetInnerHTML={answer}></div>
             </div>
         </div> 
     )
