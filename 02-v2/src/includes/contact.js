@@ -33,10 +33,10 @@ function ContactForm() {
   };
 
   return (
-    <div className="w-full flex flex-col py-14 px-6 text-left text-blue font-bold lg:flex-row lg:justify-between lg:gap-28 container mx-auto" id="contact">
+    <div className="w-full flex flex-col py-14 px-6 text-left text-blue font-bold lg:flex-row lg:justify-between lg:gap-28 container mx-auto bg-grid-lines" id="contact">
       <div className="mb-12 lg:w-1/2">
         <h2 className="text-5xl mb-12 pointer-events-none">Ready To Start?</h2>
-        <p className="text-base leading-8 pointer-events-none">Save time and money through our expert fractional project management consulting services. We look forward to building a successful partnership with you!</p>
+        <p className="text-base leading-8 pointer-events-none max-w-lg">Save time and money through our expert fractional project management consulting services. We look forward to building a successful partnership with you!</p>
       </div>
       <div className="lg:w-1/2">
         <h3 className="text-3xl border-b-blue border-b-solid border-b pb-5 pointer-events-none">Send Us a Message</h3>
