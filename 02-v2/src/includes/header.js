@@ -38,8 +38,6 @@ const Header = () => {
                         <li className="lg:pb-0.5 lg:border-b-solid lg:border-b lg:border-b-blue hover:lg:border-b-white"><Link to="/about">Why PMG?</Link></li>
                         <li className="lg:pb-0.5 lg:border-b-solid lg:border-b lg:border-b-blue hover:lg:border-b-white"><Link to="/portfolio">Case Studies</Link></li>
                         <li className="lg:pb-0.5 lg:border-b-solid lg:border-b lg:border-b-blue hover:lg:border-b-white"><Link to="/services">Services</Link></li>
-                        <li className="lg:pb-0.5 lg:border-b-solid lg:border-b lg:border-b-blue hover:lg:border-b-white"><Link to="/pricing">Pricing</Link></li>
-                        <li className="lg:pb-0.5 lg:border-b-solid lg:border-b lg:border-b-blue hover:lg:border-b-white"><Link to="/blog">Blog</Link></li>
                         <li className="text-black bg-white py-3 px-14 rounded-3xl max-w-sm w-full mx-auto lg:w-fit lg:mx-0"><a href="#contact">Contact Us</a></li>
                         <li className="w-full flex flex-row items-center justify-center gap-6 lg:hidden">
                             <a href="https://www.linkedin.com/company/partnered-management-group" target="_blank" rel="noreferrer">
