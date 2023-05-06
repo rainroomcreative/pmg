@@ -1,5 +1,5 @@
 {
-  "name": "Partnered Management Group",
+  "name": "pmg",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3000",
@@ -22,7 +22,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "analyze-build-bundle": "node scripts/analyze_build_bundle.js",
+    "analyze-build-bundle": "yarn scripts/analyze_build_bundle.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -8,7 +8,6 @@ import LogRocket from 'logrocket';
 if (process.env.NODE_ENV === 'production') {
 
   LogRocket.init(`${process.env.REACT_APP_appId}`);
-  firebase.analytics();
 };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
