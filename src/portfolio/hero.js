@@ -22,7 +22,7 @@ const Hero = () => {
                                 <h3 className="text-3xl xl:text-5xl pointer-events-none" ref={countUpRef}></h3>                                
                             )}
                         </CountUp>
-                    <h4 className="text-sm mt-6 pointer-events-none">Cheaper than competitors.</h4>
+                    <h4 className="text-sm mt-6 pointer-events-none">Cheaper than competitors</h4>
                 </div>
                 <div className="w-full lg:w-1/4 lg:bg-blue rounded-3xl p-6">
                     <CountUp

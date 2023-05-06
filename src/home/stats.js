@@ -21,7 +21,7 @@ const Stats = () => {
                                 <h3 className="text-3xl pointer-events-none" ref={countUpRef}></h3>                                
                             )}
                         </CountUp>
-                    <h4 className="text-sm mt-6 pointer-events-none">Cheaper than competitors.</h4>
+                    <h4 className="text-sm mt-6 pointer-events-none">Cheaper than competitors</h4>
                 </div>
                 <div className="w-1/3">
                     <CountUp
