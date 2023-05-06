@@ -60,7 +60,7 @@ const Portfolio = () => {
     fetchCaseStudies();
   }, []);
 
-  console.log({caseStudies});  
+  //console.log({caseStudies});  
 
     return (
         <div>

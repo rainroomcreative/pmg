@@ -1,7 +1,7 @@
 export const reviews = [
     {
         id: 1,
-        reviewContent: "August is a very helpful project manager and has had a lot of ideas to help improve our process along the way. He's got a go-getter kind of attitude and knows how to go from idea to execution.",
+        reviewContent: "Jeff is a very helpful project manager and has had a lot of ideas to help improve our process along the way. He's got a go-getter kind of attitude and knows how to go from idea to execution.",
     },
     {
         id: 2,
@@ -9,19 +9,19 @@ export const reviews = [
     },
     {
         id: 3,
-        reviewContent: "Communication and response from August.  August has a great personality.  It felt like a team which is very important as we work with vendors.  August displayed technical knowledge and provided guidance to the team.",
+        reviewContent: "Communication and response from the PMG team was prompt and consistent. It felt like a team which is very important as we work with vendors.  Jeff from the PMG team displayed technical knowledge and provided guidance to the team.",
     },
     {
         id: 4,
-        reviewContent: "I felt August corrected what was not going very well in our weekly then bi weekly status calls. We moved more to a standup type nature rather than listening to the project plan be read thru.  Once August took over that role and face of the project it was smoother.",    
+        reviewContent: "Shaelyn corrected what was not going very well in our weekly then bi weekly status calls. We moved more to a standup type nature rather than listening to the project plan be read thru.  Once Shaelyn took over that role and face of the project it was smoother.",    
     },
     {
         id: 5,
-        reviewContent: "Performed to the best of his abilities, which far exceeded what i was expecting. Completed the project 2 weeks before the proposed deadline and was very hands on with the project and his communication was spot on.",    
+        reviewContent: "Al performed to the best of his abilities. PMG completed the project 2 weeks before the proposed deadline and was very hands on with the project and his communication was spot on.",    
     },
     {
         id: 6,
-        reviewContent: "Once again August did a great job completing this short WordPress project and even providing a same-day turnaround so we could get it live quickly.",    
+        reviewContent: "Josh did a great job completing this short WordPress project and even providing a same-day turnaround so we could get it live quickly.",    
     },
     {
         id: 7,

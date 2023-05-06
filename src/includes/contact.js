@@ -44,7 +44,7 @@ function ContactForm() {
       </div>
       <div className="lg:w-1/2">
         <h3 className="text-3xl border-b-blue border-b-solid border-b pb-5 pointer-events-none">Send Us a Message</h3>
-        <form className="mt-12 gap-2.5 flex flex-col w-full md:grid" onSubmit={sendEmail}>
+        <form className="mt-12 gap-2.5 flex flex-col w-full md:grid"  onSubmit={sendEmail}>
           <div className="w-full flex flex-col gap-2 md:col-span-1">
             <label className="text-sm" htmlFor="first_name">First Name*</label>
             <input className="border-blue border border-solid rounded-3xl h-10 px-3" type="text" id="first_name" name="first_name" required/>
