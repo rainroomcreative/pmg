@@ -1,5 +1,5 @@
 {
-  "name": "02-v2",
+  "name": "Partnered Management Group",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3000",
@@ -8,6 +8,7 @@
     "framer-motion": "^10.12.4",
     "graphql": "^16.6.0",
     "graphql-request": "^6.0.0",
+    "logrocket": "^4.0.1",
     "react": "^18.2.0",
     "react-animate-on-scroll": "^2.1.5",
     "react-countup": "^6.4.2",
