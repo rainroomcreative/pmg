@@ -58,7 +58,7 @@ function ContactForm() {
             <input className="border-blue border border-solid rounded-3xl h-10 px-3" type="email" id="email" name="email" required/>
           </div>
           <div className="w-full flex flex-col gap-2 md:col-span-1">
-            <label className="text-sm" htmlFor="phone">Phone</label>
+            <label className="text-sm" htmlFor="phone_number">Phone</label>
             <input className="border-blue border border-solid rounded-3xl h-10 px-3" type="tel" id="phone" name="phone" />
           </div>
           <div className="w-full flex flex-col gap-2 md:col-span-2">
