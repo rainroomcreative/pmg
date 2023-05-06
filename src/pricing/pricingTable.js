@@ -24,7 +24,7 @@ const PricingTable = () => {
                         </li>
                         <li className="flex flex-row gap-4 items-center">
                             <Check/>
-                            <p className="text-sm pointer-events-none">Dedicated Support through email: M - F</p>
+                            <p className="text-sm pointer-events-none">Dedicated Support through email</p>
                         </li>
                         <li className="flex flex-row gap-4 items-center">
                             <Check/>
@@ -55,7 +55,7 @@ const PricingTable = () => {
                         </li>
                         <li className="flex flex-row gap-4 items-center">
                             <Check className="white-check"/>
-                            <p className="text-sm pointer-events-none">Dedicated Slack Channel Support: M - F</p>
+                            <p className="text-sm pointer-events-none">Dedicated Slack Channel Support</p>
                         </li>
                         <li className="flex flex-row gap-4 items-center">
                             <Check className="white-check"/>
@@ -86,7 +86,7 @@ const PricingTable = () => {
                         </li>
                         <li className="flex flex-row gap-4 items-center">
                             <Check/>
-                            <p className="text-sm pointer-events-none">Dedicated Slack Channel Support: M - F</p>
+                            <p className="text-sm pointer-events-none">Dedicated Slack Channel Support</p>
                         </li>
                         <li className="flex flex-row gap-4 items-center">
                             <Check/>
@@ -105,7 +105,7 @@ const PricingTable = () => {
                     <ul className="flex flex-col gap-7 text-left">
                         <li className="flex flex-row gap-4 items-center">
                             <Check/>
-                            <p className="text-sm pointer-events-none">75+ Management Hours</p>
+                            <p className="text-sm pointer-events-none">Starting at 75 Management Hours</p>
                         </li>
                         <li className="flex flex-row gap-4 items-center">
                             <Check/>
@@ -113,15 +113,15 @@ const PricingTable = () => {
                         </li>
                         <li className="flex flex-row gap-4 items-center">
                             <Check/>
-                            <p className="text-sm pointer-events-none">2 hour Response Time</p>
+                            <p className="text-sm pointer-events-none">Same Day Response Time</p>
                         </li>
                         <li className="flex flex-row gap-4 items-center">
                             <Check/>
-                            <p className="text-sm pointer-events-none">Dedicated Support through email: M - F</p>
+                            <p className="text-sm pointer-events-none">Dedicated Slack Channel Support</p>
                         </li>
                         <li className="flex flex-row gap-4 items-center">
                             <Check/>
-                            <p className="text-sm pointer-events-none">Access to 4 Templates</p>
+                            <p className="text-sm pointer-events-none">Access to all Templates</p>
                         </li>
                         <li className="flex flex-row gap-4 items-center">
                             <Check/>
