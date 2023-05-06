@@ -8,8 +8,9 @@ const Pricing = () => {
         <div>
             <div className="w-full flex flex-col px-6 container mx-auto font-bold">
                 <div className="text-black text-left py-24">
-                    <h1 className="text-5xl lg:text-center pointer-events-none">Fractional Rates - Maximum Results</h1>
-                    <p className="text-base leading-8 mt-10 pointer-events-none">We believe that transparency and open communication are essential in any successful business relationship. That's why we're committed to providing clear and concise pricing information to our clients. No hidden fees, no surprises – just quality fractional project management services at a fraction of the cost.</p>
+                    <h1 className="text-5xl lg:text-center pointer-events-none">Partnered Program <br /></h1>
+                    <h2 className="text-4xl pt-4 font-light lg:text-center pointer-events-none">Fractional Rates - Maximum Results</h2>
+                    <p className="text-lg font-semibold leading-8 mt-10 pointer-events-none">Our project management service is built on transparency and trust. We believe that providing clear and concise information is key to building a successful relationship with our clients. With no hidden fees or surprises, you can expect quality project management services that are tailored to your unique needs at fractional rates.</p>
                 </div>
                 <PricingTable/>
             </div>
