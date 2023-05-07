@@ -49,7 +49,7 @@ export const questions = [
     },
     {
         id: 7,
-        question: "What are project management templates?",
+        question: "What are management templates?",
         answer: "As an active subscriber, you'll gain exclusive access to our custom management templates, which have a proven track record of driving success for our clients. By utilizing these templates, our clients have experienced significant cost savings, with an average reduction of 6% in operating expenses."
     },
     {
