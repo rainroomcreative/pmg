@@ -94,7 +94,7 @@ const PricingTable = () => {
                         </li>
                         <li className="flex flex-row gap-4 items-center">
                             <Check/>
-                            <p className="text-sm pointer-events-none">Same Day Response Time</p>
+                            <p className="text-sm pointer-events-none">3 Hour Response Time</p>
                         </li>
                         <li className="flex flex-row gap-4 items-center">
                             <Check/>
@@ -129,7 +129,7 @@ const PricingTable = () => {
                         </li>
                         <li className="flex flex-row gap-4 items-center">
                             <Check/>
-                            <p className="text-sm pointer-events-none">3 Hour Response Time</p>
+                            <p className="text-sm pointer-events-none">Same Day Response Time</p>
                         </li>
                         <li className="flex flex-row gap-4 items-center">
                             <Check/>
