@@ -26,7 +26,7 @@ const Stats = () => {
                 <div className="w-1/3">
                     <CountUp
                     start={0}
-                    end={1.2}
+                    end={1.5}
                     delay={1.5}
                     duration={1.5}
                     decimals={1}
@@ -48,7 +48,7 @@ const Stats = () => {
                 <div className="w-1/3">
                     <CountUp
                         start={0}
-                        end={2000}
+                        end={2500}
                         duration={1.5}
                         delay={3}
                         onEnd={() => console.log('Ended! 👏')}

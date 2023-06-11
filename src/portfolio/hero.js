@@ -27,7 +27,7 @@ const Hero = () => {
                 <div className="w-full lg:w-1/4 lg:bg-blue rounded-3xl p-6">
                     <CountUp
                     start={0}
-                    end={1.2}
+                    end={1.5}
                     delay={1.5}
                     duration={1.5}
                     decimals={1}
@@ -47,7 +47,7 @@ const Hero = () => {
                 <div className="w-full lg:w-1/4 lg:bg-blue rounded-3xl p-6">
                     <CountUp
                         start={0}
-                        end={2000}
+                        end={2500}
                         delay={3}
                         duration={1.5}
                         enableScrollSpy={true}
