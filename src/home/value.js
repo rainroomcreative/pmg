@@ -150,6 +150,7 @@ const Value = () => {
                         <h2 className="text-5xl leading-loose border-b border-b-blue border-b-solid mb-5">01</h2>
                         <h3 className="text-3xl">Get your time back</h3>
                         <p className="text-base leading-8 mt-7">We specialize in taking the burden of inefficient and repetitive tasks off your plate and lets you focus your valuable time on what matters most - your business.</p>
+                        <Link to="/portfolio" className="w-full mt-5 text-blue bg-transparent border border-solid border-blue text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See Case Studies</Link>
                     </div>
                 </div>
                 <div className="flex flex-col justify-end py-10 items-center relative min-h-screen snap-always snap-center md:hidden">
@@ -168,7 +169,7 @@ const Value = () => {
                         <h2 className="text-5xl leading-loose border-b border-b-blue border-b-solid mb-5">02</h2>
                         <h3 className="text-3xl">Maximize Your Profits</h3>
                         <p className="text-base leading-8 mt-7">Cut expenses and maximize profits by making the most of your company’s time and resources. Our cost-effective services are custom tailored to fit your budget, so you can get the help you need without breaking the bank.</p>
-                        <Link to="/portfolio" className="w-full mt-5 text-blue bg-transparent border border-solid border-blue text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See Case Studies</Link>
+                        <Link to="/pricing" className="w-full mt-5 text-blue bg-transparent border border-solid border-blue text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See Pricing</Link>
                     </div>
                 </div>
                 <div className="flex flex-col justify-end py-10 items-center min-h-screen relative snap-always snap-center md:hidden">
@@ -182,6 +183,7 @@ const Value = () => {
                         <h2 className="text-5xl leading-loose border-b border-b-blue border-b-solid mb-5">03</h2>
                         <h3 className="text-3xl">Work Smarter</h3>
                         <p className="text-base leading-8 mt-7">We specialize in taking the burden of inefficient and repetitive tasks off your plate and lets you focus your valuable time on what matters most - your business.</p>
+                        <Link to="/pricing" className="w-full mt-5 text-blue bg-transparent border border-solid border-blue text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See Pricing</Link>
                     </div>
                 </div>
                 <div className="flex flex-col justify-end py-10 items-center relative min-h-screen snap-always snap-center md:hidden">
@@ -197,7 +199,7 @@ const Value = () => {
                         <h2 className="text-5xl leading-loose border-b border-b-blue border-b-solid mb-5">04</h2>
                         <h3 className="text-3xl">Access Industry Professionals</h3>
                         <p className="text-base leading-8 mt-7">In addition to fractional project management, our team has experience in design, web development, and marketing - giving you access to a diverse range of tools and skillsets.</p>
-                        <Link to="/services" className="w-full mt-5 text-blue bg-transparent border border-solid border-blue text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See our Services</Link>
+                        <Link to="/about" className="w-full mt-5 text-blue bg-transparent border border-solid border-blue text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See our Team</Link>
                     </div>
                 </div>
             </div>
