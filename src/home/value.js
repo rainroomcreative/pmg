@@ -63,7 +63,7 @@ const Value = () => {
                             <InView as="div" threshold={.8} onChange={(inView, entry) => inView ? handleProgress(2) : console.log("not in view")}  className="snap-start max-width-parallax flex flex-col justify-center items-start h-full lightbulb basis-full flex-1 pl-8 pr-8 text-left text-white value-text-box">
                                 <h3 className="text-3xl font-bold pointer-events-none">Work Smarter</h3>
                                 <p className="text-base leading-8 mt-7 pointer-events-none">PMG has developed a unique approach that streamlines project management, so you can achieve better results in less time. Our team of experienced project managers has the expertise to handle complex projects, ensuring that they are completed on time, within budget, and to the highest standards. With our work smarter philosophy, you can focus on growing your business while we take care of the rest.</p>
-                                <Link to="/pricing" className="w-full mt-5 bg-transparent border border-solid border-white text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See Pricing</Link>
+                                <a className="w-full mt-5 bg-transparent border border-solid border-white text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48" href="#contact">Learn More</a>
                             </InView>
                             <InView as="div" threshold={.8} onChange={(inView, entry) => inView ? handleProgress(3) : console.log("not in view")}  className="snap-start max-width-parallax flex flex-col justify-center items-start h-full gears basis-full flex-1 pl-8 pr-8 text-left text-white value-text-box">
                                 <h3 className="text-3xl font-bold pointer-events-none">Access Industry Professionals</h3>
@@ -183,7 +183,7 @@ const Value = () => {
                         <h2 className="text-5xl leading-loose border-b border-b-blue border-b-solid mb-5">03</h2>
                         <h3 className="text-3xl">Work Smarter</h3>
                         <p className="text-base leading-8 mt-7">We specialize in taking the burden of inefficient and repetitive tasks off your plate and lets you focus your valuable time on what matters most - your business.</p>
-                        <Link to="/pricing" className="w-full mt-5 text-blue bg-transparent border border-solid border-blue text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See Pricing</Link>
+                        <a className="w-full mt-5 text-blue bg-transparent border border-solid border-blue text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48" href="#contact">Learn More</a>
                     </div>
                 </div>
                 <div className="flex flex-col justify-end py-10 items-center relative min-h-screen snap-always snap-center md:hidden">
