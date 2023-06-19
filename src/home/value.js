@@ -53,20 +53,22 @@ const Value = () => {
                             <InView as="div" threshold={.8} onChange={(inView, entry) => inView ? handleProgress(0) : console.log("not in view")} className="snap-start max-width-parallax flex flex-col justify-center items-start hourglass h-full bg-red-500 basis-9/12 flex-1 pl-8 pr-8 text-left text-white value-text-box">
                                 <h3 className="text-3xl font-bold pointer-events-none">Get your time back</h3>
                                 <p className="text-base leading-8 mt-7 pointer-events-none">We specialize in taking the burden of time consuming and repetitive tasks off your plate which lets you focus your valuable time on what matters most - your business.</p>
+                                <Link to="/portfolio" className="w-full mt-5 bg-transparent border border-solid border-white text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See Case Studies</Link>
                             </InView>
                             <InView as="div" threshold={.8} onChange={(inView, entry) => inView ? handleProgress(1) : console.log("not in view")} className="snap-start max-width-parallax flex flex-col justify-center items-start money h-full basis-full flex-1 pl-8 pr-8 text-left text-white value-text-box">
                                 <h3 className="text-3xl font-bold pointer-events-none">Maximize Your Profits</h3>
                                 <p className="text-base leading-8 mt-7 pointer-events-none">Cut expenses and maximize profits by making the most of your company’s time and resources. Our cost-effective services are custom tailored to fit your budget, so you can get the help you need without breaking the bank.</p>
-                                <Link to="/portfolio" className="w-full mt-5 bg-transparent border border-solid border-white text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See Case Studies</Link>
+                                <Link to="/pricing" className="w-full mt-5 bg-transparent border border-solid border-white text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See Pricing</Link>
                             </InView>
                             <InView as="div" threshold={.8} onChange={(inView, entry) => inView ? handleProgress(2) : console.log("not in view")}  className="snap-start max-width-parallax flex flex-col justify-center items-start h-full lightbulb basis-full flex-1 pl-8 pr-8 text-left text-white value-text-box">
                                 <h3 className="text-3xl font-bold pointer-events-none">Work Smarter</h3>
                                 <p className="text-base leading-8 mt-7 pointer-events-none">PMG has developed a unique approach that streamlines project management, so you can achieve better results in less time. Our team of experienced project managers has the expertise to handle complex projects, ensuring that they are completed on time, within budget, and to the highest standards. With our work smarter philosophy, you can focus on growing your business while we take care of the rest.</p>
+                                <Link to="/pricing" className="w-full mt-5 bg-transparent border border-solid border-white text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See Pricing</Link>
                             </InView>
                             <InView as="div" threshold={.8} onChange={(inView, entry) => inView ? handleProgress(3) : console.log("not in view")}  className="snap-start max-width-parallax flex flex-col justify-center items-start h-full gears basis-full flex-1 pl-8 pr-8 text-left text-white value-text-box">
                                 <h3 className="text-3xl font-bold pointer-events-none">Access Industry Professionals</h3>
                                 <p className="text-base leading-8 mt-7 pointer-events-none">Our team brings a wealth of expertise to our clients, not just in fractional project management, but also in areas such as design, web development, and marketing. This means that you'll have access to a broad range of skills and tools that can help drive the success of your projects.</p>
-                                <Link to="/services" className="w-full mt-5 bg-transparent border border-solid border-white text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See our Services</Link>
+                                <Link to="/about" className="w-full mt-5 bg-transparent border border-solid border-white text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See our Team</Link>
                             </InView>
                         </div>
                     </div>

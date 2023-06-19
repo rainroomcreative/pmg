@@ -16,7 +16,7 @@ const Team = () => {
     }
 
     return (
-        <div className="font-bold text-white w-full bg-blue px-6 py-10 mt-52 relative">
+        <div id="team" className="font-bold text-white w-full bg-blue px-6 py-10 mt-52 relative">
             <div className="container mx-auto text-left mb-20">
                 <h2 className="text-5xl pointer-events-none">Team</h2>
             </div>

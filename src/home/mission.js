@@ -4,8 +4,8 @@ import {Link} from "react-router-dom";
 const Mission = () => {
     return (
         <div className="container mx-auto text-blue text-left pb-12 pt-24 px-6 flex flex-col gap-10 font-bold lg:py-36 lg:w-4/5">
-            <h2 className="text-5xl pointer-events-none">Our Mission</h2>
-            <p className="text-base leading-8 pointer-events-none">Partnered Management Group's mission is to provide affordable, client-first project management services that prioritize measurable results. Our collaborative approach ensures we understand our clients' unique goals and objectives, delivering projects on time and within budget to the highest standards of quality.  As a trusted partner with over 30 years of experience, we help our clients achieve success and drive their businesses forward.</p>
+            <h2 className="text-5xl pointer-events-none">Our Expertise</h2>
+            <p className="text-lg leading-8 pointer-events-none">By joining the Partnered Program you gain access to a team of highly skilled project managers with over 30 years of combined experience. Our experts are equipped with the latest tools and possess the critical thinking and analytical skills necessary to tackle even the most complex projects. They will help you streamline your project management processes, identify hidden risks and opportunities, and achieve successful outcomes. Whether you're starting a new project or seeking to optimize existing ones, our team is dedicated to taking your business to the next level.</p>
             <Link to="/about" className="w-full mt-5 text-blue bg-transparent border border-solid border-blue text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">Why PMG?</Link>
         </div>
     )
