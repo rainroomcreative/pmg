@@ -64,12 +64,5 @@ export const teamMembers = [
         title: "Jr. Project Manager",
         bio: "Sabrina has over 4 years of experience in digital project management. She specializes in SOP creation, budget management, and construction management. She applies her analytical and organizational skills to ensure each project is properly scoped and delivered on time. Sabrina holds a BS in Marketing / Communication and Social Interaction and a current PMP certification",
         image: Sabrina,
-    },
-    {
-        id: 109,
-        name: "Favour Orji",
-        title: "Technical Project Manager + Software Developer",
-        bio: "Favour is a multi-faceted, multi-hyphenated professional with a passion for technology, innovation, and human relations. She is an engineer by training, a software developer by profession, and an explorer at heart. Favour has over 3 years of project management experience managing projects of all sizes, developing key deliverables, and driving project success for startups, small businesses, nonprofits, and tech companies. She has developed a keen ability to explore complex challenges, to navigate organizational dynamics and to forecast and dismantle roadblocks to success. Favour received her dual degree in Bioengineering (B.S.) and Sociology (B.A.) from the University of Washington.",
-        image: Favour,
-    },
+    }
 ]
