@@ -11,11 +11,9 @@ import Money3 from "./images/Money_White_4.png";
 import Gears1 from "./images/Gears_White_2.png";
 import Gears2 from "./images/Gears_White_3.png";
 import { useInView, InView } from 'react-intersection-observer';
-import { ScrollSync, ScrollSyncPane } from 'react-scroll-sync';
-import { motion } from 'framer-motion'
+import { motion, useAnimation } from "framer-motion";
 
 const Value = () => {
-
     var progressNumbers = [false, false, false, false]
     const [progress, setProgress] = useState(progressNumbers)
 
@@ -30,140 +28,41 @@ const Value = () => {
     const { ref, inView, entry } = useInView({
         /* Optional options */
         threshold: 0,
-      });
+    });
     
     return (
-        
         <div className="w-screen snap-start" >
-                <ScrollSync>
-                    
-                    <div className="hidden md:flex flex-row sticky top-0 h-auto mb-32">
-                    {/* <div className="absolute top-0 left-0 calc-sticky-blue-wrap-size">
-                        <div className="bg-blue w-full sticky rounded-e-2xl top-0 calc-sticky-blue-size"></div>
-                    </div> */}
-                    <ScrollSyncPane>
-                    <div className="w-1/2  max-h-[700px] overflow-scroll hide-scroll bg-blue flex flex-row snap-y snap-mandatory rounded-e-[20px]" id="valueScrollController">
-                        <div className="sticky top-[270px] self-start  flex flex-col justify-center items centerborder-l border-l-white border-l-solid sticky-element w-52 pl-8 text-left">
-                            <HashLink to="/#time">
-                                <h3 className={`pl-4 border-l border-white text-white prog-numbers ${ progress[0] ? "show" : ""}`} data-name="hourglass">01</h3>
-                            </HashLink>
-                            <HashLink to="/#profits">
-                                <h3 className={`pl-4 border-l border-white text-white prog-numbers ${ progress[1] ? "show" : ""}`} data-name="money">02</h3>
-                            </HashLink>
-                            <HashLink to="/#workSmarter">
-                                <h3 className={`pl-4 border-l border-white text-white prog-numbers ${ progress[2] ? "show" : ""}`} data-name="lightbulb">03</h3>
-                            </HashLink>
-                            <HashLink to="/#professionals">
-                                <h3 className={`pl-4 border-l border-white text-white prog-numbers ${ progress[3] ? "show" : ""}`} data-name="gears">04</h3>
-                            </HashLink>
-                        </div>
-                        {/* ANCHOR Desktop Hourglass */}
-                        <div className="snap-y snap-mandatory">
-                            <InView as="div" threshold={.8} onChange={(inView, entry) => inView ? handleProgress(0) : console.log("not in view")} className="snap-start max-width-parallax flex flex-col justify-center items-start hourglass h-full bg-red-500 basis-9/12 flex-1 pl-8 pr-8 text-left text-white value-text-box" id="time">
-                                <h3 className="text-3xl font-bold pointer-events-none">Get your time back</h3>
-                                <p className="text-base leading-8 mt-7 pointer-events-none">We specialize in taking the burden of time consuming and repetitive tasks off your plate which lets you focus your valuable time on what matters most - your business.</p>
-                                <Link to="/portfolio" className="w-full mt-5 bg-transparent border border-solid border-white text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See Case Studies</Link>
-                            </InView>
-                            <InView as="div" threshold={.8} onChange={(inView, entry) => inView ? handleProgress(1) : console.log("not in view")} className="snap-start max-width-parallax flex flex-col justify-center items-start money h-full basis-full flex-1 pl-8 pr-8 text-left text-white value-text-box" id="profits">
-                                <h3 className="text-3xl font-bold pointer-events-none">Maximize Your Profits</h3>
-                                <p className="text-base leading-8 mt-7 pointer-events-none">Cut expenses and maximize profits by making the most of your company’s time and resources. Our cost-effective services are custom tailored to fit your budget, so you can get the help you need without breaking the bank.</p>
-                                <Link to="/pricing" className="w-full mt-5 bg-transparent border border-solid border-white text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See Pricing</Link>
-                            </InView>
-                            <InView as="div" threshold={.8} onChange={(inView, entry) => inView ? handleProgress(2) : console.log("not in view")}  className="snap-start max-width-parallax flex flex-col justify-center items-start h-full lightbulb basis-full flex-1 pl-8 pr-8 text-left text-white value-text-box" id="workSmarter">
-                                <h3 className="text-3xl font-bold pointer-events-none">Work Smarter</h3>
-                                <p className="text-base leading-8 mt-7 pointer-events-none">PMG has developed a unique approach that streamlines project management, so you can achieve better results in less time. Our team of experienced project managers has the expertise to handle complex projects, ensuring that they are completed on time, within budget, and to the highest standards. With our work smarter philosophy, you can focus on growing your business while we take care of the rest.</p>
-                                <a className="w-full mt-5 bg-transparent border border-solid border-white text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48" href="#contact">Learn More</a>
-                            </InView>
-                            <InView as="div" threshold={.8} onChange={(inView, entry) => inView ? handleProgress(3) : console.log("not in view")}  className="snap-start max-width-parallax flex flex-col justify-center items-start h-full gears basis-full flex-1 pl-8 pr-8 text-left text-white value-text-box" id="professionals">
-                                <h3 className="text-3xl font-bold pointer-events-none">Access Industry Professionals</h3>
-                                <p className="text-base leading-8 mt-7 pointer-events-none">Our team brings a wealth of expertise to our clients, not just in fractional project management, but also in areas such as design, web development, and marketing. This means that you'll have access to a broad range of skills and tools that can help drive the success of your projects.</p>
-                                <Link to="/about" className="w-full mt-5 bg-transparent border border-solid border-white text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See our Team</Link>
-                            </InView>
-                        </div>
-                    </div>
-                    </ScrollSyncPane>
-                    <ScrollSyncPane>
-                        <div className="w-1/2 max-h-[700px] overflow-scroll hide-scroll snap-y rounded-e-[20px]">
-                            {/* ANCHOR Desktop Hourglass */}
-                            <div className="h-full relative flex justify-center items-center overflow-hidden">
-                                <motion.img src={Hourglass} alt="Get your time back" className="mx-auto absolute top-0 z-[10] max-w-[430px]" animate={{ y: progress[0] ? 100 : -50}} transition={{duration: 2, delay: .2, ease: "easeInOut"}} />
-                                <div className="pedestal-gradient ">
-                                    <div className="bg-hourglass bg-bottom bg-no-repeat bg-contain hourglass w-[540px] h-[540px] relative basis-full flex-1 flex flex-column justify-center max-width-parallax ">
-                                    
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* ANCHOR Desktop Money */}
-                            <div className="h-full relative flex justify-center items-center overflow-hidden">
-                                <motion.img src={Money1} alt="Money" className="mx-auto absolute top-0 z-[10] max-w-[430px]" animate={{ y: progress[1] ?  50 : 0 }} transition={{duration: 2, delay: .2, ease: "easeInOut"}}/>
-                                <motion.img src={Money2} alt="Money" className="mx-auto absolute top-0 z-[11] max-w-[430px]" animate={{ y: progress[1] ?  50 :-50 }} transition={{duration: 2, delay: .4, ease: "easeInOut"}}/>
-                                <motion.img src={Money3} alt="Money" className="mx-auto absolute top-0 z-[12] max-w-[430px]" animate={{ y: progress[1] ?  50 : -100 }} transition={{duration: 2, delay: .6, ease: "easeInOut"}}/>
-                                <div className="pedestal-gradient ">
-                                    <div className="bg-money bg-bottom bg-no-repeat bg-contain hourglass w-[540px] h-[540px] relative basis-full flex-1 flex flex-column justify-center max-width-parallax ">
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-                            
-
-                            {/* ANCHOR Desktop Lightbulb */}
-                            <div className="h-full relative flex justify-center items-center overflow-hidden">
-                                <motion.img src={Lightbulb} alt="Lightbulb" className="mx-auto absolute top-0 z-[10] max-w-[430px]" animate={{ y: progress[2] ?  100 :50}} transition={{duration: 2, delay: .2, ease: "easeInOut"}}/>
-
-                                <div className="pedestal-gradient ">
-                                    <div className="bg-lightbulb bg-bottom bg-no-repeat bg-contain hourglass w-[540px] h-[540px] relative basis-full flex-1 flex flex-column justify-center max-width-parallax ">
-                                    
-                                    </div>
-                                </div>
-                            </div>
-                            
-
-                            {/* ANCHOR Desktop Gears */}
-                            <div className="h-full relative flex justify-center items-center overflow-hidden">
-                                <motion.img src={Gears2} alt="Gears" className="mx-auto absolute top-0 z-[12] max-w-[430px]" animate={{ y: progress[3] ?  70 :20 }} transition={{duration: 2.25, delay: .2}}/>
-                                <motion.img src={Gears1} alt="Gears" className="mx-auto absolute top-0 z-[11] max-w-[430px]" animate={{ y: progress[3] ?  100 : 50 }}  transition={{duration: 2, delay: .2}}/>
-                                
-                                <div className="pedestal-gradient ">
-                                    <div className="bg-gears bg-bottom bg-no-repeat bg-contain hourglass w-[540px] h-[540px] relative basis-full flex-1 flex flex-column justify-center max-width-parallax ">
-                                    
-                                    </div>
-                                </div>
-                            </div>
-                            
-
-                        
-                        </div>
-                    </ScrollSyncPane>
-
-                        
-
-
-                        
-
-                        
-                    </div>
-                    
-                </ScrollSync>
-                
-            <div className="px-6 py-20 font-bold text-blue text-left flex gap-36 flex-col justify-between items-center w-full md:h-full md:flex-row md:container md:gap-4">
+            <div className="pr-6 py-20 font-bold text-blue md:relative text-left flex gap-36 flex-col justify-between items-center w-full md:h-full md:gap-4">
+                <div className="sticky left-0 top-0 self-start flex-col justify-center items center border-l bg-blue border-l-white border-l-solid sticky-element pl-8 text-left w-1/2 h-screen hidden md:flex rounded-e-[20px] z-0">
+                    <HashLink to="/#time">
+                        <h3 className={`pl-4 border-l border-white text-white prog-numbers ${ progress[0] ? "show" : ""}`} data-name="hourglass">01</h3>
+                    </HashLink>
+                    <HashLink to="/#profits">
+                        <h3 className={`pl-4 border-l border-white text-white prog-numbers ${ progress[1] ? "show" : ""}`} data-name="money">02</h3>
+                    </HashLink>
+                    <HashLink to="/#workSmarter">
+                        <h3 className={`pl-4 border-l border-white text-white prog-numbers ${ progress[2] ? "show" : ""}`} data-name="lightbulb">03</h3>
+                    </HashLink>
+                    <HashLink to="/#professionals">
+                        <h3 className={`pl-4 border-l border-white text-white prog-numbers ${ progress[3] ? "show" : ""}`} data-name="gears">04</h3>
+                    </HashLink>
+                </div>
                 {/* MOBILE STYLES */}
-                <div className="flex flex-col py-10 justify-end items-center min-h-screen relative md:hidden snap-always snap-center">
-                    <div className="mx-auto bg-hourglass bg-bottom bg-center bg-[length:100%] bg-no-repeat max-h-full w-full absolute top-0 z-0">
+                <div className="flex flex-col md:flex-row-reverse md:gap-10 py-10 justify-end md:justify-between items-center min-h-screen relative snap-always snap-center z-10">
+                    <div className="mx-auto md:mx-0 bg-hourglass bg-bottom bg-center bg-[length:100%] bg-no-repeat max-h-full w-full md:w-1/2 md:max-w-[430px] absolute md:relative top-0 z-0">
                         <Parallax translateY={[-20, 15]}>
                             <img src={Hourglass} alt="Get your time back" className="mx-auto" />
                         </Parallax>
                     </div>
-                    <div className="flex flex-col justify-end items-start h-full z-10">
+                    <div className="flex flex-col justify-end items-start h-full z-10 md:w-1/2 md:text-white md:px-28">
                         <h2 className="text-5xl leading-loose border-b border-b-blue border-b-solid mb-5">01</h2>
                         <h3 className="text-3xl">Get your time back</h3>
                         <p className="text-base leading-8 mt-7">We specialize in taking the burden of inefficient and repetitive tasks off your plate and lets you focus your valuable time on what matters most - your business.</p>
                         <Link to="/portfolio" className="w-full mt-5 text-blue bg-transparent border border-solid border-blue text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See Case Studies</Link>
                     </div>
                 </div>
-                <div className="flex flex-col justify-end py-10 items-center relative min-h-screen snap-always snap-center md:hidden">
-                    <div className="mx-auto bg-money bg-no-repeat bg-center bg-[length:100%] w-full max-h-full absolute top-0 z-0" style={{height: 78 + 'vh'}}>
+                <div className="flex flex-col md:flex-row-reverse md:gap-10 justify-end md:justify-between py-10 items-center relative min-h-screen snap-always snap-center z-10">
+                    <div className="mx-auto md:mx-0 bg-money bg-no-repeat bg-center bg-[length:100%] w-full md:w-1/2 md:max-w-[430px] max-h-full absolute md:relative top-0 z-0" style={{height: 78 + 'vh'}}>
                         <Parallax translateY={[-45,  25]} className="absolute top-4 z-20">
                             <img src={Money3} alt="Get your time back" className="mx-auto" />
                         </Parallax>
@@ -174,29 +73,29 @@ const Value = () => {
                             <img src={Money1} alt="Get your time back" className="mx-auto" />
                         </Parallax>
                     </div>
-                    <div className="relative top-48 pb-48 flex flex-col justify-end items-start h-full z-30">
+                    <div className="relative top-48 pb-48 flex flex-col justify-end items-start h-full md:w-1/2 z-30 md:text-white md:px-28">
                         <h2 className="text-5xl leading-loose border-b border-b-blue border-b-solid mb-5">02</h2>
                         <h3 className="text-3xl">Maximize Your Profits</h3>
                         <p className="text-base leading-8 mt-7">Cut expenses and maximize profits by making the most of your company’s time and resources. Our cost-effective services are custom tailored to fit your budget, so you can get the help you need without breaking the bank.</p>
                         <Link to="/pricing" className="w-full mt-5 text-blue bg-transparent border border-solid border-blue text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See Pricing</Link>
                     </div>
                 </div>
-                <div className="flex flex-col justify-end py-10 items-center min-h-screen relative snap-always snap-center md:hidden">
-                    <div className="mx-auto bg-lightbulb bg-bottom bg-center bg-[length:100%] bg-no-repeat max-h-full w-full absolute top-0 z-0">
+                <div className="flex flex-col md:flex-row-reverse md:gap-10 justify-end md:justify-between py-10 items-center min-h-screen relative snap-always snap-center z-10">
+                    <div className="mx-auto md:mx-0 bg-lightbulb bg-bottom bg-center bg-[length:100%] bg-no-repeat max-h-full w-full md:w-1/2 md:max-w-[430px] absolute md:relative top-0 z-0">
                         <Parallax translateY={[-20, 15 ]}>
                             <img src={Lightbulb} alt="Lightbulb" className="mx-auto" />
                         </Parallax>
                         <div className=" h-72 w-full absolute bottom-0"></div>
                     </div>
-                    <div className="flex flex-col justify-end items-start h-full z-10">
+                    <div className="flex flex-col justify-end items-start h-full md:w-1/2 z-10 md:text-white md:px-28">
                         <h2 className="text-5xl leading-loose border-b border-b-blue border-b-solid mb-5">03</h2>
                         <h3 className="text-3xl">Work Smarter</h3>
                         <p className="text-base leading-8 mt-7">We specialize in taking the burden of inefficient and repetitive tasks off your plate and lets you focus your valuable time on what matters most - your business.</p>
                         <a className="w-full mt-5 text-blue bg-transparent border border-solid border-blue text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48" href="#contact">Learn More</a>
                     </div>
                 </div>
-                <div className="flex flex-col justify-end py-10 items-center relative min-h-screen snap-always snap-center md:hidden">
-                    <div className="mx-auto bg-gears bg-no-repeat bg-center bg-[length:100%] w-full max-h-full absolute top-0 z-0" style={{height: 78 + 'vh'}}>
+                <div className="flex flex-col md:flex-row-reverse md:gap-10 justify-end md:justify-between py-10 items-center relative min-h-screen snap-always snap-center z-10">
+                    <div className="mx-auto md:mx-0 bg-gears bg-no-repeat bg-center bg-[length:100%] w-full md:w-1/2 md:max-w-[430px] max-h-full absolute md:relative top-0 z-0" style={{height: 78 + 'vh'}}>
                         <Parallax translateY={[-35, 25]} className="absolute top-4 z-10">
                             <img src={Gears2} alt="Gears" className="mx-auto" />
                         </Parallax>
@@ -204,7 +103,7 @@ const Value = () => {
                             <img src={Gears1} alt="Gears" className="mx-auto" />
                         </Parallax>
                     </div>
-                    <div className="relative top-48 pb-48 flex flex-col justify-end items-start h-full z-20">
+                    <div className="relative top-48 pb-48 flex flex-col justify-end items-start h-full md:w-1/2 z-20 md:text-white md:px-28">
                         <h2 className="text-5xl leading-loose border-b border-b-blue border-b-solid mb-5">04</h2>
                         <h3 className="text-3xl">Access Industry Professionals</h3>
                         <p className="text-base leading-8 mt-7">In addition to fractional project management, our team has experience in design, web development, and marketing - giving you access to a diverse range of tools and skillsets.</p>
@@ -215,17 +114,5 @@ const Value = () => {
         </div>
     )
 }
-
-
-
-// function newScrollInit() {
-//     const scrollContainer = document.getElementById('valueScroll');
-//     const scrollController = document.getElementById('valueScrollController');
-//     const newScroll = ParallaxController.init({
-//         scrollAxis: 'vertical',
-//         scrollContainer: scrollContainer,
-//     });
-//     newScroll.updateScrollContainer(scrollController);
-// }
 
 export default Value;
