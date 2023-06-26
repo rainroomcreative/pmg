@@ -14,7 +14,7 @@ import { useInView, InView } from 'react-intersection-observer';
 import { ScrollSync, ScrollSyncPane } from 'react-scroll-sync';
 import { motion } from 'framer-motion'
 
-const Value = () => {
+const ValueOld = () => {
 
     var progressNumbers = [false, false, false, false]
     const [progress, setProgress] = useState(progressNumbers)
@@ -30,7 +30,7 @@ const Value = () => {
     const { ref, inView, entry } = useInView({
         /* Optional options */
         threshold: 0,
-      });
+    });
     
     return (
         
@@ -131,18 +131,8 @@ const Value = () => {
                                     </div>
                                 </div>
                             </div>
-                            
-
-                        
                         </div>
                     </ScrollSyncPane>
-
-                        
-
-
-                        
-
-                        
                     </div>
                     
                 </ScrollSync>
@@ -228,4 +218,4 @@ const Value = () => {
 //     newScroll.updateScrollContainer(scrollController);
 // }
 
-export default Value;
+export default ValueOld;
