@@ -1,12 +1,11 @@
 import August from "./images/August_square.jpg";
 import Jeff from "./images/Jeff.jpg";
-import Ben from "./images/Ben.jpg";
 import Josh from "./images/Josh.jpg";
 import Jon from "./images/Jon.jpg";
 import Shaelyn from "./images/Shaelyn.jpg";
 import Al from "./images/al.png";
 import Sabrina from "./images/sabrina.jpg";
-import Favour from "./images/Favour.jpeg";
+
 
 export const teamMembers = [
     {
@@ -22,13 +21,6 @@ export const teamMembers = [
         title: "Director of Project Management",
         bio: "Jeff is a passionate leader with over 15 years of experience in project and operations management. He has spent much of his career leading cross-functional teams and delivering strategic technology solutions to a wide range of customers. He has overseen system and software design, development, integration, and testing of multiple projects at various stages of the project lifecycle, leveraging both waterfall and agile methodologies. As a consultant, he has stood up project management offices for small companies with rapid growth in need of structure and process implementation. In his free time, Jeff enjoys going to the movies, traveling, working out, and spending time with family and friends.",
         image: Jeff,
-    },
-    {
-        id: 103,
-        name: "Ben Frecon - (PMP)",
-        title: "Asst. Director of Project Management",
-        bio: "With over 10 years of project experience, over 11 years of Business Management experience, and 12 years of Sales, Sales Management, and Sales Training experience, Ben contributes a vast array of skill sets to his projects. Ben holds an MS in Accounting, Audit; BS in Business Administration; AA in Communications, and a current PMP certification.",
-        image: Ben,
     },
     {
         id: 104,
