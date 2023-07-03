@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { request } from 'graphql-request';
 import RelatedPosts from "./relatedPosts";
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 
 const Article = () => {
     const [blogPosts, setBlogPosts] = useState([]);
@@ -46,7 +48,7 @@ const Article = () => {
                         <p className="text-sm pointer-events-none">Date: {dateFormatted}</p>
                     </div>
                     <div className="text-base leading-8 pointer-events-none">
-                        {article.blogPost}
+                    <ReactMarkdown children={article.blogPost}  remarkPlugins={[remarkGfm]}/>
                     </div>
                 </div>
                 <RelatedPosts slug={slug}/>

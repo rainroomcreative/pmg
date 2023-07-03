@@ -18,6 +18,7 @@ class Footer extends React.Component {
                             <li><Link to="/portfolio">Case Studies</Link></li>
                             <li><Link to="/pricing">Pricing</Link></li>
                             <li><Link to="/services">Services</Link></li>
+                            <li><a href="https://blog.partneredmg.com" target="_blank">Blog</a></li>
                         </ul>
                     </div>
                     <div className="pt-10 flex flex-col gap-3 justify-center items-center order-2 lg:order-1 lg:items-start lg:justify-start lg:pt-0">
