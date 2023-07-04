@@ -1,10 +1,10 @@
 import August from "./images/August_square.jpg";
-import Jeff from "./images/Jeff.jpg";
-import Josh from "./images/Josh.jpg";
-import Jon from "./images/Jon.jpg";
-import Shaelyn from "./images/Shaelyn.jpg";
-import Al from "./images/al.png";
-import Sabrina from "./images/sabrina.jpg";
+import Jeff from "./images/Jeff1.jpg";
+import Josh from "./images/Josh1.jpg";
+import Jon from "./images/Jon1.jpg";
+import Shaelyn from "./images/Shaelyn1.jpg";
+import Al from "./images/al1.jpg";
+import Sabrina from "./images/Sabrina1.jpg";
 
 
 export const teamMembers = [
