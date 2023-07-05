@@ -7963,6 +7963,13 @@ react-scroll-sync@^0.11.0:
   dependencies:
     prop-types "^15.5.7"
 
+react-use-scroll-snap@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.npmjs.org/react-use-scroll-snap/-/react-use-scroll-snap-0.0.4.tgz"
+  integrity sha512-IVnGldU13ZM5NkiBNudXFVsyDuF8u99zjYhGsy+fsS75CvcD//apT0Qn1YTEUQ/QDB21K8NPM8psFpTIKeay2Q==
+  dependencies:
+    tweezer.js "^1.5.0"
+
 react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
@@ -8298,6 +8305,11 @@ schema-utils@2.7.0:
     "@types/json-schema" "^7.0.4"
     ajv "^6.12.2"
     ajv-keywords "^3.4.1"
+
+scroll-snap@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.npmjs.org/scroll-snap/-/scroll-snap-4.0.3.tgz"
+  integrity sha512-7am2JXqY/0jHN9+3b2zhZtm55NmzEQhZTXZBIdC/fVb6aVN5nonjbRpf+OghU9LhguJB+rq5ty9SmQcYzMvMxw==
 
 select-hose@^2.0.0:
   version "2.0.0"
@@ -9049,6 +9061,11 @@ tsutils@^3.21.0:
   integrity sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==
   dependencies:
     tslib "^1.8.1"
+
+tweezer.js@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.npmjs.org/tweezer.js/-/tweezer.js-1.5.0.tgz"
+  integrity sha512-aSiJz7rGWNAQq7hjMK9ZYDuEawXupcCWgl3woQQSoDP2Oh8O4srWb/uO1PzzHIsrPEOqrjJ2sUb9FERfzuBabQ==
 
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
