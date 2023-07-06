@@ -43,7 +43,7 @@ const Blog = () => {
     return (
         <div className="mx-auto container py-24 px-6 w-full">
             <div className="mb-24">
-                <h1 className="text-5xl font-bold text-black pointer-events-none">Our Blog</h1>
+                <h1 className="text-5xl font-bold text-black pointer-events-none">Partnered Blog</h1>
             </div>
             <div className="flex flex-col gap-14 md:grid md:grid-cols-2">
                 <h2 className={"pointer-events-none text-blue font-bold text-3xl" + `${loading ? " block" : " hidden"}`}>Loading...</h2>

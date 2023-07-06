@@ -18,11 +18,12 @@ class Footer extends React.Component {
                             <li><Link to="/portfolio">Case Studies</Link></li>
                             <li><Link to="/pricing">Pricing</Link></li>
                             <li><Link to="/services">Services</Link></li>
+                            <li><a href="https://blog.partneredmg.com" target="_blank">Blog</a></li>
                         </ul>
                     </div>
                     <div className="pt-10 flex flex-col gap-3 justify-center items-center order-2 lg:order-1 lg:items-start lg:justify-start lg:pt-0">
                         <img className="mx-auto lg:mb-6" src={logo} alt="Partnered Management Group" />
-                        <p className="font-normal hidden lg:block pointer-events-none">© PartnerManagementGroup - 2022</p>
+                        <p className="font-normal hidden lg:block pointer-events-none">© Partnered Management Group - 2023</p>
                     </div>
                     <div className="pt-10 order-4 flex flex-col gap-3 lg:order-3 lg:items-start lg:justify-start lg:pt-0 lg:gap-0">
                         <h4 className="hidden text-base mb-6 lg:block pointer-events-none">Help</h4>

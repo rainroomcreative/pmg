@@ -38,6 +38,7 @@ const Value = () => {
     });
     
     return (
+
         <div className="w-screen snap-start px-6 md:px-0" >
             <div className="md:pr-6 py-20 font-bold text-blue md:relative text-left flex gap-36 flex-col justify-between items-center w-full md:h-full md:gap-4">
                 <div className="hidden z-50 md:flex self-start flex-col sticky top-0 justify-center left-5 sticky-element h-screen">
@@ -123,6 +124,7 @@ const Value = () => {
                             <Link to="/about" className="w-full mt-5 text-blue bg-transparent border border-solid border-blue md:border-white md:text-white text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See our Team</Link>
                         </div>
                     </InView>
+
                 </div>
             </div>
         </div>
