@@ -26,7 +26,11 @@ const Value = () => {
 
 
     const scrollRef = useRef(null);
-    useScrollSnap({ ref: scrollRef, duration: 50, delay: 5 });
+    useScrollSnap({
+        ref: scrollRef,
+        duration: 25,
+        delay: 0
+    });
 
     const { ref, inView, entry } = useInView({
         /* Optional options */

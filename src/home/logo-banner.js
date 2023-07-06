@@ -22,7 +22,7 @@ const LogoBanner = () => {
 
 
     return (
-        <div className="bg-blue w-screen h-80 flex flex-col justify-center items-center gap-10 md:h-36">
+        <div className="bg-blue h-80 flex flex-col justify-center items-center gap-10 md:h-36">
             <div className="overflow-x-scroll w-screen hide-scroll md:flex md:flex-col md:justify-center md:items-center">
                 <div className="flex flex-row justify-between items-center gap-12 h-12 w-max px-6 animate-scrollRight md:animate-none" style={scrollStyle}>
                     <img src={JetiLogo} alt="Jeti logo" className="w-1/6 h-7" />
