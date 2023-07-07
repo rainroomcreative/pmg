@@ -71,7 +71,7 @@ const Value = () => {
                         <div className="z-10 md:z-0 flex flex-col justify-end md:justify-center items-start h-full md:min-h-[80vh] md:w-1/2 md:text-white md:pr-8 lg:pr-28 md:pl-40">
                             <h2 className="text-5xl leading-loose border-b border-b-blue border-b-solid mb-5 md:hidden">01</h2>
                             <h3 className="text-3xl">Get your time back</h3>
-                            <p className="text-base leading-8 mt-7">We specialize in taking the burden of inefficient and repetitive tasks off your plate and lets you focus your valuable time on what matters most - your business.</p>
+                            <p className="text-base leading-8 mt-7">We specialize in taking the burden of time consuming and repetitive tasks off your plate which lets you focus your valuable time on what matters most - your business.</p>
                             <Link to="/portfolio" className="w-full mt-5 text-blue bg-transparent border border-solid border-blue md:border-white md:text-white text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See Case Studies</Link>
                         </div>
                     </InView>
@@ -104,7 +104,7 @@ const Value = () => {
                         <div className="z-10 md:z-0 flex flex-col justify-end md:justify-center items-start h-full md:min-h-[80vh] md:w-1/2 md:text-white md:pr-8 lg:pr-28 md:pl-40">
                             <h2 className="text-5xl leading-loose border-b border-b-blue border-b-solid mb-5 md:hidden">03</h2>
                             <h3 className="text-3xl">Work Smarter</h3>
-                            <p className="text-base leading-8 mt-7">We specialize in taking the burden of inefficient and repetitive tasks off your plate and lets you focus your valuable time on what matters most - your business.</p>
+                            <p className="text-base leading-8 mt-7">PMG has developed a unique approach that streamlines project management, so you can achieve better results in less time. Our team of experienced project managers has the expertise to handle complex projects, ensuring that they are completed on time, within budget, and to the highest standards. With our work smarter philosophy, you can focus on growing your business while we take care of the rest.</p>
                             <HashLink className="w-full mt-5 text-blue bg-transparent border border-solid border-blue md:border-white md:text-white text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48" href="#contact">Learn More</HashLink>
                         </div>
                     </InView>
@@ -120,7 +120,7 @@ const Value = () => {
                         <div className="z-10 md:z-0 relative top-48 md:top-0 pb-48 md:pb-0 flex flex-col justify-end md:justify-center items-start h-full md:min-h-[80vh] md:w-1/2 md:text-white md:pr-8 lg:pr-28 md:pl-40">
                             <h2 className="text-5xl leading-loose border-b border-b-blue border-b-solid mb-5 md:hidden">04</h2>
                             <h3 className="text-3xl">Access Industry Professionals</h3>
-                            <p className="text-base leading-8 mt-7">In addition to fractional project management, our team has experience in design, web development, and marketing - giving you access to a diverse range of tools and skillsets.</p>
+                            <p className="text-base leading-8 mt-7">Our team brings a wealth of expertise to our clients, not just in fractional project management, but also in areas such as design, web development, and marketing. This means that you'll have access to a broad range of skills and tools that can help drive the success of your projects.</p>
                             <Link to="/about" className="w-full mt-5 text-blue bg-transparent border border-solid border-blue md:border-white md:text-white text-center py-3 rounded-3xl hover:text-white hover:bg-gold hover:border-gold md:w-48">See our Team</Link>
                         </div>
                     </InView>
