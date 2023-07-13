@@ -41,7 +41,7 @@ const Value = () => {
 
         <div className="w-screen snap-start px-6 md:px-0" >
             <div className="md:pr-6 py-20 font-bold text-blue md:relative text-left flex gap-36 flex-col justify-between items-center w-full md:h-full md:gap-4">
-                <div className="hidden z-50 md:flex self-start flex-col sticky top-0 justify-center left-5 sticky-element h-screen">
+                <div className="hidden z-50 md:flex self-start flex-col sticky top-0 justify-center left-5 sticky-element h-screen xl:top-[15vh] xl:h-[70vh]">
                     <div className="flex flex-col justify-center items-start border-l border-l-white border-l-solid">
                         <HashLink to="/#time">
                             <h3 className={`pl-4 text-white border-white border-l prog-numbers ${ progress[0] ? "show" : ""}`} data-name="hourglass">01</h3>
@@ -58,12 +58,12 @@ const Value = () => {
                     </div>
                 </div>
             
-                <div className="md:mt-[-100vh] sticky left-0 top-[5vh] flex-col justify-center self-start pl-8 text-left w-1/2 h-[90vh] bg-blue hidden md:flex rounded-e-[20px]">
+                <div className="md:mt-[-100vh] xl:mt-[-80vh] sticky left-0 top-[5vh] xl:top-[15vh] flex-col justify-center self-start pl-8 text-left w-1/2 h-[90vh] xl:h-[70vh] bg-blue hidden md:flex rounded-e-[20px]">
                 </div>
 
                 <div id="scroll-container" ref={scrollRef}>
-                    <InView as="div" threshold={.8} onChange={(inView, entry) => inView ? handleProgress(0) : console.log("not in view")} className="mt-36 md:mt-0 slide hourglass value-text-box flex flex-col md:flex-row-reverse md:gap-10 py-10 md:mt-[-90vh] justify-end md:justify-center md:justify-between items-center min-h-screen relative snap-center" id="time">
-                        <div className="flex flex-col items-center mx-auto md:mx-0 bg-hourglass bg-bottom bg-center bg-[length:450px] md:bg-[length:100%] bg-no-repeat max-h-full w-full md:w-1/2 md:max-w-[430px] absolute md:relative top-0 z-0">
+                    <InView as="div" threshold={.8} onChange={(inView, entry) => inView ? handleProgress(0) : console.log("not in view")} className="mt-36 md:mt-[-90vh] xl:mt-[-70vh] slide hourglass value-text-box flex flex-col md:flex-row-reverse md:gap-10 py-10 justify-end md:justify-center md:justify-between items-center min-h-screen relative snap-center" id="time">
+                        <div className="flex flex-col items-center mx-auto bg-hourglass bg-bottom bg-center bg-[length:300px] md:bg-[length:100%] bg-no-repeat max-h-full w-full md:w-1/2 md:max-w-[430px] absolute md:relative top-0 z-0">
                             <Parallax translateY={[-20, 15]}>
                                 <img src={Hourglass} alt="Get your time back" className="mx-auto max-w-[350px] lg:max-w-[450px] md:mx-w-[auto]" />
                             </Parallax>
@@ -76,7 +76,7 @@ const Value = () => {
                         </div>
                     </InView>
                     <InView as="div" threshold={.8} onChange={(inView, entry) => inView ? handleProgress(1) : console.log("not in view")} className="mt-36 md:mt-0 slide money value-text-box flex flex-col md:flex-row-reverse md:gap-10 justify-end md:justify-center md:justify-between py-10 items-center relative min-h-screen snap-always snap-center" id="profits">
-                        <div className="flex flex-col items-center mx-auto md:mx-0 bg-money bg-no-repeat bg-center bg-[length:450px] md:bg-[length:100%] w-full md:w-1/2 md:max-w-[430px] max-h-full absolute md:relative top-0 z-0" style={{height: 78 + 'vh'}}>
+                        <div className="flex flex-col items-center mx-auto bg-money bg-no-repeat bg-center bg-[length:300px] md:bg-[length:100%] w-full md:w-1/2 md:max-w-[430px] max-h-full absolute md:relative top-0 z-0" style={{height: 78 + 'vh'}}>
                             <Parallax translateY={[-35,  25]} className="absolute top-4 z-20">
                                 <img src={Money3} alt="Get your time back" className="mx-auto max-w-[350px] lg:max-w-[450px] md:mx-w-[auto]" />
                             </Parallax>
@@ -95,7 +95,7 @@ const Value = () => {
                         </div>
                     </InView>
                     <InView as="div" threshold={.8} onChange={(inView, entry) => inView ? handleProgress(2) : console.log("not in view")}  className="mt-36 md:mt-0 slide lightbulb value-text-box flex flex-col md:flex-row-reverse md:gap-10 justify-end md:justify-center md:justify-between py-10 items-center min-h-screen relative snap-always snap-center" id="workSmarter">
-                        <div className="flex flex-col items-center mx-auto md:mx-0 bg-lightbulb bg-bottom bg-center bg-[length:450px] md:bg-[length:100%] bg-no-repeat max-h-full w-full md:w-1/2 md:max-w-[430px] absolute md:relative top-0 z-0">
+                        <div className="flex flex-col items-center mx-auto bg-lightbulb bg-bottom bg-center bg-[length:300px] md:bg-[length:100%] bg-no-repeat max-h-full w-full md:w-1/2 md:max-w-[430px] absolute md:relative top-0 z-0">
                             <Parallax translateY={[-20, 15 ]}>
                                 <img src={Lightbulb} alt="Lightbulb" className="mx-auto max-w-[350px] lg:max-w-[450px] md:mx-w-[auto]" />
                             </Parallax>
@@ -109,8 +109,8 @@ const Value = () => {
                         </div>
                     </InView>
                     <InView as="div" threshold={.8} onChange={(inView, entry) => inView ? handleProgress(3) : console.log("not in view")}  className="mt-36 md:mt-0 slide flex flex-col md:flex-row-reverse md:gap-10 justify-end md:justify-center md:justify-between py-10 items-center relative min-h-screen snap-always snap-center gears value-text-box" id="professionals">
-                        <div className="flex flex-col items-center mx-auto md:mx-0 bg-gears bg-no-repeat bg-center bg-[length:450px] md:bg-[length:100%] w-full md:w-1/2 md:max-w-[430px] max-h-full absolute md:relative top-0 z-0" style={{height: 78 + 'vh'}}>
-                            <Parallax translateY={[-30, 15]} className="absolute top-4 z-10">
+                        <div className="flex flex-col items-center mx-auto bg-gears bg-no-repeat bg-center bg-[length:300px] md:bg-[length:100%] w-full md:w-1/2 md:max-w-[430px] max-h-full absolute md:relative top-0 z-0" style={{height: 78 + 'vh'}}>
+                            <Parallax translateY={[-30, 20]} className="absolute top-4 z-10">
                                 <img src={Gears2} alt="Gears" className="mx-auto max-w-[350px] lg:max-w-[450px] md:mx-w-[auto]" />
                             </Parallax>
                             <Parallax translateY={[-20, 0 ]} className="absolute top-20 z-0">

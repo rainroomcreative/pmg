@@ -44,7 +44,7 @@ const LogoBanner = () => {
                     <img src={RealityAILogo} alt="Reality AI logo" className="w-1/6 h-8" />
                 </div>
             </div>
-            <div className="overflow-x-scroll w-screen hide-scroll md:hidden">
+            <div className="overflow-x-scroll overflow-y-hidden w-screen hide-scroll md:hidden">
                 <div className="flex flex-row justify-between items-center gap-12 h-12 w-max px-6 -translate-x-96 animate-scrollLeft" style={scrollStyle}>
                     <img src={JetiLogo} alt="Jeti logo" className="w-1/6 h-7" />
                     <img src={OrderAILogo} alt="Order AI logo" className="w-1/6 h-8" />
@@ -53,6 +53,10 @@ const LogoBanner = () => {
                     <img src={tesla} alt="Tesla logo" className="w-1/6 h-20" />
                     <img src={HR} alt="Hunger Rush logo" className="w-1/6 h-36" />
                     <img src={appgate} alt="Hunger Rush logo" className="w-1/6 h-36" />
+                    <img src={payroc} alt="Hunger Rush logo" className="w-1/6 h-24" />
+                    <img src={PB} alt="Hunger Rush logo" className="w-1/6 h-36" />
+                    <img src={personna} alt="Hunger Rush logo" className="w-1/6 h-44" />
+                    <img src={studio} alt="Hunger Rush logo" className="w-1/6 h-36" />
                     <img src={RealityAILogo} alt="Reality AI logo" className="w-1/6 h-8" />
                 </div>
             </div>

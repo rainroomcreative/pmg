@@ -29,10 +29,10 @@ module.exports = {
       backgroundImage: {
         'grid-lines': "url('/src/includes/images/grid-lines.svg')",
         'smoke': "url('/src/home/images/Smoke.png')",
-        'gears': "linear-gradient(0deg, rgba(242,242,242,.95) 0%, rgba(242,242,242,.95) 20%, rgba(242,242,242,0) 60%), url('/src/home/images/Gears_White_1.png')",
-        'hourglass': "linear-gradient(0deg, rgba(242,242,242,.95) 0%, rgba(242,242,242,0) 60%), url('/src/home/images/Hourglass_White_1.png')",
-        'lightbulb': "linear-gradient(0deg, rgba(242,242,242,.95) 0%, rgba(242,242,242,0) 60%), url('/src/home/images/Lightbulb_White_1.png')",
-        'money': "linear-gradient(0deg, rgba(242,242,242,.95) 0%, rgba(242,242,242,.95) 20%, rgba(242,242,242,0) 60%), url('/src/home/images/Money_White_1.png')",
+        'gears': "url('/src/home/images/Gears_White_1.png')",
+        'hourglass': "url('/src/home/images/Hourglass_White_1.png')",
+        'lightbulb': "url('/src/home/images/Lightbulb_White_1.png')",
+        'money': "url('/src/home/images/Money_White_1.png')",
         'whiteFade': "linear-gradient(0deg, rgba(242,242,242,.95) 0%, rgba(242,242,242,0) 100%)",
         'whiteFade2': "linear-gradient(0deg, rgba(242,242,242,1) 0%, rgba(242,242,242,1) 10%, rgba(242,242,242,0) 50%)",
         'blueFade': "linear-gradient(0deg, rgba(17,57,83,1) 0%, rgba(17,57,83,1) 10%, rgba(17,57,83,0) 50%)",
@@ -48,16 +48,16 @@ module.exports = {
         '200': '120vh',
       },
       animation: {
-        'scrollRight': 'scrollRight 1s linear infinite',
-        'scrollLeft': 'scrollLeft 1s linear infinite',
+        'scrollRight': 'scrollRight 700ms linear infinite',
+        'scrollLeft': 'scrollLeft 700ms linear infinite',
         'fadeInUp': 'fadeInUp 1s ease-in-out',
       },
       keyframes: {
         scrollRight: {
-          to: { transform: 'translateX(-300px)' }
+          to: { transform: 'translateX(-1200px)' }
         },
         scrollLeft: {
-          to: { transform: 'translateX(300px)' }
+          to: { transform: 'translateX(1200px)' }
         },
         fadeInUp: {
           '0%': { opacity: '0', transform: 'translateY(20px)' },
