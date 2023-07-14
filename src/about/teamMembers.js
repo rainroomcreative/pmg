@@ -26,7 +26,7 @@ export const teamMembers = [
     {
         id: 104,
         name: "Josh Bosley",
-        title: "CTO + Full Stack Engineer",
+        title: "Chief Technology Officer",
         bio: "Josh is a visionary leader and problem solver with a proven track record of success in various roles. He has served as Technical Lead and Co-Founder of an IoT company, CEO of a creative web agency, and fractional CTO for several forward-thinking startups and agencies. Passionate about making the world a better place through efficient and ethical businesses, Josh is skilled at building powerful teams by fostering a balance of creativity and optimization.  Josh is a self-taught programmer with 11 years of coding experience in over 20 languages. He also has a background in electrical engineering, algorithms, and mathematics, developed through passion projects and a brief stint as an undergraduate at USU.",
         image: Josh,
     },
@@ -54,14 +54,14 @@ export const teamMembers = [
     {
         id: 108,
         name: "Sabrina Ventrano - (PMP)",
-        title: "Jr. Project Manager",
+        title: "Associate Project Manager",
         bio: "Sabrina is a highly experienced digital project manager with over 4 years of expertise in the field. She specializes in creating standard operating procedures (SOPs), managing budgets, and overseeing construction projects. With her strong analytical and organizational skills, Sabrina ensures that each project is thoroughly scoped and delivered on time. Sabrina's educational background includes a Bachelor's degree in Marketing/Communication and Social Interaction, which has equipped her with a solid foundation in marketing principles and effective communication strategies. In addition, she holds a current certification as a Project Management Professional (PMP), demonstrating her commitment to staying updated with industry best practices. In her role, Sabrina consistently excels at navigating complex projects, working closely with stakeholders to drive successful outcomes. Her meticulous attention to detail and ability to effectively scope projects contribute to the overall success of each initiative.",
         image: Sabrina,
     },
     {
         id: 109,
         name: "Matthew Greene",
-        title: "Jr. Project Manager",
+        title: "Associate Project Manager",
         bio: "With over 12 years of dedicated experience in project and program management, Matt brings a wealth of expertise to the table. His vast knowledge spans the realms of cybersecurity, operational planning and execution, team building, and leadership development. Matt's educational background includes a Bachelor's and Master's degree in Computer Science, solidifying his technical prowess. In addition to his professional accomplishments, he holds an FAA Private Pilot License with Instrument Rating, showcasing his passion for aviation.  Matt's commitment to excellence is exemplified by his extensive list of certifications, including Security+, Certified Ethical Hacker (CEH), GIAC Certified Intrusion Analyst, GIAC Certified Incident Handler, and GIAC Certified Penetration Tester. These certifications further demonstrate his dedication to staying at the forefront of industry best practices and his ability to navigate complex cybersecurity landscapes.",
         image: Matt,
     }
