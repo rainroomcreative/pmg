@@ -30,34 +30,34 @@ const LogoBanner = () => {
         <div className="bg-blue h-80 flex flex-col justify-center items-center gap-10 md:h-36">
             <div className="overflow-x-scroll overflow-y-hidden w-screen hide-scroll md:flex md:flex-col md:justify-center md:items-center">
                 <div className="flex flex-row justify-between items-center gap-12 h-12 w-max px-6 animate-scrollRight md:animate-none" style={scrollStyle}>
-                    <img src={JetiLogo} alt="Jeti logo" className="w-1/6 h-7" />
-                    <img src={OrderAILogo} alt="Order AI logo" className="w-1/6 h-8" />
-                    <img src={BellAirLogo} alt="Bell Air logo" className="w-1/6 h-12" />
-                    <img src={MightyTrueLogo} alt="Mighty & True logo" className="w-1/6 h-4" />
-                    <img src={tesla} alt="Tesla logo" className="w-1/6 h-20" />
-                    <img src={HR} alt="Hunger Rush logo" className="w-1/6 h-36" />
-                    <img src={appgate} alt="Hunger Rush logo" className="w-1/6 h-36" />
-                    <img src={payroc} alt="Hunger Rush logo" className="w-1/6 h-24" />
-                    <img src={PB} alt="Hunger Rush logo" className="w-1/6 h-36" />
-                    <img src={personna} alt="Hunger Rush logo" className="w-1/6 h-44" />
-                    <img src={studio} alt="Hunger Rush logo" className="w-1/6 h-36" />
-                    <img src={RealityAILogo} alt="Reality AI logo" className="w-1/6 h-8" />
+                    <img width="288" src={JetiLogo} alt="Jeti logo" className="w-1/6 h-7" />
+                    <img width="288" src={OrderAILogo} alt="Order AI logo" className="w-1/6 h-8" />
+                    <img width="288" src={BellAirLogo} alt="Bell Air logo" className="w-1/6 h-12" />
+                    <img width="288" src={MightyTrueLogo} alt="Mighty & True logo" className="w-1/6 h-4" />
+                    <img width="288" src={tesla} alt="Tesla logo" className="w-1/6 h-20" />
+                    <img width="288" src={HR} alt="Hunger Rush logo" className="w-1/6 h-36" />
+                    <img width="288" src={appgate} alt="Hunger Rush logo" className="w-1/6 h-36" />
+                    <img width="288" src={payroc} alt="Hunger Rush logo" className="w-1/6 h-24" />
+                    <img width="288" src={PB} alt="Hunger Rush logo" className="w-1/6 h-36" />
+                    <img width="288" src={personna} alt="Hunger Rush logo" className="w-1/6 h-44" />
+                    <img width="288" src={studio} alt="Hunger Rush logo" className="w-1/6 h-36" />
+                    <img width="288" src={RealityAILogo} alt="Reality AI logo" className="w-1/6 h-8" />
                 </div>
             </div>
             <div className="overflow-x-scroll overflow-y-hidden w-screen hide-scroll md:hidden">
                 <div className="flex flex-row justify-between items-center gap-12 h-12 w-max px-6 -translate-x-96 animate-scrollLeft" style={scrollStyle}>
-                    <img src={JetiLogo} alt="Jeti logo" className="w-1/6 h-7" />
-                    <img src={OrderAILogo} alt="Order AI logo" className="w-1/6 h-8" />
-                    <img src={BellAirLogo} alt="Bell Air logo" className="w-1/6 h-12" />
-                    <img src={MightyTrueLogo} alt="Mighty & True logo" className="w-1/6 h-4" />
-                    <img src={tesla} alt="Tesla logo" className="w-1/6 h-20" />
-                    <img src={HR} alt="Hunger Rush logo" className="w-1/6 h-36" />
-                    <img src={appgate} alt="Hunger Rush logo" className="w-1/6 h-36" />
-                    <img src={payroc} alt="Hunger Rush logo" className="w-1/6 h-24" />
-                    <img src={PB} alt="Hunger Rush logo" className="w-1/6 h-36" />
-                    <img src={personna} alt="Hunger Rush logo" className="w-1/6 h-44" />
-                    <img src={studio} alt="Hunger Rush logo" className="w-1/6 h-36" />
-                    <img src={RealityAILogo} alt="Reality AI logo" className="w-1/6 h-8" />
+                    <img width="288" src={JetiLogo} alt="Jeti logo" className="w-1/6 h-7" />
+                    <img width="288" src={OrderAILogo} alt="Order AI logo" className="w-1/6 h-8" />
+                    <img width="288" src={BellAirLogo} alt="Bell Air logo" className="w-1/6 h-12" />
+                    <img width="288" src={MightyTrueLogo} alt="Mighty & True logo" className="w-1/6 h-4" />
+                    <img width="288" src={tesla} alt="Tesla logo" className="w-1/6 h-20" />
+                    <img width="288" src={HR} alt="Hunger Rush logo" className="w-1/6 h-36" />
+                    <img width="288" src={appgate} alt="Hunger Rush logo" className="w-1/6 h-36" />
+                    <img width="288" src={payroc} alt="Hunger Rush logo" className="w-1/6 h-24" />
+                    <img width="288" src={PB} alt="Hunger Rush logo" className="w-1/6 h-36" />
+                    <img width="288" src={personna} alt="Hunger Rush logo" className="w-1/6 h-44" />
+                    <img width="288" src={studio} alt="Hunger Rush logo" className="w-1/6 h-36" />
+                    <img width="288" src={RealityAILogo} alt="Reality AI logo" className="w-1/6 h-8" />
                 </div>
             </div>
         </div>

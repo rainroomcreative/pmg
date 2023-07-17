@@ -27,7 +27,7 @@ const Header = () => {
                 <div className="w-3/12">
                     <Link to="/" onClick={() => MobileNav('close')}>
                         <img src={logo} alt="Partnered Management Group" className="hidden lg:block"/>
-                        <img src={mobileLogo} alt="Partnered Management Group" className="block lg:hidden"/>
+                        <img width="94" src={mobileLogo} alt="Partnered Management Group" className="block lg:hidden"/>
                     </Link>
                 </div>
                 <div className="w-9/12 flex flex-col shrink-0 justify-center items-end lg:justify-end lg:items-center lg:flex-row">
