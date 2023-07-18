@@ -1,4 +1,5 @@
 import React from "react";
+import { ReactSVG } from "react-svg";
 import {Link} from "react-router-dom";
 import logo from "./images/PMG-logo-icon.svg";
 import {ReactComponent as Facebook} from "./images/ic_outline-facebook.svg";
@@ -22,7 +23,7 @@ class Footer extends React.Component {
                         </ul>
                     </div>
                     <div className="pt-10 flex flex-col gap-3 justify-center items-center order-2 lg:order-1 lg:items-start lg:justify-start lg:pt-0">
-                        <img width="124" className="mx-auto w-[62px] lg:mb-6" src={logo} alt="Partnered Management Group" />
+                        <ReactSVG width="124" className="mx-auto w-[62px] lg:mb-6" src={logo} alt="Partnered Management Group" />
                         <p className="font-normal hidden lg:block pointer-events-none">© Partnered Management Group - 2023</p>
                     </div>
                     <div className="pt-10 order-4 flex flex-col gap-3 lg:order-3 lg:items-start lg:justify-start lg:pt-0 lg:gap-0">

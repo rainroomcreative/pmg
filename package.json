@@ -22,6 +22,7 @@
     "react-scripts": "5.0.1",
     "react-scroll-parallax": "^3.4.2",
     "react-scroll-sync": "^0.11.0",
+    "react-svg": "^16.1.18",
     "react-use-scroll-snap": "^0.0.4",
     "remark-gfm": "^3.0.1",
     "scroll-snap": "^4.0.3",

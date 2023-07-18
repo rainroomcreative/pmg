@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { ReactSVG } from 'react-svg';
 import {Link} from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 import logo from './images/PMG-logo.svg';
@@ -27,7 +28,7 @@ const Header = () => {
                 <div className="w-3/12">
                     <Link to="/" onClick={() => MobileNav('close')}>
                         <img src={logo} alt="Partnered Management Group" className="hidden lg:block"/>
-                        <img width="94" src={mobileLogo} alt="Partnered Management Group" className="block w-[47px] lg:hidden"/>
+                        <ReactSVG width="94" src={mobileLogo} alt="Partnered Management Group" className="block w-[47px] lg:hidden"/>
                     </Link>
                 </div>
                 <div className="w-9/12 flex flex-col shrink-0 justify-center items-end lg:justify-end lg:items-center lg:flex-row">
