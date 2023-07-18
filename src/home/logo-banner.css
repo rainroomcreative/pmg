@@ -1,0 +1,51 @@
+.logo-banner--logo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 144px;
+    flex-shrink: 1;
+}
+
+.logo-banner--logo.jeti-logo {
+    background-image: url(./images/Jeti.svg);
+}
+
+.logo-banner--logo.order-ai-logo {
+    background-image: url(./images/OrderAI.svg);
+}
+
+.logo-banner--logo.bellair-logo {
+    background-image: url(./images/BellAir.svg);
+}
+
+.logo-banner--logo.mighty-true-logo {
+    background-image: url(./images/MightyTrue.svg);
+}
+
+.logo-banner--logo.reality-ai-logo {
+    background-image: url(./images/RealityAI.svg);
+}
+
+.logo-banner--logo.tesla-logo {
+    background-image: url(./images/tesla.svg);
+}
+
+.logo-banner--logo.hunger-rush-logo {
+    background-image: url(./images/HungerRush.svg);
+}
+
+.logo-banner--logo.appgate-logo {
+    background-image: url(./images/appgate.svg);
+}
+
+.logo-banner--logo.payroc-logo {
+    background-image: url(./images/Payroc.svg);
+}
+
+.logo-banner--logo.persona-logo {
+    background-image: url(./images/Personna.svg);
+}
+
+.logo-banner--logo.studio88-logo {
+    background-image: url(./images/studio.svg);
+}

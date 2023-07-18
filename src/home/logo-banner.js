@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactSVG } from "react-svg";
+import './logo-banner.css';
 import JetiLogo from "./images/Jeti.svg";
 import OrderAILogo from "./images/OrderAI.svg";
 import BellAirLogo from "./images/BellAir.svg";
@@ -31,34 +32,34 @@ const LogoBanner = () => {
         <div className="bg-blue h-80 flex flex-col justify-center items-center gap-10 md:h-36">
             <div className="overflow-x-scroll overflow-y-hidden w-screen hide-scroll md:flex md:flex-col md:justify-center md:items-center">
                 <div className="flex flex-row justify-between items-center gap-12 h-12 w-max px-6 animate-scrollRight md:animate-none" style={scrollStyle}>
-                    <ReactSVG width="288" src={JetiLogo} alt="Jeti logo" className="w-1/6 h-7" />
-                    <ReactSVG width="288" src={OrderAILogo} alt="Order AI logo" className="w-1/6 h-8" />
-                    <ReactSVG width="288" src={BellAirLogo} alt="Bell Air logo" className="w-1/6 h-12" />
-                    <ReactSVG width="288" src={MightyTrueLogo} alt="Mighty & True logo" className="w-1/6 h-4" />
-                    <ReactSVG width="288" src={tesla} alt="Tesla logo" className="w-1/6 h-20" />
-                    <ReactSVG width="288" src={HR} alt="Hunger Rush logo" className="w-1/6 h-36" />
-                    <ReactSVG width="288" src={appgate} alt="Hunger Rush logo" className="w-1/6 h-36" />
-                    <ReactSVG width="288" src={payroc} alt="Hunger Rush logo" className="w-1/6 h-24" />
-                    <ReactSVG width="288" src={PB} alt="Hunger Rush logo" className="w-1/6 h-36" />
-                    <ReactSVG width="288" src={personna} alt="Hunger Rush logo" className="w-1/6 h-44" />
-                    <ReactSVG width="288" src={studio} alt="Hunger Rush logo" className="w-1/6 h-36" />
-                    <ReactSVG width="288" src={RealityAILogo} alt="Reality AI logo" className="w-1/6 h-8" />
+                <div width="144" alt="Jeti logo" className="logo-banner--logo jeti-logo w-1/6 h-7" />
+                    <div width="144" alt="Order AI logo" className="logo-banner--logo order-ai-logo w-1/6 h-8" />
+                    <div width="144" alt="Bell Air logo" className="logo-banner--logo bellair-logo w-1/6 h-12" />
+                    <div width="144" alt="Mighty & True logo" className="logo-banner--logo mighty-true-logo w-1/6 h-4" />
+                    <div width="144" alt="Tesla logo" className="logo-banner--logo tesla-logo w-1/6 h-20 med:hidden" />
+                    <div width="144" alt="Hunger Rush logo" className="logo-banner--logo hunger-rush-logo w-1/6 h-36 med:hidden" />
+                    <div width="144" alt="Appgate logo" className="logo-banner--logo appgate-logo w-1/6 h-36 med:hidden" />
+                    <div width="144" alt="Payroc logo" className="logo-banner--logo payroc-logo w-1/6 h-24 med:hidden" />
+                    <div width="144" alt="Persona logo" className="logo-banner--logo persona-logo w-1/6 h-36 med:hidden" />
+                    <div width="144" alt="Psycho Bunny logo" className="logo-banner--logo psycho-bunny-logo w-1/6 h-8 med:hidden" />
+                    <div width="144" alt="Hunger Rush logo" className="logo-banner--logo studio88-logo w-1/6 h-44 med:hidden" />
+                    <div width="144" alt="Reality AI logo" className="logo-banner--logo reality-ai-logo w-1/6 h-36" />
                 </div>
             </div>
             <div className="overflow-x-scroll overflow-y-hidden w-screen hide-scroll md:hidden">
-                <div className="flex flex-row justify-between items-center gap-12 h-12 w-max px-6 -translate-x-96 animate-scrollLeft" style={scrollStyle}>
-                    <ReactSVG width="288" src={JetiLogo} alt="Jeti logo" className="w-1/6 h-7" />
-                    <ReactSVG width="288" src={OrderAILogo} alt="Order AI logo" className="w-1/6 h-8" />
-                    <ReactSVG width="288" src={BellAirLogo} alt="Bell Air logo" className="w-1/6 h-12" />
-                    <ReactSVG width="288" src={MightyTrueLogo} alt="Mighty & True logo" className="w-1/6 h-4" />
-                    <ReactSVG width="288" src={tesla} alt="Tesla logo" className="w-1/6 h-20" />
-                    <ReactSVG width="288" src={HR} alt="Hunger Rush logo" className="w-1/6 h-36" />
-                    <ReactSVG width="288" src={appgate} alt="Hunger Rush logo" className="w-1/6 h-36" />
-                    <ReactSVG width="288" src={payroc} alt="Hunger Rush logo" className="w-1/6 h-24" />
-                    <ReactSVG width="288" src={PB} alt="Hunger Rush logo" className="w-1/6 h-36" />
-                    <ReactSVG width="288" src={personna} alt="Hunger Rush logo" className="w-1/6 h-44" />
-                    <ReactSVG width="288" src={studio} alt="Hunger Rush logo" className="w-1/6 h-36" />
-                    <ReactSVG width="288" src={RealityAILogo} alt="Reality AI logo" className="w-1/6 h-8" />
+                <div className="flex flex-row justify-between items-center gap-12 h-12 w-max px-6 -translate-x-[82rem] animate-scrollLeft" style={scrollStyle}>
+                    <div width="144" alt="Jeti logo" className="logo-banner--logo jeti-logo w-1/6 h-7" />
+                    <div width="144" alt="Order AI logo" className="logo-banner--logo order-ai-logo w-1/6 h-8" />
+                    <div width="144" alt="Bell Air logo" className="logo-banner--logo bellair-logo w-1/6 h-12" />
+                    <div width="144" alt="Mighty & True logo" className="logo-banner--logo mighty-true-logo w-1/6 h-4" />
+                    <div width="144" alt="Tesla logo" className="logo-banner--logo tesla-logo w-1/6 h-20 med:hidden" />
+                    <div width="144" alt="Hunger Rush logo" className="logo-banner--logo hunger-rush-logo w-1/6 h-36 med:hidden" />
+                    <div width="144" alt="Appgate logo" className="logo-banner--logo appgate-logo w-1/6 h-36 med:hidden" />
+                    <div width="144" alt="Payroc logo" className="logo-banner--logo payroc-logo w-1/6 h-24 med:hidden" />
+                    <div width="144" alt="Persona logo" className="logo-banner--logo persona-logo w-1/6 h-36 med:hidden" />
+                    <div width="144" alt="Psycho Bunny logo" className="logo-banner--logo psycho-bunny-logo w-1/6 h-8 med:hidden" />
+                    <div width="144" alt="Hunger Rush logo" className="logo-banner--logo studio88-logo w-1/6 h-44 med:hidden" />
+                    <div width="144" alt="Reality AI logo" className="logo-banner--logo reality-ai-logo w-1/6 h-36" />
                 </div>
             </div>
         </div>
