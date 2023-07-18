@@ -10,5 +10,5 @@
 [[headers]]
     for = "/*"
     [headers.values]
-        Test-It: true
-        Cache-Control: no-cache
+        test-it = "true"
+        cache-control = "no-cache"
