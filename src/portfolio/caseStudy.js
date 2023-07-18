@@ -50,7 +50,7 @@ const CaseStudy = ({ caseStudy, index, onToggle, active }) => {
                             <p className={"text-sm md:text-base cursor-pointer p-1 border-b-solid" + `${ tabActive === '4' ? " border-b" : ""}` + `${ isEven ? " border-b-white" : " border-b-black"}`} onClick={() => changeTab('4')}>Results</p>
                             <p className={"text-sm md:text-base cursor-pointer p-1 border-b-solid" + `${ tabActive === '5' ? " border-b" : ""}` + `${ isEven ? " border-b-white" : " border-b-black"}`} onClick={() => changeTab('5')}>Conclusion</p>
                         </div>
-                        <div className="relative h-96 md:h-64 text-base leading-8">
+                        <div className="relative h-96 text-base leading-8">
                             <p className={"pointer-events-none absolute top left transition-opacity duration-1000" + `${ tabActive === '1' ? " opacity-100" : " opacity-0"}`}>{caseStudy.backgroundCopy}</p>
                             <p className={"pointer-events-none absolute top left transition-opacity duration-1000" + `${ tabActive === '2' ? " opacity-100" : " opacity-0"}`}>{caseStudy.challengesCopy}</p>
                             <p className={"pointer-events-none absolute top left transition-opacity duration-1000" + `${ tabActive === '3' ? " opacity-100" : " opacity-0"}`}>{caseStudy.solutionCopy}</p>
